@@ -36624,7 +36624,7 @@
             "category": "integration",
             "description": "Home Assistant integration for Goldair WiFi heaters, dehumidifiers and fans",
             "domain": "goldair_climate",
-            "downloads": 269,
+            "downloads": 0,
             "etag_repository": "W/\"cdf775b7322d1ffa7d50d60a58114be4fbc7c50d5adcb559d9926f1eed1f5ccd\"",
             "full_name": "nicole-ashley/homeassistant-goldair-climate",
             "first_install": true,

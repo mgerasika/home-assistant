@@ -17,19 +17,905 @@
                     "user_id": "c57ebe0a3b2c4797a6b0d747179adad4",
                     "friendly_name": "admin"
                 },
-                "last_changed": "2022-02-05T17:12:17.189684+00:00",
-                "last_updated": "2022-02-05T17:12:17.189684+00:00",
+                "last_changed": "2022-02-05T18:39:33.766967+00:00",
+                "last_updated": "2022-02-05T18:40:12.328033+00:00",
                 "context": {
-                    "id": "78ec11ab535c82520dd57c091e4fee0b",
+                    "id": "e2a12c8f53111f6ea513d0eae0a85f1b",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
         },
         {
             "state": {
-                "entity_id": "sensor.ble_temperature_a4c1384972ba",
+                "entity_id": "sensor.ble_temperature_maysternya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Maysternya"
+                },
+                "last_changed": "2022-02-05T18:39:38.230681+00:00",
+                "last_updated": "2022-02-05T18:39:38.230681+00:00",
+                "context": {
+                    "id": "ff185719132f1735702379fbabcca411",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_maysternya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Maysternya"
+                },
+                "last_changed": "2022-02-05T18:39:38.231040+00:00",
+                "last_updated": "2022-02-05T18:39:38.231040+00:00",
+                "context": {
+                    "id": "d1086a52f261e1cc66fe35cbc6a51222",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_maysternya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Maysternya"
+                },
+                "last_changed": "2022-02-05T18:39:38.231286+00:00",
+                "last_updated": "2022-02-05T18:39:38.231286+00:00",
+                "context": {
+                    "id": "7fa1744f489cf47c2f6b338d35c1c78a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_maysternya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Maysternya"
+                },
+                "last_changed": "2022-02-05T18:39:38.231518+00:00",
+                "last_updated": "2022-02-05T18:39:38.231518+00:00",
+                "context": {
+                    "id": "36f3abddd939d47a68ddcf939dbee3cc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_maysternya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Maysternya"
+                },
+                "last_changed": "2022-02-05T18:39:38.231724+00:00",
+                "last_updated": "2022-02-05T18:39:38.231724+00:00",
+                "context": {
+                    "id": "d1c9943ead29691086ea4add25e1a5e1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_spalnya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Spalnya"
+                },
+                "last_changed": "2022-02-05T18:39:38.231928+00:00",
+                "last_updated": "2022-02-05T18:39:38.231928+00:00",
+                "context": {
+                    "id": "ba8eb146ddfcbeb450efb339dae0e326",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_spalnya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Spalnya"
+                },
+                "last_changed": "2022-02-05T18:39:38.232157+00:00",
+                "last_updated": "2022-02-05T18:39:38.232157+00:00",
+                "context": {
+                    "id": "24188bc76223bba3fdecd0a5f3f92cc8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_spalnya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Spalnya"
+                },
+                "last_changed": "2022-02-05T18:39:38.232364+00:00",
+                "last_updated": "2022-02-05T18:39:38.232364+00:00",
+                "context": {
+                    "id": "eb9581b8e00461f6fd527ca567eb89a1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_spalnya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Spalnya"
+                },
+                "last_changed": "2022-02-05T18:39:38.232566+00:00",
+                "last_updated": "2022-02-05T18:39:38.232566+00:00",
+                "context": {
+                    "id": "a63333bf21139b63f29d6fa7fdd29f7d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_spalnya",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Spalnya"
+                },
+                "last_changed": "2022-02-05T18:39:38.232764+00:00",
+                "last_updated": "2022-02-05T18:39:38.232764+00:00",
+                "context": {
+                    "id": "d444b39390fd63d0e8144a19528c6ca3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_vanna",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Vanna"
+                },
+                "last_changed": "2022-02-05T18:39:38.232969+00:00",
+                "last_updated": "2022-02-05T18:39:38.232969+00:00",
+                "context": {
+                    "id": "11bf1be24df503196c3e7a196d7d44ca",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_vanna",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Vanna"
+                },
+                "last_changed": "2022-02-05T18:39:38.233198+00:00",
+                "last_updated": "2022-02-05T18:39:38.233198+00:00",
+                "context": {
+                    "id": "ec3aaa25999a013e58379ab3e250bf9b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_vanna",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Vanna"
+                },
+                "last_changed": "2022-02-05T18:39:38.233399+00:00",
+                "last_updated": "2022-02-05T18:39:38.233399+00:00",
+                "context": {
+                    "id": "954f32f5245399fd9caf6853094f040a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_vanna",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Vanna"
+                },
+                "last_changed": "2022-02-05T18:39:38.233599+00:00",
+                "last_updated": "2022-02-05T18:39:38.233599+00:00",
+                "context": {
+                    "id": "a9d91e302129a856031e7c87e4e5d403",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_vanna",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Vanna"
+                },
+                "last_changed": "2022-02-05T18:39:38.233797+00:00",
+                "last_updated": "2022-02-05T18:39:38.233797+00:00",
+                "context": {
+                    "id": "c2c009e960ede70c5971056d6e068740",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_velika",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "last packet id": 171,
+                    "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+                    "uuid": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Velika"
+                },
+                "last_changed": "2022-02-05T18:39:38.234020+00:00",
+                "last_updated": "2022-02-05T18:39:38.234020+00:00",
+                "context": {
+                    "id": "1c230ab8b100acd1393caf258a2a798e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_velika",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Velika"
+                },
+                "last_changed": "2022-02-05T18:39:38.234232+00:00",
+                "last_updated": "2022-02-05T18:39:38.234232+00:00",
+                "context": {
+                    "id": "5c378999d0202899abbd27269478f6d9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_velika",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Velika"
+                },
+                "last_changed": "2022-02-05T18:39:38.234435+00:00",
+                "last_updated": "2022-02-05T18:39:38.234435+00:00",
+                "context": {
+                    "id": "1c780fd78f3de0842ee20714d68575d5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_velika",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Velika"
+                },
+                "last_changed": "2022-02-05T18:39:38.234639+00:00",
+                "last_updated": "2022-02-05T18:39:38.234639+00:00",
+                "context": {
+                    "id": "c9f86bd2f55cb5b2553593cdd76b8f3d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_velika",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "last packet id": 171,
+                    "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+                    "uuid": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Velika"
+                },
+                "last_changed": "2022-02-05T18:39:38.234863+00:00",
+                "last_updated": "2022-02-05T18:39:38.234863+00:00",
+                "context": {
+                    "id": "440fb208ae04d3183a7010a7d6021216",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_ani",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Ani"
+                },
+                "last_changed": "2022-02-05T18:39:38.235092+00:00",
+                "last_updated": "2022-02-05T18:39:38.235092+00:00",
+                "context": {
+                    "id": "0f9d2ce895cd26bc807de55b304c1c93",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_ani",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Ani"
+                },
+                "last_changed": "2022-02-05T18:39:38.235300+00:00",
+                "last_updated": "2022-02-05T18:39:38.235300+00:00",
+                "context": {
+                    "id": "dafe6e0b88638ebfaf1c70bd7263397f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_ani",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Ani"
+                },
+                "last_changed": "2022-02-05T18:39:38.235498+00:00",
+                "last_updated": "2022-02-05T18:39:38.235498+00:00",
+                "context": {
+                    "id": "5d0b6ef0e7fa10d65f92e3bff978716e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_ani",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Ani"
+                },
+                "last_changed": "2022-02-05T18:39:38.235698+00:00",
+                "last_updated": "2022-02-05T18:39:38.235698+00:00",
+                "context": {
+                    "id": "a23d75b92f795e0bb7f60bb0094dba5a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_ani",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Ani"
+                },
+                "last_changed": "2022-02-05T18:39:38.235896+00:00",
+                "last_updated": "2022-02-05T18:39:38.235896+00:00",
+                "context": {
+                    "id": "7cac03d6523247bfe36c08b9bca649cc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_koridor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Koridor"
+                },
+                "last_changed": "2022-02-05T18:39:38.236132+00:00",
+                "last_updated": "2022-02-05T18:39:38.236132+00:00",
+                "context": {
+                    "id": "7757c544ec2fa05ed5f890259aa0ff6a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_koridor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Koridor"
+                },
+                "last_changed": "2022-02-05T18:39:38.236358+00:00",
+                "last_updated": "2022-02-05T18:39:38.236358+00:00",
+                "context": {
+                    "id": "83d9bb2f4cb68028988a2913d3d74511",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_koridor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Koridor"
+                },
+                "last_changed": "2022-02-05T18:39:38.236557+00:00",
+                "last_updated": "2022-02-05T18:39:38.236557+00:00",
+                "context": {
+                    "id": "3b1318b0767fa728a33ffa1129edf61b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_koridor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Koridor"
+                },
+                "last_changed": "2022-02-05T18:39:38.236759+00:00",
+                "last_updated": "2022-02-05T18:39:38.236759+00:00",
+                "context": {
+                    "id": "02f96857d2e59becaf32c7d0af087153",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_koridor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Koridor"
+                },
+                "last_changed": "2022-02-05T18:39:38.236956+00:00",
+                "last_updated": "2022-02-05T18:39:38.236956+00:00",
+                "context": {
+                    "id": "4b3834817aa157de9f8ff70bd773aeef",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_dax",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:DF:06:52",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Dax"
+                },
+                "last_changed": "2022-02-05T18:39:38.237179+00:00",
+                "last_updated": "2022-02-05T18:39:38.237179+00:00",
+                "context": {
+                    "id": "7a910ba9581da3c7e4c8ff5b973f49a8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_dax",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:DF:06:52",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Dax"
+                },
+                "last_changed": "2022-02-05T18:39:38.237380+00:00",
+                "last_updated": "2022-02-05T18:39:38.237380+00:00",
+                "context": {
+                    "id": "cb82d688f142dbc8bb7fcf43b476c2fb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_dax",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:DF:06:52",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Dax"
+                },
+                "last_changed": "2022-02-05T18:39:38.237580+00:00",
+                "last_updated": "2022-02-05T18:39:38.237580+00:00",
+                "context": {
+                    "id": "0adcdb0dda55766f83d44d557e3b6fd6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_dax",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:DF:06:52",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Dax"
+                },
+                "last_changed": "2022-02-05T18:39:38.237852+00:00",
+                "last_updated": "2022-02-05T18:39:38.237852+00:00",
+                "context": {
+                    "id": "f113051e780e2f05d35ac550d7bf87c8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_dax",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:DF:06:52",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Dax"
+                },
+                "last_changed": "2022-02-05T18:39:38.238083+00:00",
+                "last_updated": "2022-02-05T18:39:38.238083+00:00",
+                "context": {
+                    "id": "79e43cd36006fcebf43a3765a42847a4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_proektor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Proektor"
+                },
+                "last_changed": "2022-02-05T18:39:38.238293+00:00",
+                "last_updated": "2022-02-05T18:39:38.238293+00:00",
+                "context": {
+                    "id": "8e86f900f6cd52adf7c90f12c1838083",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_proektor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Proektor"
+                },
+                "last_changed": "2022-02-05T18:39:38.238495+00:00",
+                "last_updated": "2022-02-05T18:39:38.238495+00:00",
+                "context": {
+                    "id": "339f59aee825570b4a463ea33c77f49b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_proektor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Proektor"
+                },
+                "last_changed": "2022-02-05T18:39:38.238694+00:00",
+                "last_updated": "2022-02-05T18:39:38.238694+00:00",
+                "context": {
+                    "id": "6e06a22a09e0ad5441eaac6f9120e07a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_proektor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Proektor"
+                },
+                "last_changed": "2022-02-05T18:39:38.238899+00:00",
+                "last_updated": "2022-02-05T18:39:38.238899+00:00",
+                "context": {
+                    "id": "fac1f4af20208e7ca9724332fd36568e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_proektor",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Proektor"
+                },
+                "last_changed": "2022-02-05T18:39:38.239120+00:00",
+                "last_updated": "2022-02-05T18:39:38.239120+00:00",
+                "context": {
+                    "id": "42509dc87bb7d8b54dd03b5b1a64a88c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_vulichya",
                 "state": "unknown",
                 "attributes": {
                     "state_class": "measurement",
@@ -37,43 +923,50 @@
                     "mac address": "A4:C1:38:49:72:BA",
                     "unit_of_measurement": "\u00b0C",
                     "device_class": "temperature",
-                    "friendly_name": "ble temperature A4C1384972BA"
+                    "friendly_name": "ble temperature Vulichya"
                 },
-                "last_changed": "2022-02-05T16:50:14.077170+00:00",
-                "last_updated": "2022-02-05T16:50:14.077170+00:00",
+                "last_changed": "2022-02-05T18:39:38.239345+00:00",
+                "last_updated": "2022-02-05T18:39:38.239345+00:00",
                 "context": {
-                    "id": "87702722338638b00ab01adfc07fd172",
+                    "id": "4ade8a96c11e2c04f5025fdfc30229b2",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
         },
         {
             "state": {
-                "entity_id": "sensor.ble_humidity_a4c1384972ba",
-                "state": "unknown",
+                "entity_id": "sensor.ble_humidity_vulichya",
+                "state": "55",
                 "attributes": {
                     "state_class": "measurement",
                     "sensor type": "LYWSD03MMC",
                     "mac address": "A4:C1:38:49:72:BA",
+                    "last packet id": 128,
+                    "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+                    "uuid": "A4:C1:38:49:72:BA",
+                    "last mean of": 1,
+                    "median": 55,
+                    "mean": 55,
+                    "rssi": -79,
                     "unit_of_measurement": "%",
                     "device_class": "humidity",
-                    "friendly_name": "ble humidity A4C1384972BA"
+                    "friendly_name": "ble humidity Vulichya"
                 },
-                "last_changed": "2022-02-05T16:50:14.078487+00:00",
-                "last_updated": "2022-02-05T16:50:14.078487+00:00",
+                "last_changed": "2022-02-05T18:40:09.402410+00:00",
+                "last_updated": "2022-02-05T18:40:09.402410+00:00",
                 "context": {
-                    "id": "3003007b1a848c2f31d7d078dd028483",
+                    "id": "2bae7acfba1188d9615b72cb226d1c44",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
         },
         {
             "state": {
-                "entity_id": "sensor.ble_battery_a4c1384972ba",
+                "entity_id": "sensor.ble_battery_vulichya",
                 "state": "unknown",
                 "attributes": {
                     "state_class": "measurement",
@@ -81,21 +974,21 @@
                     "mac address": "A4:C1:38:49:72:BA",
                     "unit_of_measurement": "%",
                     "device_class": "battery",
-                    "friendly_name": "ble battery A4C1384972BA"
+                    "friendly_name": "ble battery Vulichya"
                 },
-                "last_changed": "2022-02-05T16:50:14.079681+00:00",
-                "last_updated": "2022-02-05T16:50:14.079681+00:00",
+                "last_changed": "2022-02-05T18:39:38.239748+00:00",
+                "last_updated": "2022-02-05T18:39:38.239748+00:00",
                 "context": {
-                    "id": "46fc2f8f803d7fa20381619b6a4cb7ea",
+                    "id": "8094a1a1b243639e6aabd483aafafaf8",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
         },
         {
             "state": {
-                "entity_id": "sensor.ble_voltage_a4c1384972ba",
+                "entity_id": "sensor.ble_voltage_vulichya",
                 "state": "unknown",
                 "attributes": {
                     "state_class": "measurement",
@@ -103,39 +996,686 @@
                     "mac address": "A4:C1:38:49:72:BA",
                     "unit_of_measurement": "V",
                     "device_class": "voltage",
-                    "friendly_name": "ble voltage A4C1384972BA"
+                    "friendly_name": "ble voltage Vulichya"
                 },
-                "last_changed": "2022-02-05T16:50:14.080856+00:00",
-                "last_updated": "2022-02-05T16:50:14.080856+00:00",
+                "last_changed": "2022-02-05T18:39:38.239946+00:00",
+                "last_updated": "2022-02-05T18:39:38.239946+00:00",
                 "context": {
-                    "id": "e044b9ad9a5501af0e6e25e2cb1d4f67",
+                    "id": "716e37b539711180b45ebba64c4d37cb",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
         },
         {
             "state": {
-                "entity_id": "sensor.ble_rssi_a4c1384972ba",
-                "state": "unknown",
+                "entity_id": "sensor.ble_rssi_vulichya",
+                "state": "-79",
                 "attributes": {
                     "state_class": "measurement",
                     "sensor type": "LYWSD03MMC",
                     "mac address": "A4:C1:38:49:72:BA",
+                    "last packet id": 128,
+                    "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+                    "uuid": "A4:C1:38:49:72:BA",
+                    "last mean of": 1,
+                    "median": -79,
+                    "mean": -79,
                     "unit_of_measurement": "dBm",
                     "device_class": "signal_strength",
-                    "friendly_name": "ble rssi A4C1384972BA"
+                    "friendly_name": "ble rssi Vulichya"
                 },
-                "last_changed": "2022-02-05T16:50:14.081940+00:00",
-                "last_updated": "2022-02-05T16:50:14.081940+00:00",
+                "last_changed": "2022-02-05T18:40:09.402698+00:00",
+                "last_updated": "2022-02-05T18:40:09.402698+00:00",
                 "context": {
-                    "id": "0173c51a3365f7d945634ce47bfe7b8a",
+                    "id": "015f0a231ad85fc74bf903a24549d4c1",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_detected_activity",
+                "state": "still",
+                "attributes": {
+                    "still": 100,
+                    "icon": "mdi:sleep",
+                    "friendly_name": "G8441 Detected Activity"
+                },
+                "last_changed": "2022-02-05T18:39:40.844228+00:00",
+                "last_updated": "2022-02-05T18:39:40.844228+00:00",
+                "context": {
+                    "id": "760174df2c55e8d4505d95c11653488a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_ringer_mode",
+                "state": "vibrate",
+                "attributes": {
+                    "icon": "mdi:vibrate",
+                    "friendly_name": "G8441 Ringer Mode"
+                },
+                "last_changed": "2022-02-05T18:39:40.844812+00:00",
+                "last_updated": "2022-02-05T18:39:40.844812+00:00",
+                "context": {
+                    "id": "85d6a4040499a9efc9bbd920ff239177",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_battery_level",
+                "state": "76",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "icon": "mdi:battery-70",
+                    "friendly_name": "G8441 Battery Level"
+                },
+                "last_changed": "2022-02-05T18:39:40.845325+00:00",
+                "last_updated": "2022-02-05T18:39:40.845325+00:00",
+                "context": {
+                    "id": "2a88393396a53a805e7352b60fb5daf4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_battery_state",
+                "state": "discharging",
+                "attributes": {
+                    "icon": "mdi:battery-minus",
+                    "friendly_name": "G8441 Battery State"
+                },
+                "last_changed": "2022-02-05T18:39:40.845862+00:00",
+                "last_updated": "2022-02-05T18:39:40.845862+00:00",
+                "context": {
+                    "id": "46d8a0767030f4bb015ee43aa6ae0fcb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_charger_type",
+                "state": "none",
+                "attributes": {
+                    "icon": "mdi:battery",
+                    "friendly_name": "G8441 Charger Type"
+                },
+                "last_changed": "2022-02-05T18:39:40.846374+00:00",
+                "last_updated": "2022-02-05T18:39:40.846374+00:00",
+                "context": {
+                    "id": "179d723d516c9e922e6758cdcf6a97e5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_battery_health",
+                "state": "good",
+                "attributes": {
+                    "icon": "mdi:battery-heart-variant",
+                    "friendly_name": "G8441 Battery Health"
+                },
+                "last_changed": "2022-02-05T18:39:40.846839+00:00",
+                "last_updated": "2022-02-05T18:39:40.846839+00:00",
+                "context": {
+                    "id": "79fa1527e5a7bab2b1e343ff4879f77d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_battery_temperature",
+                "state": "27.2",
+                "attributes": {
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "icon": "mdi:battery",
+                    "friendly_name": "G8441 Battery Temperature"
+                },
+                "last_changed": "2022-02-05T18:39:40.847350+00:00",
+                "last_updated": "2022-02-05T18:39:40.847350+00:00",
+                "context": {
+                    "id": "8351f555b711d4155ee3738ada5f4579",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_bluetooth_connection",
+                "state": "1",
+                "attributes": {
+                    "connected_not_paired_devices": "[]",
+                    "connected_paired_devices": "[00:18:09:9B:74:01]",
+                    "paired_devices": "[F4:4E:FD:B0:1D:7A, 7E:88:46:81:27:72, 5A:5A:5A:A6:43:79, 00:18:09:9B:74:01]",
+                    "unit_of_measurement": "connection(s)",
+                    "icon": "mdi:bluetooth",
+                    "friendly_name": "G8441 Bluetooth Connection"
+                },
+                "last_changed": "2022-02-05T18:39:40.847833+00:00",
+                "last_updated": "2022-02-05T18:39:40.847833+00:00",
+                "context": {
+                    "id": "57c592ceb8fd9deb25c7a59dbe98e60a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_do_not_disturb_sensor",
+                "state": "off",
+                "attributes": {
+                    "icon": "mdi:minus-circle",
+                    "friendly_name": "G8441 Do Not Disturb Sensor"
+                },
+                "last_changed": "2022-02-05T18:39:40.848323+00:00",
+                "last_updated": "2022-02-05T18:39:40.848323+00:00",
+                "context": {
+                    "id": "80c0db2e6edeba028699cca28193fe2b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_geocoded_location",
+                "state": "Q3CQ+3W, Pasiky-Zubrytski, Lviv Oblast, Ukraine",
+                "attributes": {
+                    "Administrative Area": "Lviv Oblast",
+                    "Country": "Ukraine",
+                    "ISO Country Code": "UA",
+                    "Latitude": 49.770103,
+                    "Locality": "Pasiky-Zubrytski",
+                    "Longitude": 24.089794,
+                    "Postal Code": "null",
+                    "Sub Administrative Area": "Pustomytivs'kyi district",
+                    "Sub Locality": "null",
+                    "Sub Thoroughfare": "null",
+                    "Thoroughfare": "null",
+                    "icon": "mdi:map",
+                    "friendly_name": "G8441 Geocoded Location"
+                },
+                "last_changed": "2022-02-05T18:39:40.849791+00:00",
+                "last_updated": "2022-02-05T18:39:40.849791+00:00",
+                "context": {
+                    "id": "f2d8d128f4bad8865f693362a3b3c53f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_last_reboot",
+                "state": "2022-02-04T13:30:51+00:00",
+                "attributes": {
+                    "Local Time": "Fri Feb 04 15:30:51 GMT+02:00 2022",
+                    "Time in Milliseconds": 1643981451637,
+                    "device_class": "timestamp",
+                    "icon": "mdi:restart",
+                    "friendly_name": "G8441 Last Reboot"
+                },
+                "last_changed": "2022-02-05T18:39:40.850473+00:00",
+                "last_updated": "2022-02-05T18:39:40.850473+00:00",
+                "context": {
+                    "id": "f397d3f4f541dd3745cbbacf88685816",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_light_sensor",
+                "state": "160",
+                "attributes": {
+                    "unit_of_measurement": "lx",
+                    "device_class": "illuminance",
+                    "icon": "mdi:brightness-5",
+                    "friendly_name": "G8441 Light Sensor"
+                },
+                "last_changed": "2022-02-05T18:39:40.850965+00:00",
+                "last_updated": "2022-02-05T18:39:40.850965+00:00",
+                "context": {
+                    "id": "35e4906a3cd4143006dfbeed0e01132f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_wifi_connection",
+                "state": "zyxel",
+                "attributes": {
+                    "is_hidden": false,
+                    "icon": "mdi:wifi",
+                    "friendly_name": "G8441 WiFi Connection"
+                },
+                "last_changed": "2022-02-05T18:39:40.851472+00:00",
+                "last_updated": "2022-02-05T18:39:40.851472+00:00",
+                "context": {
+                    "id": "106a4e53b7b75c5e69988bc412d93421",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_next_alarm",
+                "state": "unavailable",
+                "attributes": {
+                    "device_class": "timestamp",
+                    "icon": "mdi:alarm",
+                    "friendly_name": "G8441 Next Alarm"
+                },
+                "last_changed": "2022-02-05T18:39:40.851941+00:00",
+                "last_updated": "2022-02-05T18:39:40.851941+00:00",
+                "context": {
+                    "id": "e874ad741f917943d0283e743fc86106",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_pressure_sensor",
+                "state": "975.4",
+                "attributes": {
+                    "unit_of_measurement": "hPa",
+                    "device_class": "pressure",
+                    "icon": "mdi:gauge",
+                    "friendly_name": "G8441 Pressure Sensor"
+                },
+                "last_changed": "2022-02-05T18:39:40.852424+00:00",
+                "last_updated": "2022-02-05T18:39:40.852424+00:00",
+                "context": {
+                    "id": "d706e3dc78515e08bd6cf501a558a90f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_proximity_sensor",
+                "state": "near",
+                "attributes": {
+                    "icon": "mdi:leak",
+                    "friendly_name": "G8441 Proximity Sensor"
+                },
+                "last_changed": "2022-02-05T18:39:40.852912+00:00",
+                "last_updated": "2022-02-05T18:39:40.852912+00:00",
+                "context": {
+                    "id": "3f03d289bf84388f0ead711a02b75dbc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_steps_sensor",
+                "state": "1112",
+                "attributes": {
+                    "unit_of_measurement": "steps",
+                    "icon": "mdi:walk",
+                    "friendly_name": "G8441 Steps Sensor"
+                },
+                "last_changed": "2022-02-05T18:39:40.853455+00:00",
+                "last_updated": "2022-02-05T18:39:40.853455+00:00",
+                "context": {
+                    "id": "24c4908d20703477a3b9a0c93e9e6356",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_internal_storage",
+                "state": "22",
+                "attributes": {
+                    "Free internal storage": "4GB",
+                    "Total internal storage": "21GB",
+                    "unit_of_measurement": "%",
+                    "icon": "mdi:harddisk",
+                    "friendly_name": "G8441 Internal Storage"
+                },
+                "last_changed": "2022-02-05T18:39:40.853922+00:00",
+                "last_updated": "2022-02-05T18:39:40.853922+00:00",
+                "context": {
+                    "id": "574646ff5a4b59a4fa7808de58754f7a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.g8441_is_charging",
+                "state": "off",
+                "attributes": {
+                    "device_class": "plug",
+                    "icon": "mdi:power-plug-off",
+                    "friendly_name": "G8441 Is Charging"
+                },
+                "last_changed": "2022-02-05T18:39:40.854412+00:00",
+                "last_updated": "2022-02-05T18:39:40.854412+00:00",
+                "context": {
+                    "id": "ac01a7d13ce644cf5e6e72cf6e4463ac",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.g8441",
+                "state": "not_home",
+                "attributes": {
+                    "source_type": "gps",
+                    "latitude": 49.7695679,
+                    "longitude": 24.0898421,
+                    "gps_accuracy": 20,
+                    "altitude": 380,
+                    "course": 0,
+                    "speed": 0,
+                    "vertical_accuracy": 1,
+                    "friendly_name": "G8441"
+                },
+                "last_changed": "2022-02-05T18:39:40.861197+00:00",
+                "last_updated": "2022-02-05T18:39:40.861197+00:00",
+                "context": {
+                    "id": "aec415d07c6a3a3cda982c03b7c6af0f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:40:12.353952+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_kitchen",
+                "state": "19.0",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "last packet id": 86,
+                    "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+                    "uuid": "A4:C1:38:25:70:8A",
+                    "last mean of": 1,
+                    "median": 19.0,
+                    "mean": 19.0,
+                    "rssi": -71,
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature Kitchen"
+                },
+                "last_changed": "2022-02-05T18:33:04.456063+00:00",
+                "last_updated": "2022-02-05T18:33:04.456063+00:00",
+                "context": {
+                    "id": "142080721e5c929d310085372fc7c6c4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_kitchen",
+                "state": "55",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "last packet id": 84,
+                    "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+                    "uuid": "A4:C1:38:25:70:8A",
+                    "last mean of": 1,
+                    "median": 55,
+                    "mean": 55,
+                    "rssi": -65,
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity Kitchen"
+                },
+                "last_changed": "2022-02-05T18:32:03.560335+00:00",
+                "last_updated": "2022-02-05T18:32:03.560335+00:00",
+                "context": {
+                    "id": "0e768cb248eb084214b34d7260f59155",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_kitchen",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery Kitchen"
+                },
+                "last_changed": "2022-02-05T18:21:59.314489+00:00",
+                "last_updated": "2022-02-05T18:21:59.314489+00:00",
+                "context": {
+                    "id": "8846a6a47447a1da94fdc3e1dec25c56",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_kitchen",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage Kitchen"
+                },
+                "last_changed": "2022-02-05T18:21:59.314716+00:00",
+                "last_updated": "2022-02-05T18:21:59.314716+00:00",
+                "context": {
+                    "id": "5844639d13cb0e218f8a377ca563912d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_kitchen",
+                "state": "-71",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:25:70:8A",
+                    "last packet id": 86,
+                    "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+                    "uuid": "A4:C1:38:25:70:8A",
+                    "last mean of": 1,
+                    "median": -71,
+                    "mean": -71,
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi Kitchen"
+                },
+                "last_changed": "2022-02-05T18:33:04.457462+00:00",
+                "last_updated": "2022-02-05T18:33:04.457462+00:00",
+                "context": {
+                    "id": "523607cbd1595dc2ca8bad97cc03c557",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c1385729b5",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C1385729B5"
+                },
+                "last_changed": "2022-02-05T18:22:26.296279+00:00",
+                "last_updated": "2022-02-05T18:22:26.296279+00:00",
+                "context": {
+                    "id": "582baaed64c1eb5d26140693e9aeb3b1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c1385729b5",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C1385729B5"
+                },
+                "last_changed": "2022-02-05T18:22:26.296626+00:00",
+                "last_updated": "2022-02-05T18:22:26.296626+00:00",
+                "context": {
+                    "id": "c0374ebfac36dedede80e83ccf50b026",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c1385729b5",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C1385729B5"
+                },
+                "last_changed": "2022-02-05T18:22:26.296895+00:00",
+                "last_updated": "2022-02-05T18:22:26.296895+00:00",
+                "context": {
+                    "id": "834df42d787815caa3fed51ee3be94ae",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c1385729b5",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C1385729B5"
+                },
+                "last_changed": "2022-02-05T18:22:26.297181+00:00",
+                "last_updated": "2022-02-05T18:22:26.297181+00:00",
+                "context": {
+                    "id": "928186185c31c8a9bf3bf615d4571202",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c1385729b5",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:57:29:B5",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C1385729B5"
+                },
+                "last_changed": "2022-02-05T18:22:26.297428+00:00",
+                "last_updated": "2022-02-05T18:22:26.297428+00:00",
+                "context": {
+                    "id": "e37ef0b8a4bdeefab06308710383fcdf",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
         },
         {
             "state": {
@@ -149,15 +1689,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T16:54:52.094621+00:00",
-                "last_updated": "2022-02-05T16:54:52.094621+00:00",
+                "last_changed": "2022-02-05T18:22:47.007333+00:00",
+                "last_updated": "2022-02-05T18:22:47.007333+00:00",
                 "context": {
-                    "id": "9e3bc2bb13b78fc91afa1ae607117756",
+                    "id": "a1b82fa0743e637c5ab83dcfef6074c9",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
         },
         {
             "state": {
@@ -171,15 +1711,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T16:54:52.096155+00:00",
-                "last_updated": "2022-02-05T16:54:52.096155+00:00",
+                "last_changed": "2022-02-05T18:22:47.008530+00:00",
+                "last_updated": "2022-02-05T18:22:47.008530+00:00",
                 "context": {
-                    "id": "dc79f7094a76cf0d10956d2d598cb77f",
+                    "id": "1334e9d620733d10d3090fb36eca92b8",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
         },
         {
             "state": {
@@ -193,15 +1733,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T16:54:52.097454+00:00",
-                "last_updated": "2022-02-05T16:54:52.097454+00:00",
+                "last_changed": "2022-02-05T18:22:47.009636+00:00",
+                "last_updated": "2022-02-05T18:22:47.009636+00:00",
                 "context": {
-                    "id": "c4ab0aa0d918d38fe33ba7a34985f155",
+                    "id": "d696e7435e59196d3f8590733cc34055",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
         },
         {
             "state": {
@@ -215,15 +1755,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T16:54:52.098695+00:00",
-                "last_updated": "2022-02-05T16:54:52.098695+00:00",
+                "last_changed": "2022-02-05T18:22:47.010702+00:00",
+                "last_updated": "2022-02-05T18:22:47.010702+00:00",
                 "context": {
-                    "id": "1d821b2185d1b4bacb4378fccf91a440",
+                    "id": "eb618f57d5909ca1bc2834d3b8a85079",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
         },
         {
             "state": {
@@ -237,15 +1777,785 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T16:54:52.101295+00:00",
-                "last_updated": "2022-02-05T16:54:52.101295+00:00",
+                "last_changed": "2022-02-05T18:22:47.011753+00:00",
+                "last_updated": "2022-02-05T18:22:47.011753+00:00",
                 "context": {
-                    "id": "388e8165ec0b167b536b459bb74b89a0",
+                    "id": "7f848966e0857ee207369f4e8b30de7d",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c13828a032",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C13828A032"
+                },
+                "last_changed": "2022-02-05T18:22:48.777549+00:00",
+                "last_updated": "2022-02-05T18:22:48.777549+00:00",
+                "context": {
+                    "id": "5e8ba8b89919747d103ef4afa9b786e3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c13828a032",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C13828A032"
+                },
+                "last_changed": "2022-02-05T18:22:48.778801+00:00",
+                "last_updated": "2022-02-05T18:22:48.778801+00:00",
+                "context": {
+                    "id": "b9489c86b0215fa2c643c805388fc871",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c13828a032",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C13828A032"
+                },
+                "last_changed": "2022-02-05T18:22:48.779915+00:00",
+                "last_updated": "2022-02-05T18:22:48.779915+00:00",
+                "context": {
+                    "id": "5f3f38eabff3751b44ef1b9c8422a0ed",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c13828a032",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C13828A032"
+                },
+                "last_changed": "2022-02-05T18:22:48.781065+00:00",
+                "last_updated": "2022-02-05T18:22:48.781065+00:00",
+                "context": {
+                    "id": "56494ba4f7f8524aadb8793e8a611638",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c13828a032",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:A0:32",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C13828A032"
+                },
+                "last_changed": "2022-02-05T18:22:48.782323+00:00",
+                "last_updated": "2022-02-05T18:22:48.782323+00:00",
+                "context": {
+                    "id": "450131e1fe7d2800c87695859d3594b5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c1384972ba",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:49:72:BA",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C1384972BA"
+                },
+                "last_changed": "2022-02-05T18:29:09.417197+00:00",
+                "last_updated": "2022-02-05T18:29:09.417197+00:00",
+                "context": {
+                    "id": "ec65168bd0387be43556ad857e0256ef",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c1384972ba",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:49:72:BA",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C1384972BA"
+                },
+                "last_changed": "2022-02-05T18:29:09.418626+00:00",
+                "last_updated": "2022-02-05T18:29:09.418626+00:00",
+                "context": {
+                    "id": "68acfd7c9ba9bb66bb52fa19ccb16977",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c1384972ba",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:49:72:BA",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C1384972BA"
+                },
+                "last_changed": "2022-02-05T18:29:09.419955+00:00",
+                "last_updated": "2022-02-05T18:29:09.419955+00:00",
+                "context": {
+                    "id": "e70b9fab778031b6d0444b4172581166",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c1384972ba",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:49:72:BA",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C1384972BA"
+                },
+                "last_changed": "2022-02-05T18:29:09.421202+00:00",
+                "last_updated": "2022-02-05T18:29:09.421202+00:00",
+                "context": {
+                    "id": "0182ae910710e09ef20899d2b9280c9d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c1384972ba",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:49:72:BA",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C1384972BA"
+                },
+                "last_changed": "2022-02-05T18:29:09.422337+00:00",
+                "last_updated": "2022-02-05T18:29:09.422337+00:00",
+                "context": {
+                    "id": "7946adf545109a5b50fd48994dfd5f17",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c138be4cfb",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:BE:4C:FB",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C138BE4CFB"
+                },
+                "last_changed": "2022-02-05T18:25:25.379727+00:00",
+                "last_updated": "2022-02-05T18:25:25.379727+00:00",
+                "context": {
+                    "id": "db62125e272e34f5585c79138190240b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c138be4cfb",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:BE:4C:FB",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C138BE4CFB"
+                },
+                "last_changed": "2022-02-05T18:25:25.381231+00:00",
+                "last_updated": "2022-02-05T18:25:25.381231+00:00",
+                "context": {
+                    "id": "e376d0c6e8cd8d90df2329a23c397441",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c138be4cfb",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:BE:4C:FB",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C138BE4CFB"
+                },
+                "last_changed": "2022-02-05T18:25:25.382543+00:00",
+                "last_updated": "2022-02-05T18:25:25.382543+00:00",
+                "context": {
+                    "id": "bf1aedb95bafb71e19c18e8b9046932b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c138be4cfb",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:BE:4C:FB",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C138BE4CFB"
+                },
+                "last_changed": "2022-02-05T18:25:25.383810+00:00",
+                "last_updated": "2022-02-05T18:25:25.383810+00:00",
+                "context": {
+                    "id": "e8699c4af864e28243bc330e274960c7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c138be4cfb",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:BE:4C:FB",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C138BE4CFB"
+                },
+                "last_changed": "2022-02-05T18:25:25.385087+00:00",
+                "last_updated": "2022-02-05T18:25:25.385087+00:00",
+                "context": {
+                    "id": "a1b21021a335936208fe378da41ddbac",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c1381d624b",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C1381D624B"
+                },
+                "last_changed": "2022-02-05T18:25:39.014764+00:00",
+                "last_updated": "2022-02-05T18:25:39.014764+00:00",
+                "context": {
+                    "id": "09b8b6abf1cc7f1c03cc6c1f0e908356",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c1381d624b",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C1381D624B"
+                },
+                "last_changed": "2022-02-05T18:25:39.016279+00:00",
+                "last_updated": "2022-02-05T18:25:39.016279+00:00",
+                "context": {
+                    "id": "44a29c569e06b02c674f1d1fcac1514d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c1381d624b",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C1381D624B"
+                },
+                "last_changed": "2022-02-05T18:25:39.017585+00:00",
+                "last_updated": "2022-02-05T18:25:39.017585+00:00",
+                "context": {
+                    "id": "86df73557d4705339215efab4804f828",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c1381d624b",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C1381D624B"
+                },
+                "last_changed": "2022-02-05T18:25:39.018878+00:00",
+                "last_updated": "2022-02-05T18:25:39.018878+00:00",
+                "context": {
+                    "id": "0f316be48359c8dc0ee136f3f38c9f7c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c1381d624b",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:1D:62:4B",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C1381D624B"
+                },
+                "last_changed": "2022-02-05T18:25:39.021256+00:00",
+                "last_updated": "2022-02-05T18:25:39.021256+00:00",
+                "context": {
+                    "id": "9b65065b3d3b04aa3fd28eb3f3d3aaa1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c1386e303f",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C1386E303F"
+                },
+                "last_changed": "2022-02-05T18:36:13.827850+00:00",
+                "last_updated": "2022-02-05T18:36:13.827850+00:00",
+                "context": {
+                    "id": "6660b7b0aaf072da4b817cde83a818e6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c1386e303f",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C1386E303F"
+                },
+                "last_changed": "2022-02-05T18:36:13.830791+00:00",
+                "last_updated": "2022-02-05T18:36:13.830791+00:00",
+                "context": {
+                    "id": "4b1073b05017e9371d8ab560a10ffa6e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c1386e303f",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C1386E303F"
+                },
+                "last_changed": "2022-02-05T18:36:13.832173+00:00",
+                "last_updated": "2022-02-05T18:36:13.832173+00:00",
+                "context": {
+                    "id": "a7671a1b0b5e0f079bb2c0691db8969a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c1386e303f",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C1386E303F"
+                },
+                "last_changed": "2022-02-05T18:36:13.833581+00:00",
+                "last_updated": "2022-02-05T18:36:13.833581+00:00",
+                "context": {
+                    "id": "f84e51738ec407fc746cd6b86be66d02",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c1386e303f",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:6E:30:3F",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C1386E303F"
+                },
+                "last_changed": "2022-02-05T18:36:13.834894+00:00",
+                "last_updated": "2022-02-05T18:36:13.834894+00:00",
+                "context": {
+                    "id": "c39738096d40c80df990de807176dc03",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c138c0f4b7",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C138C0F4B7"
+                },
+                "last_changed": "2022-02-05T18:27:36.280773+00:00",
+                "last_updated": "2022-02-05T18:27:36.280773+00:00",
+                "context": {
+                    "id": "09ba77ac901cb7f85638352111aa1a32",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c138c0f4b7",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C138C0F4B7"
+                },
+                "last_changed": "2022-02-05T18:27:36.282293+00:00",
+                "last_updated": "2022-02-05T18:27:36.282293+00:00",
+                "context": {
+                    "id": "035d5be866db324921ced4f7f66be87d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c138c0f4b7",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C138C0F4B7"
+                },
+                "last_changed": "2022-02-05T18:27:36.283611+00:00",
+                "last_updated": "2022-02-05T18:27:36.283611+00:00",
+                "context": {
+                    "id": "1609c9edaab29e4db06bebb051c8fef8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c138c0f4b7",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C138C0F4B7"
+                },
+                "last_changed": "2022-02-05T18:27:36.284881+00:00",
+                "last_updated": "2022-02-05T18:27:36.284881+00:00",
+                "context": {
+                    "id": "a476f521fe9ef07ee21de8af5f5ddc80",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c138c0f4b7",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:C0:F4:B7",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C138C0F4B7"
+                },
+                "last_changed": "2022-02-05T18:27:36.286127+00:00",
+                "last_updated": "2022-02-05T18:27:36.286127+00:00",
+                "context": {
+                    "id": "30a1c3e88c4363e0b5fbc7d0a25acc61",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_temperature_a4c13828bd62",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "friendly_name": "ble temperature A4C13828BD62"
+                },
+                "last_changed": "2022-02-05T18:25:15.444069+00:00",
+                "last_updated": "2022-02-05T18:25:15.444069+00:00",
+                "context": {
+                    "id": "f79315e4101a7b93dde363f0f5150802",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_humidity_a4c13828bd62",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "%",
+                    "device_class": "humidity",
+                    "friendly_name": "ble humidity A4C13828BD62"
+                },
+                "last_changed": "2022-02-05T18:25:15.445416+00:00",
+                "last_updated": "2022-02-05T18:25:15.445416+00:00",
+                "context": {
+                    "id": "a745e696ee99c61a856a85218bab46b8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_battery_a4c13828bd62",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "friendly_name": "ble battery A4C13828BD62"
+                },
+                "last_changed": "2022-02-05T18:25:15.447705+00:00",
+                "last_updated": "2022-02-05T18:25:15.447705+00:00",
+                "context": {
+                    "id": "697adbcfb955fb69cef3d8d56c6f2165",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_voltage_a4c13828bd62",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "V",
+                    "device_class": "voltage",
+                    "friendly_name": "ble voltage A4C13828BD62"
+                },
+                "last_changed": "2022-02-05T18:25:15.449250+00:00",
+                "last_updated": "2022-02-05T18:25:15.449250+00:00",
+                "context": {
+                    "id": "8eb3f0e9f582ff5ece38e70dd5936e54",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.ble_rssi_a4c13828bd62",
+                "state": "unknown",
+                "attributes": {
+                    "state_class": "measurement",
+                    "sensor type": "LYWSD03MMC",
+                    "mac address": "A4:C1:38:28:BD:62",
+                    "unit_of_measurement": "dBm",
+                    "device_class": "signal_strength",
+                    "friendly_name": "ble rssi A4C13828BD62"
+                },
+                "last_changed": "2022-02-05T18:25:15.450498+00:00",
+                "last_updated": "2022-02-05T18:25:15.450498+00:00",
+                "context": {
+                    "id": "93c7c5a36812c88663315c169b2e6432",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T18:39:08.856912+00:00"
         },
         {
             "state": {
@@ -267,7 +2577,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:21:18.817824+00:00"
         },
         {
             "state": {
@@ -289,7 +2599,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:21:18.817824+00:00"
         },
         {
             "state": {
@@ -311,7 +2621,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:21:18.817824+00:00"
         },
         {
             "state": {
@@ -333,7 +2643,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+            "last_seen": "2022-02-05T18:21:18.817824+00:00"
         },
         {
             "state": {
@@ -355,1184 +2665,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_temperature_a4c13828a032",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:A0:32",
-                    "unit_of_measurement": "\u00b0C",
-                    "device_class": "temperature",
-                    "friendly_name": "ble temperature A4C13828A032"
-                },
-                "last_changed": "2022-02-05T16:53:59.189636+00:00",
-                "last_updated": "2022-02-05T16:53:59.189636+00:00",
-                "context": {
-                    "id": "3d7484fc2d47539d89cff616766b6610",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_humidity_a4c13828a032",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:A0:32",
-                    "unit_of_measurement": "%",
-                    "device_class": "humidity",
-                    "friendly_name": "ble humidity A4C13828A032"
-                },
-                "last_changed": "2022-02-05T16:53:59.190167+00:00",
-                "last_updated": "2022-02-05T16:53:59.190167+00:00",
-                "context": {
-                    "id": "843321fe1771129dd31f61f3080d0185",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_battery_a4c13828a032",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:A0:32",
-                    "unit_of_measurement": "%",
-                    "device_class": "battery",
-                    "friendly_name": "ble battery A4C13828A032"
-                },
-                "last_changed": "2022-02-05T16:53:59.190607+00:00",
-                "last_updated": "2022-02-05T16:53:59.190607+00:00",
-                "context": {
-                    "id": "fd6ed8d3e1594ca0137a8a6ec4d1aac7",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_voltage_a4c13828a032",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:A0:32",
-                    "unit_of_measurement": "V",
-                    "device_class": "voltage",
-                    "friendly_name": "ble voltage A4C13828A032"
-                },
-                "last_changed": "2022-02-05T16:53:59.191068+00:00",
-                "last_updated": "2022-02-05T16:53:59.191068+00:00",
-                "context": {
-                    "id": "1b2337fd91b84f214603d687e0cb7e1b",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_rssi_a4c13828a032",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:A0:32",
-                    "unit_of_measurement": "dBm",
-                    "device_class": "signal_strength",
-                    "friendly_name": "ble rssi A4C13828A032"
-                },
-                "last_changed": "2022-02-05T16:53:59.191481+00:00",
-                "last_updated": "2022-02-05T16:53:59.191481+00:00",
-                "context": {
-                    "id": "429b606364225f686d5ce83a4daf1086",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_temperature_a4c1385729b5",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:57:29:B5",
-                    "unit_of_measurement": "\u00b0C",
-                    "device_class": "temperature",
-                    "friendly_name": "ble temperature A4C1385729B5"
-                },
-                "last_changed": "2022-02-05T17:39:29.442303+00:00",
-                "last_updated": "2022-02-05T17:39:29.442303+00:00",
-                "context": {
-                    "id": "66cf955a9e07d476f71f8e4d2cbbb6ed",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_humidity_a4c1385729b5",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:57:29:B5",
-                    "unit_of_measurement": "%",
-                    "device_class": "humidity",
-                    "friendly_name": "ble humidity A4C1385729B5"
-                },
-                "last_changed": "2022-02-05T17:39:29.443768+00:00",
-                "last_updated": "2022-02-05T17:39:29.443768+00:00",
-                "context": {
-                    "id": "03220a9f2576409d744a1179df4425d7",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_battery_a4c1385729b5",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:57:29:B5",
-                    "unit_of_measurement": "%",
-                    "device_class": "battery",
-                    "friendly_name": "ble battery A4C1385729B5"
-                },
-                "last_changed": "2022-02-05T17:39:29.445134+00:00",
-                "last_updated": "2022-02-05T17:39:29.445134+00:00",
-                "context": {
-                    "id": "820e89dbd1ebddd4400b33425ae226ee",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_voltage_a4c1385729b5",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:57:29:B5",
-                    "unit_of_measurement": "V",
-                    "device_class": "voltage",
-                    "friendly_name": "ble voltage A4C1385729B5"
-                },
-                "last_changed": "2022-02-05T17:39:29.446412+00:00",
-                "last_updated": "2022-02-05T17:39:29.446412+00:00",
-                "context": {
-                    "id": "e764d529954189497480fa18afa01178",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_rssi_a4c1385729b5",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:57:29:B5",
-                    "unit_of_measurement": "dBm",
-                    "device_class": "signal_strength",
-                    "friendly_name": "ble rssi A4C1385729B5"
-                },
-                "last_changed": "2022-02-05T17:39:29.447627+00:00",
-                "last_updated": "2022-02-05T17:39:29.447627+00:00",
-                "context": {
-                    "id": "08c65bee5008d51b09798ecc62949b54",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_temperature_a4c138be4cfb",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:BE:4C:FB",
-                    "unit_of_measurement": "\u00b0C",
-                    "device_class": "temperature",
-                    "friendly_name": "ble temperature A4C138BE4CFB"
-                },
-                "last_changed": "2022-02-05T16:57:27.881677+00:00",
-                "last_updated": "2022-02-05T16:57:27.881677+00:00",
-                "context": {
-                    "id": "3dbba60178356c3e2e00e156d5f77768",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_humidity_a4c138be4cfb",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:BE:4C:FB",
-                    "unit_of_measurement": "%",
-                    "device_class": "humidity",
-                    "friendly_name": "ble humidity A4C138BE4CFB"
-                },
-                "last_changed": "2022-02-05T16:57:27.882074+00:00",
-                "last_updated": "2022-02-05T16:57:27.882074+00:00",
-                "context": {
-                    "id": "d354384057070c1d2a97a90a36b05551",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_battery_a4c138be4cfb",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:BE:4C:FB",
-                    "unit_of_measurement": "%",
-                    "device_class": "battery",
-                    "friendly_name": "ble battery A4C138BE4CFB"
-                },
-                "last_changed": "2022-02-05T16:57:27.882364+00:00",
-                "last_updated": "2022-02-05T16:57:27.882364+00:00",
-                "context": {
-                    "id": "b5ad21c55f7088647956111265623f4f",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_voltage_a4c138be4cfb",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:BE:4C:FB",
-                    "unit_of_measurement": "V",
-                    "device_class": "voltage",
-                    "friendly_name": "ble voltage A4C138BE4CFB"
-                },
-                "last_changed": "2022-02-05T16:57:27.882634+00:00",
-                "last_updated": "2022-02-05T16:57:27.882634+00:00",
-                "context": {
-                    "id": "774651fba9fb4ac6f1a56cdb6a6b51fc",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_rssi_a4c138be4cfb",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:BE:4C:FB",
-                    "unit_of_measurement": "dBm",
-                    "device_class": "signal_strength",
-                    "friendly_name": "ble rssi A4C138BE4CFB"
-                },
-                "last_changed": "2022-02-05T16:57:27.882891+00:00",
-                "last_updated": "2022-02-05T16:57:27.882891+00:00",
-                "context": {
-                    "id": "ac240f059d5a5559e8d09b14b77554a3",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_temperature_a4c1381d624b",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:1D:62:4B",
-                    "unit_of_measurement": "\u00b0C",
-                    "device_class": "temperature",
-                    "friendly_name": "ble temperature A4C1381D624B"
-                },
-                "last_changed": "2022-02-05T16:57:41.134267+00:00",
-                "last_updated": "2022-02-05T16:57:41.134267+00:00",
-                "context": {
-                    "id": "8c84d23b2b4201786113be3cd8a79046",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_humidity_a4c1381d624b",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:1D:62:4B",
-                    "unit_of_measurement": "%",
-                    "device_class": "humidity",
-                    "friendly_name": "ble humidity A4C1381D624B"
-                },
-                "last_changed": "2022-02-05T16:57:41.135765+00:00",
-                "last_updated": "2022-02-05T16:57:41.135765+00:00",
-                "context": {
-                    "id": "16d7a9b19321e035691ba7ef56e3df16",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_battery_a4c1381d624b",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:1D:62:4B",
-                    "unit_of_measurement": "%",
-                    "device_class": "battery",
-                    "friendly_name": "ble battery A4C1381D624B"
-                },
-                "last_changed": "2022-02-05T16:57:41.137170+00:00",
-                "last_updated": "2022-02-05T16:57:41.137170+00:00",
-                "context": {
-                    "id": "b646d9c11eb252a94400b98bb169f793",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_voltage_a4c1381d624b",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:1D:62:4B",
-                    "unit_of_measurement": "V",
-                    "device_class": "voltage",
-                    "friendly_name": "ble voltage A4C1381D624B"
-                },
-                "last_changed": "2022-02-05T16:57:41.138508+00:00",
-                "last_updated": "2022-02-05T16:57:41.138508+00:00",
-                "context": {
-                    "id": "d98dfbb31e857571c71ed9ecaadfab47",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_rssi_a4c1381d624b",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:1D:62:4B",
-                    "unit_of_measurement": "dBm",
-                    "device_class": "signal_strength",
-                    "friendly_name": "ble rssi A4C1381D624B"
-                },
-                "last_changed": "2022-02-05T16:57:41.139794+00:00",
-                "last_updated": "2022-02-05T16:57:41.139794+00:00",
-                "context": {
-                    "id": "7a98324027f7e1c7a561351f8e3d4554",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_temperature_a4c138c0f4b7",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:C0:F4:B7",
-                    "unit_of_measurement": "\u00b0C",
-                    "device_class": "temperature",
-                    "friendly_name": "ble temperature A4C138C0F4B7"
-                },
-                "last_changed": "2022-02-05T16:59:41.325528+00:00",
-                "last_updated": "2022-02-05T16:59:41.325528+00:00",
-                "context": {
-                    "id": "d5dfbf72827ee3a3d48e28c86921b17c",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_humidity_a4c138c0f4b7",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:C0:F4:B7",
-                    "unit_of_measurement": "%",
-                    "device_class": "humidity",
-                    "friendly_name": "ble humidity A4C138C0F4B7"
-                },
-                "last_changed": "2022-02-05T16:59:41.326458+00:00",
-                "last_updated": "2022-02-05T16:59:41.326458+00:00",
-                "context": {
-                    "id": "143c31e604186431d007fa8a5d5efc9a",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_battery_a4c138c0f4b7",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:C0:F4:B7",
-                    "unit_of_measurement": "%",
-                    "device_class": "battery",
-                    "friendly_name": "ble battery A4C138C0F4B7"
-                },
-                "last_changed": "2022-02-05T16:59:41.327308+00:00",
-                "last_updated": "2022-02-05T16:59:41.327308+00:00",
-                "context": {
-                    "id": "63c7e9c066a5fe18b20d49e419f6a5e0",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_voltage_a4c138c0f4b7",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:C0:F4:B7",
-                    "unit_of_measurement": "V",
-                    "device_class": "voltage",
-                    "friendly_name": "ble voltage A4C138C0F4B7"
-                },
-                "last_changed": "2022-02-05T16:59:41.328146+00:00",
-                "last_updated": "2022-02-05T16:59:41.328146+00:00",
-                "context": {
-                    "id": "61ef61fe8319c5a8243d2fee4d2728ce",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_rssi_a4c138c0f4b7",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:C0:F4:B7",
-                    "unit_of_measurement": "dBm",
-                    "device_class": "signal_strength",
-                    "friendly_name": "ble rssi A4C138C0F4B7"
-                },
-                "last_changed": "2022-02-05T16:59:41.328869+00:00",
-                "last_updated": "2022-02-05T16:59:41.328869+00:00",
-                "context": {
-                    "id": "7d4eda9682780e880664655e991a7e0a",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_temperature_a4c13828bd62",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:BD:62",
-                    "unit_of_measurement": "\u00b0C",
-                    "device_class": "temperature",
-                    "friendly_name": "ble temperature A4C13828BD62"
-                },
-                "last_changed": "2022-02-05T17:07:16.231341+00:00",
-                "last_updated": "2022-02-05T17:07:16.231341+00:00",
-                "context": {
-                    "id": "9b4611c9ecab8b377fe0474f649e84ae",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_humidity_a4c13828bd62",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:BD:62",
-                    "unit_of_measurement": "%",
-                    "device_class": "humidity",
-                    "friendly_name": "ble humidity A4C13828BD62"
-                },
-                "last_changed": "2022-02-05T17:07:16.232807+00:00",
-                "last_updated": "2022-02-05T17:07:16.232807+00:00",
-                "context": {
-                    "id": "d7c2e34ffe10cdd5a7819e4ea1924b1c",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_battery_a4c13828bd62",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:BD:62",
-                    "unit_of_measurement": "%",
-                    "device_class": "battery",
-                    "friendly_name": "ble battery A4C13828BD62"
-                },
-                "last_changed": "2022-02-05T17:07:16.234240+00:00",
-                "last_updated": "2022-02-05T17:07:16.234240+00:00",
-                "context": {
-                    "id": "c2241f5718792c8878203f367bbe7cd5",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_voltage_a4c13828bd62",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:BD:62",
-                    "unit_of_measurement": "V",
-                    "device_class": "voltage",
-                    "friendly_name": "ble voltage A4C13828BD62"
-                },
-                "last_changed": "2022-02-05T17:07:16.235505+00:00",
-                "last_updated": "2022-02-05T17:07:16.235505+00:00",
-                "context": {
-                    "id": "db1db08d4e776eea505c03aa182d6902",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_rssi_a4c13828bd62",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:28:BD:62",
-                    "unit_of_measurement": "dBm",
-                    "device_class": "signal_strength",
-                    "friendly_name": "ble rssi A4C13828BD62"
-                },
-                "last_changed": "2022-02-05T17:07:16.237862+00:00",
-                "last_updated": "2022-02-05T17:07:16.237862+00:00",
-                "context": {
-                    "id": "30cd8676ae6ccd5eaa8dce98030882a5",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "device_tracker.g8441",
-                "state": "not_home",
-                "attributes": {
-                    "source_type": "gps",
-                    "latitude": 49.7695679,
-                    "longitude": 24.0898421,
-                    "gps_accuracy": 20,
-                    "altitude": 380,
-                    "course": 0,
-                    "speed": 0,
-                    "vertical_accuracy": 1,
-                    "friendly_name": "G8441"
-                },
-                "last_changed": "2022-02-05T17:43:25.472844+00:00",
-                "last_updated": "2022-02-05T17:43:25.472844+00:00",
-                "context": {
-                    "id": "e62ab04374be6ba5ada65bf8d5569c85",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_detected_activity",
-                "state": "unknown",
-                "attributes": {
-                    "in_vehicle": 10,
-                    "on_bicycle": 10,
-                    "on_foot": 10,
-                    "running": 10,
-                    "still": 10,
-                    "unknown": 40,
-                    "walking": 10,
-                    "icon": "mdi:progress-question",
-                    "friendly_name": "G8441 Detected Activity"
-                },
-                "last_changed": "2022-02-05T17:38:25.432877+00:00",
-                "last_updated": "2022-02-05T17:38:25.432877+00:00",
-                "context": {
-                    "id": "8f492e2d3c0af74aa50f6cb1e6b24e63",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_ringer_mode",
-                "state": "vibrate",
-                "attributes": {
-                    "icon": "mdi:vibrate",
-                    "friendly_name": "G8441 Ringer Mode"
-                },
-                "last_changed": "2022-02-05T17:04:00.965317+00:00",
-                "last_updated": "2022-02-05T17:04:00.965317+00:00",
-                "context": {
-                    "id": "a130cf7f9bb57d81090fae006576cffd",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_battery_level",
-                "state": "79",
-                "attributes": {
-                    "unit_of_measurement": "%",
-                    "device_class": "battery",
-                    "icon": "mdi:battery-70",
-                    "friendly_name": "G8441 Battery Level"
-                },
-                "last_changed": "2022-02-05T17:38:25.434812+00:00",
-                "last_updated": "2022-02-05T17:38:25.434812+00:00",
-                "context": {
-                    "id": "4374e16a36116ad84a01fc1f371d9f10",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_battery_state",
-                "state": "discharging",
-                "attributes": {
-                    "icon": "mdi:battery-minus",
-                    "friendly_name": "G8441 Battery State"
-                },
-                "last_changed": "2022-02-05T17:04:01.069413+00:00",
-                "last_updated": "2022-02-05T17:04:01.069413+00:00",
-                "context": {
-                    "id": "7cc7e45556c700e7dbb0edf888b9f014",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "binary_sensor.g8441_is_charging",
-                "state": "off",
-                "attributes": {
-                    "device_class": "plug",
-                    "icon": "mdi:power-plug-off",
-                    "friendly_name": "G8441 Is Charging"
-                },
-                "last_changed": "2022-02-05T17:04:01.101653+00:00",
-                "last_updated": "2022-02-05T17:04:01.101653+00:00",
-                "context": {
-                    "id": "63b0bc3b2b520b4d301f57ec67a30656",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_charger_type",
-                "state": "none",
-                "attributes": {
-                    "icon": "mdi:battery",
-                    "friendly_name": "G8441 Charger Type"
-                },
-                "last_changed": "2022-02-05T17:04:01.129633+00:00",
-                "last_updated": "2022-02-05T17:04:01.129633+00:00",
-                "context": {
-                    "id": "6c613a1a035d4c0237c8ee77cd292d79",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_battery_health",
-                "state": "good",
-                "attributes": {
-                    "icon": "mdi:battery-heart-variant",
-                    "friendly_name": "G8441 Battery Health"
-                },
-                "last_changed": "2022-02-05T17:04:01.149572+00:00",
-                "last_updated": "2022-02-05T17:04:01.149572+00:00",
-                "context": {
-                    "id": "c3b40e28938f47beb7b44f600e75f361",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_battery_temperature",
-                "state": "27.7",
-                "attributes": {
-                    "unit_of_measurement": "\u00b0C",
-                    "device_class": "temperature",
-                    "icon": "mdi:battery",
-                    "friendly_name": "G8441 Battery Temperature"
-                },
-                "last_changed": "2022-02-05T17:38:43.387883+00:00",
-                "last_updated": "2022-02-05T17:38:43.387883+00:00",
-                "context": {
-                    "id": "c020d1e2c1db61a28eccf18d205e8bd5",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_bluetooth_connection",
-                "state": "1",
-                "attributes": {
-                    "connected_not_paired_devices": "[]",
-                    "connected_paired_devices": "[00:18:09:9B:74:01]",
-                    "paired_devices": "[F4:4E:FD:B0:1D:7A, 7E:88:46:81:27:72, 5A:5A:5A:A6:43:79, 00:18:09:9B:74:01]",
-                    "unit_of_measurement": "connection(s)",
-                    "icon": "mdi:bluetooth",
-                    "friendly_name": "G8441 Bluetooth Connection"
-                },
-                "last_changed": "2022-02-05T17:27:47.482512+00:00",
-                "last_updated": "2022-02-05T17:27:47.482512+00:00",
-                "context": {
-                    "id": "ba8c60e19c1302df727bc483372f6976",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_do_not_disturb_sensor",
-                "state": "off",
-                "attributes": {
-                    "icon": "mdi:minus-circle",
-                    "friendly_name": "G8441 Do Not Disturb Sensor"
-                },
-                "last_changed": "2022-02-05T17:04:01.222230+00:00",
-                "last_updated": "2022-02-05T17:04:01.222230+00:00",
-                "context": {
-                    "id": "de0fd1d9f1472332adfac921727cfea9",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_geocoded_location",
-                "state": "Q3CQ+3W, Pasiky-Zubrytski, Lviv Oblast, Ukraine",
-                "attributes": {
-                    "Administrative Area": "Lviv Oblast",
-                    "Country": "Ukraine",
-                    "ISO Country Code": "UA",
-                    "Latitude": 49.770103,
-                    "Locality": "Pasiky-Zubrytski",
-                    "Longitude": 24.089794,
-                    "Postal Code": "null",
-                    "Sub Administrative Area": "Pustomytivs'kyi district",
-                    "Sub Locality": "null",
-                    "Sub Thoroughfare": "null",
-                    "Thoroughfare": "null",
-                    "icon": "mdi:map",
-                    "friendly_name": "G8441 Geocoded Location"
-                },
-                "last_changed": "2022-02-05T17:04:01.237599+00:00",
-                "last_updated": "2022-02-05T17:04:01.237599+00:00",
-                "context": {
-                    "id": "d9e2e507ac5636c5bfb130f7c98e663f",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_last_reboot",
-                "state": "2022-02-04T13:30:51+00:00",
-                "attributes": {
-                    "Local Time": "Fri Feb 04 15:30:51 GMT+02:00 2022",
-                    "Time in Milliseconds": 1643981451637,
-                    "device_class": "timestamp",
-                    "icon": "mdi:restart",
-                    "friendly_name": "G8441 Last Reboot"
-                },
-                "last_changed": "2022-02-05T17:04:01.323321+00:00",
-                "last_updated": "2022-02-05T17:04:01.323321+00:00",
-                "context": {
-                    "id": "509e851fdb2be811e9b05e8ad250087f",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_light_sensor",
-                "state": "89",
-                "attributes": {
-                    "unit_of_measurement": "lx",
-                    "device_class": "illuminance",
-                    "icon": "mdi:brightness-5",
-                    "friendly_name": "G8441 Light Sensor"
-                },
-                "last_changed": "2022-02-05T17:39:21.393449+00:00",
-                "last_updated": "2022-02-05T17:39:21.393449+00:00",
-                "context": {
-                    "id": "ae519d1d3643676f1f08d9af6a00d949",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_wifi_connection",
-                "state": "zyxel",
-                "attributes": {
-                    "is_hidden": false,
-                    "icon": "mdi:wifi",
-                    "friendly_name": "G8441 WiFi Connection"
-                },
-                "last_changed": "2022-02-05T17:04:01.429384+00:00",
-                "last_updated": "2022-02-05T17:04:01.429384+00:00",
-                "context": {
-                    "id": "6fd955f85eb7b80d6c2d5d463662f922",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_next_alarm",
-                "state": "unavailable",
-                "attributes": {
-                    "device_class": "timestamp",
-                    "icon": "mdi:alarm",
-                    "friendly_name": "G8441 Next Alarm"
-                },
-                "last_changed": "2022-02-05T17:04:01.464893+00:00",
-                "last_updated": "2022-02-05T17:04:01.464893+00:00",
-                "context": {
-                    "id": "3d4759fc58a903a74d26aa3bf8e4ae97",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_pressure_sensor",
-                "state": "975.4",
-                "attributes": {
-                    "unit_of_measurement": "hPa",
-                    "device_class": "pressure",
-                    "icon": "mdi:gauge",
-                    "friendly_name": "G8441 Pressure Sensor"
-                },
-                "last_changed": "2022-02-05T17:39:21.395344+00:00",
-                "last_updated": "2022-02-05T17:39:21.395344+00:00",
-                "context": {
-                    "id": "bbdde7b822c71ad622385f706b6416e3",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_proximity_sensor",
-                "state": "near",
-                "attributes": {
-                    "icon": "mdi:leak",
-                    "friendly_name": "G8441 Proximity Sensor"
-                },
-                "last_changed": "2022-02-05T17:35:56.987092+00:00",
-                "last_updated": "2022-02-05T17:35:56.987092+00:00",
-                "context": {
-                    "id": "6640276168bcc71e9478a5e7f8a1e17a",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_steps_sensor",
-                "state": "1112",
-                "attributes": {
-                    "unit_of_measurement": "steps",
-                    "icon": "mdi:walk",
-                    "friendly_name": "G8441 Steps Sensor"
-                },
-                "last_changed": "2022-02-05T17:18:41.454382+00:00",
-                "last_updated": "2022-02-05T17:18:41.454382+00:00",
-                "context": {
-                    "id": "5d516c408c4b4cd7a78f97f1c34949fb",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.g8441_internal_storage",
-                "state": "22",
-                "attributes": {
-                    "Free internal storage": "4GB",
-                    "Total internal storage": "21GB",
-                    "unit_of_measurement": "%",
-                    "icon": "mdi:harddisk",
-                    "friendly_name": "G8441 Internal Storage"
-                },
-                "last_changed": "2022-02-05T17:04:01.816765+00:00",
-                "last_updated": "2022-02-05T17:04:01.816765+00:00",
-                "context": {
-                    "id": "d223db6a0fcdf6a6dabbb6ae9a261317",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T17:50:40.501837+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_temperature_a4c1386e303f",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:6E:30:3F",
-                    "unit_of_measurement": "\u00b0C",
-                    "device_class": "temperature",
-                    "friendly_name": "ble temperature A4C1386E303F"
-                },
-                "last_changed": "2022-02-05T14:13:33.427119+00:00",
-                "last_updated": "2022-02-05T14:13:33.427119+00:00",
-                "context": {
-                    "id": "2203c760079036b9533ec4568208c6c3",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T15:12:31.072443+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_humidity_a4c1386e303f",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:6E:30:3F",
-                    "unit_of_measurement": "%",
-                    "device_class": "humidity",
-                    "friendly_name": "ble humidity A4C1386E303F"
-                },
-                "last_changed": "2022-02-05T14:13:33.427795+00:00",
-                "last_updated": "2022-02-05T14:13:33.427795+00:00",
-                "context": {
-                    "id": "4300a372a4148d99f9f19f7418a44875",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T15:12:31.072443+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_battery_a4c1386e303f",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:6E:30:3F",
-                    "unit_of_measurement": "%",
-                    "device_class": "battery",
-                    "friendly_name": "ble battery A4C1386E303F"
-                },
-                "last_changed": "2022-02-05T14:13:33.428501+00:00",
-                "last_updated": "2022-02-05T14:13:33.428501+00:00",
-                "context": {
-                    "id": "fb75475f7c1c286a30a8e64a0b529327",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T15:12:31.072443+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_voltage_a4c1386e303f",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:6E:30:3F",
-                    "unit_of_measurement": "V",
-                    "device_class": "voltage",
-                    "friendly_name": "ble voltage A4C1386E303F"
-                },
-                "last_changed": "2022-02-05T14:13:33.429157+00:00",
-                "last_updated": "2022-02-05T14:13:33.429157+00:00",
-                "context": {
-                    "id": "b38a3121c8ba39491688a34f412303eb",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T15:12:31.072443+00:00"
-        },
-        {
-            "state": {
-                "entity_id": "sensor.ble_rssi_a4c1386e303f",
-                "state": "unknown",
-                "attributes": {
-                    "state_class": "measurement",
-                    "sensor type": "LYWSD03MMC",
-                    "mac address": "A4:C1:38:6E:30:3F",
-                    "unit_of_measurement": "dBm",
-                    "device_class": "signal_strength",
-                    "friendly_name": "ble rssi A4C1386E303F"
-                },
-                "last_changed": "2022-02-05T14:13:33.429716+00:00",
-                "last_updated": "2022-02-05T14:13:33.429716+00:00",
-                "context": {
-                    "id": "a963b6e062a8032b10dedf1190b297ac",
-                    "parent_id": null,
-                    "user_id": null
-                }
-            },
-            "last_seen": "2022-02-05T15:12:31.072443+00:00"
+            "last_seen": "2022-02-05T18:21:18.817824+00:00"
         },
         {
             "state": {

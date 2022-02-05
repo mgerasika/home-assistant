@@ -1,7 +1,7 @@
 title: My Awesome Home
 views:
   # View tab title.
-  - title: Example
+  - title: Колектор
     # Unique path for direct access /lovelace/${path}
     cards:
       # Entities card will take a list of entities and show their state.
@@ -16,6 +16,9 @@ views:
 
           - entity: switch.switch_relay1
             name: кухня
+
+          - entity: sensor.ble_temperature_kitchen
+          - entity: sensor.ble_battery_kitchen
 
           - entity: switch.switch_relay2
             name: спальня
@@ -34,6 +37,42 @@ views:
 
           - entity: switch.switch_relay7
             name: коридор
+
+      - type: entities
+        # Title of the entities card
+        title: Температура
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: sensor.ble_temperature_kitchen
+          - entity: sensor.ble_battery_kitchen
+
+          - entity: sensor.ble_temperature_spalnya
+          - entity: sensor.ble_battery_spalnya
+
+          - entity: sensor.ble_temperature_maysternya
+          - entity: sensor.ble_battery_maysternya
+
+          - entity: sensor.ble_temperature_vanna
+          - entity: sensor.ble_battery_vanna
+
+          - entity: sensor.ble_temperature_velika
+          - entity: sensor.ble_battery_velika
+
+          - entity: sensor.ble_temperature_ani
+          - entity: sensor.ble_battery_ani
+
+          - entity: sensor.ble_temperature_koridor
+          - entity: sensor.ble_battery_koridor
+
+          - entity: sensor.ble_temperature_dax
+          - entity: sensor.ble_battery_dax
+
+          - entity: sensor.ble_temperature_proektor
+          - entity: sensor.ble_battery_proektor
+
+          - entity: sensor.ble_temperature_vulichya
+          - entity: sensor.ble_battery_vulichya
 
         # The markdown card will render markdown text.
       - type: markdown
