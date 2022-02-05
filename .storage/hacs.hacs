@@ -1,0 +1,20 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs.hacs",
+    "data": {
+        "view": "Grid",
+        "compact": false,
+        "onboarding_done": false,
+        "archived_repositories": [
+            "dr1rrb/ha-twinkly"
+        ],
+        "renamed_repositories": {
+            "78wesley/Darkish-Theme": "78wesley/Home-Assistant-Darkish-Theme",
+            "9a4gl/hass-peltec": "9a4gl/hass-centrometal-boiler",
+            "DarkSir23/sensor.mylar": "WillowMist/sensor.mylar",
+            "nbogojevic/homeassistant-midea-dehumidifier-lan": "nbogojevic/homeassistant-midea-air-appliances-lan",
+            "nikrolls/homeassistant-goldair-climate": "nicole-ashley/homeassistant-goldair-climate"
+        }
+    }
+}

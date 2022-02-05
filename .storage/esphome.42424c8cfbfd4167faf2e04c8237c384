@@ -1,0 +1,114 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "esphome.42424c8cfbfd4167faf2e04c8237c384",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "relay",
+            "mac_address": "AC:0B:FB:CF:01:49",
+            "compilation_time": "Nov 24 2021, 13:53:06",
+            "model": "nodemcuv2",
+            "has_deep_sleep": false,
+            "esphome_version": "2021.9.3",
+            "project_name": "",
+            "project_version": "",
+            "webserver_port": 0
+        },
+        "services": [],
+        "api_version": {
+            "major": 1,
+            "minor": 6
+        },
+        "switch": [
+            {
+                "object_id": "switch_relay0",
+                "key": 1183200009,
+                "name": "switch_relay0",
+                "unique_id": "relayswitchswitch_relay0",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            },
+            {
+                "object_id": "switch_relay1",
+                "key": 1183200008,
+                "name": "switch_relay1",
+                "unique_id": "relayswitchswitch_relay1",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            },
+            {
+                "object_id": "switch_relay2",
+                "key": 1183200011,
+                "name": "switch_relay2",
+                "unique_id": "relayswitchswitch_relay2",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            },
+            {
+                "object_id": "switch_relay3",
+                "key": 1183200010,
+                "name": "switch_relay3",
+                "unique_id": "relayswitchswitch_relay3",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            },
+            {
+                "object_id": "switch_relay4",
+                "key": 1183200013,
+                "name": "switch_relay4",
+                "unique_id": "relayswitchswitch_relay4",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            },
+            {
+                "object_id": "switch_relay5",
+                "key": 1183200012,
+                "name": "switch_relay5",
+                "unique_id": "relayswitchswitch_relay5",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            },
+            {
+                "object_id": "switch_relay6",
+                "key": 1183200015,
+                "name": "switch_relay6",
+                "unique_id": "relayswitchswitch_relay6",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            },
+            {
+                "object_id": "switch_relay7",
+                "key": 1183200014,
+                "name": "switch_relay7",
+                "unique_id": "relayswitchswitch_relay7",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            }
+        ]
+    }
+}

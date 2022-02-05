@@ -1,0 +1,70 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "esphome.a2d9856bedbaebff4b8aaf35811de5f7",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "test",
+            "mac_address": "AC:0B:FB:CE:83:60",
+            "compilation_time": "Jan  9 2022, 21:28:53",
+            "model": "nodemcuv2",
+            "has_deep_sleep": false,
+            "esphome_version": "2021.9.3",
+            "project_name": "",
+            "project_version": "",
+            "webserver_port": 0
+        },
+        "services": [],
+        "api_version": {
+            "major": 1,
+            "minor": 6
+        },
+        "switch": [
+            {
+                "object_id": "switch_d0",
+                "key": 3386018940,
+                "name": "switch_d0",
+                "unique_id": "testswitchswitch_d0",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "assumed_state": false,
+                "device_class": ""
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "temperature_test1",
+                "key": 1638054393,
+                "name": "temperature_test1",
+                "unique_id": "dallas-2600000546F15828",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "device_class": "temperature",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "state_class": 1,
+                "last_reset_type": 0
+            },
+            {
+                "object_id": "temperature_test2",
+                "key": 1638054394,
+                "name": "temperature_test2",
+                "unique_id": "dallas-7C0000054708FC28",
+                "disabled_by_default": false,
+                "icon": "",
+                "entity_category": 0,
+                "device_class": "temperature",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "state_class": 1,
+                "last_reset_type": 0
+            }
+        ],
+        "text_sensor": []
+    }
+}
