@@ -1,86 +1,50 @@
-2022-02-05 17:31:49 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration ble_monitor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-05 17:31:49 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-05 17:31:50 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2022-02-05 17:31:50 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=5 from 2022-02-05 13:27:24.187940)
-2022-02-05 17:32:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:33:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:34:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:34:16 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:35:47 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:36:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:37:09 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:37:39 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 17:37:57 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:38:10 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:38:57 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:39:15 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 17:40:16 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 17:40:31 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:40:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 17:41:30 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:41:42 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 17:42:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:43:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:44:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:44:47 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:45:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:45:50 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.1.100 (192.168.1.100). (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36)
-2022-02-05 17:46:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:47:47 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:48:08 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:48:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:49:07 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:49:31 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
-2022-02-05 17:49:38 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 17:49:57 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:50:04 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
-2022-02-05 17:50:16 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 17:50:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for test @ 192.168.1.16: Hello timed out
-2022-02-05 17:51:30 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:52:14 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
-2022-02-05 17:52:31 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:52:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 17:53:30 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
-2022-02-05 17:53:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:54:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:54:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:55:08 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:55:27 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
-2022-02-05 17:56:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:57:42 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 17:57:47 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:58:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:59:06 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:59:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 18:00:08 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 18:00:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 18:02:30 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 18:02:40 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
-2022-02-05 18:02:41 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 18:03:10 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
-2022-02-05 18:03:10 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Mgerasika@gmail.com' for spotify integration not ready yet: http status: 429, code:-1 - /v1/me/:
+2022-02-05 18:49:40 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration ble_monitor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-05 18:49:40 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-05 18:49:48 ERROR (MainThread) [custom_components.hacs] HACS is disabled - HacsDisabledReason.INVALID_TOKEN
+2022-02-05 18:49:48 ERROR (MainThread) [custom_components.hacs] Bad credentials
+Traceback (most recent call last):
+  File "/config/custom_components/hacs/base.py", line 428, in async_can_update
+    response = await self.async_github_api_method(self.githubapi.rate_limit)
+  File "/config/custom_components/hacs/base.py", line 479, in async_github_api_method
+    raise HacsException(_exception)
+custom_components.hacs.exceptions.HacsException: Bad credentials
+2022-02-05 18:50:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:50:40 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:50:40 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Mgerasika@gmail.com' for spotify integration not ready yet: http status: 429, code:-1 - /v1/me/:
  Max Retries, reason: too many 429 error responses; Retrying in background
-2022-02-05 18:03:29 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 18:03:42 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 18:04:21 WARNING (MainThread) [homeassistant.components.media_player] Setup of media_player platform spotify is taking over 10 seconds.
-2022-02-05 18:04:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 18:05:10 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
-2022-02-05 18:05:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 18:05:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
-2022-02-05 18:06:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
-2022-02-05 18:06:11 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
-2022-02-05 18:06:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
-2022-02-05 18:06:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 18:07:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
-2022-02-05 18:07:11 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
-2022-02-05 18:07:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 18:07:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
-2022-02-05 18:08:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
-2022-02-05 18:08:11 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
-2022-02-05 18:08:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 18:08:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
-2022-02-05 18:09:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
-2022-02-05 18:09:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
-2022-02-05 18:09:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 18:09:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
-2022-02-05 18:10:06 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:51:11 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:51:12 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:52:10 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 18:52:44 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:53:10 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:53:44 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:53:59 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:54:12 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:54:21 WARNING (MainThread) [homeassistant.components.media_player] Setup of media_player platform spotify is taking over 10 seconds.
+2022-02-05 18:54:41 ERROR (SyncWorker_3) [homeassistant.util.yaml.loader] mapping values are not allowed here
+  in "/config/ui-lovelace.yaml", line 15, column 17
+2022-02-05 18:54:52 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:55:00 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:55:03 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:55:10 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:55:14 ERROR (SyncWorker_4) [homeassistant.util.yaml.loader] mapping values are not allowed here
+  in "/config/ui-lovelace.yaml", line 15, column 17
+2022-02-05 18:55:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:55:52 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:56:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:56:11 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:56:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:57:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:57:11 ERROR (SyncWorker_1) [spotipy.client] Max Retries reached
+2022-02-05 18:57:27 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:57:41 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 18:57:43 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 18:57:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:58:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:58:11 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:58:28 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:58:39 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 18:58:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:59:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:59:11 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:59:41 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7

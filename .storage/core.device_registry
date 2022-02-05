@@ -555,6 +555,30 @@
                 "name_by_user": null,
                 "disabled_by": null,
                 "configuration_url": "https://open.spotify.com"
+            },
+            {
+                "config_entries": [
+                    "f4a962ef9ef9848cb2856e7683695822"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "github",
+                        "mgerasika/home-assistant"
+                    ]
+                ],
+                "manufacturer": "GitHub",
+                "model": null,
+                "name": "mgerasika/home-assistant",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "cf84e6de085a0f26c9d9b788c294dbe0",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://github.com/mgerasika/home-assistant"
             }
         ],
         "deleted_devices": []

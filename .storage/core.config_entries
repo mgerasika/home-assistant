@@ -133,6 +133,25 @@
                 "source": "zeroconf",
                 "unique_id": "31fvbunkipavcmoimys3z4nx6h3y",
                 "disabled_by": null
+            },
+            {
+                "entry_id": "f4a962ef9ef9848cb2856e7683695822",
+                "version": 1,
+                "domain": "github",
+                "title": "",
+                "data": {
+                    "access_token": "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"
+                },
+                "options": {
+                    "repositories": [
+                        "mgerasika/home-assistant"
+                    ]
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
             }
         ]
     }

@@ -1,0 +1,65 @@
+title: My Awesome Home
+views:
+  # View tab title.
+  - title: Example
+    # Unique path for direct access /lovelace/${path}
+    cards:
+      # Entities card will take a list of entities and show their state.
+      - type: entities
+        # Title of the entities card
+        title: Example
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: switch.switch_d0
+            name: реле котел
+
+          - entity: switch.switch_relay1
+            name: кухня
+
+          - entity: switch.switch_relay2
+            name: спальня
+
+          - entity: switch.switch_relay3
+            name: майстерня
+
+          - entity: switch.switch_relay4
+            name: ванна
+
+          - entity: switch.switch_relay5
+            name: вітальня
+
+          - entity: switch.switch_relay6
+            name: ані
+
+          - entity: switch.switch_relay7
+            name: коридор
+
+        # The markdown card will render markdown text.
+      - type: markdown
+        title: Lovelace
+        content: >
+          Welcome to your **Lovelace UI**.
+
+    # The cards to show on this view.
+
+  - title: Second view
+    cards:
+      # Entities card will take a list of entities and show their state.
+      - type: entities
+        # Title of the entities card
+        title: Example
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - light.kitchen
+          - switch.ac
+          - entity: light.living_room
+            # Override the name to use
+            name: LR Lights
+
+        # The markdown card will render markdown text.
+      - type: markdown
+        title: Lovelace
+        content: >
+          Welcome to your **Lovelace UI**.

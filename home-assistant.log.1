@@ -1,1982 +1,283 @@
-2022-02-05 15:27:23 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration ble_monitor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-05 15:27:23 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-05 16:06:15 ERROR (Thread-4) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:06:16 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:06:16 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:06:16 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:07:03 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:07:03 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:07:03 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:07:03 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:07:50 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:07:50 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:07:50 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:07:50 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:08:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:09:22 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:09:22 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:09:22 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:09:22 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:09:48 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:09:48 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:09:48 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:09:48 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:10:03 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:10:22 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:11:02 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:12:34 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:12:34 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:12:34 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:12:34 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:12:45 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:12:45 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:12:45 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:12:45 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:13:33 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:13:33 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:13:33 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:13:33 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:13:34 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:13:44 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:14:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:14:34 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:14:53 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:14:53 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:14:53 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:14:53 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:15:52 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:16:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:17:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:18:50 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:19:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:20:20 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:20:46 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:21:03 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:21:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 16:21:16 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:21:16 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:21:16 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:21:21 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:21:45 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:22:02 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:22:19 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 16:23:17 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 16:23:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:23:34 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:23:44 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:24:33 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:24:44 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:25:52 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:26:52 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:27:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:28:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:28:52 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:29:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:30:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:31:18 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:31:45 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:32:03 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:32:19 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:32:44 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:33:02 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:34:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:34:17 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 16:34:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:34:33 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:34:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:35:30 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:35:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:35:44 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:36:51 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:37:50 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:38:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:38:30 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:39:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:39:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:40:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:41:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:42:18 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:42:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:43:02 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:43:17 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:43:44 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:44:01 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:44:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 16:44:50 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:45:17 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 16:45:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:45:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:45:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:46:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:46:33 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:46:44 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:47:50 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:48:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:49:14 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:50:14 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:51:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:52:48 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 16:53:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:53:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:54:01 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:54:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 16:54:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:54:42 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 16:55:00 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 16:55:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 16:55:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 16:56:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 16:56:29 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:56:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:56:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:57:29 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:57:31 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 16:57:42 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:57:46 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 16:58:29 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 16:58:50 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 16:59:14 WARNING (MainThread) [homeassistant.helpers.frame] Detected code that uses str (diagnostic) for entity category. This is deprecated and will stop working in Home Assistant 2022.4, it should be updated to use EntityCategory instead. Please report this issue.
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-Stack (most recent call last):
-  File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 203, in <module>
-    sys.exit(main())
-  File "/usr/src/homeassistant/homeassistant/__main__.py", line 191, in main
-    exit_code = runner.run(runtime_conf)
-  File "/usr/src/homeassistant/homeassistant/runner.py", line 119, in run
-    return loop.run_until_complete(setup_and_run_hass(runtime_config))
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
-    self.run_forever()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
-    self._run_once()
-  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
-    handle._run()
-  File "/usr/local/lib/python3.9/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 510, in _async_add_entity
-    entry = entity_registry.async_get_or_create(
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 401, in async_get_or_create
-    entity_category=_convert_to_entity_category(entity_category),
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_registry.py", line 103, in _convert_to_entity_category
-    return convert_to_entity_category(value, raise_report=raise_report)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 214, in convert_to_entity_category
-    report(
-  File "/usr/src/homeassistant/homeassistant/helpers/frame.py", line 74, in report
-    _LOGGER.warning(msg, stack_info=True)
-2022-02-05 16:59:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:00:14 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:01:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:02:48 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:03:47 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:04:14 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:04:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 17:04:59 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:05:15 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:06:00 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:07:00 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:07:28 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 17:07:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:07:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 17:08:29 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 17:08:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:08:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 17:09:48 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:10:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:11:14 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:12:14 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:13:49 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:14:14 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:14:32 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:14:48 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:15:13 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:15:41 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 17:15:58 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:16:12 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
-2022-02-05 17:16:42 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
-2022-02-05 17:16:59 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
-2022-02-05 17:18:27 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 17:18:30 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 17:18:31 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:18:43 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 17:19:28 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:6E:30:3F
-2022-02-05 17:19:30 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
-2022-02-05 17:19:42 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
-2022-02-05 17:20:47 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:21:16 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
-2022-02-05 17:21:48 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
-2022-02-05 17:22:14 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:23:13 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
-2022-02-05 17:24:47 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:25:48 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
-2022-02-05 17:26:11 ERROR (Thread-5) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 17:31:49 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration ble_monitor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-05 17:31:49 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-05 17:31:50 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2022-02-05 17:31:50 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=5 from 2022-02-05 13:27:24.187940)
+2022-02-05 17:32:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 17:33:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 17:34:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 17:34:16 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 17:35:47 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 17:36:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 17:37:09 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 17:37:39 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
+2022-02-05 17:37:57 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 17:38:10 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 17:38:57 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 17:39:15 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
+2022-02-05 17:40:16 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
+2022-02-05 17:40:31 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 17:40:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 17:41:30 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 17:41:42 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 17:42:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 17:43:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 17:44:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 17:44:47 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 17:45:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 17:45:50 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.1.100 (192.168.1.100). (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36)
+2022-02-05 17:46:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 17:47:47 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 17:48:08 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 17:48:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 17:49:07 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 17:49:31 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
+2022-02-05 17:49:38 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:57:29:B5
+2022-02-05 17:49:57 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 17:50:04 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
+2022-02-05 17:50:16 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:BD:62
+2022-02-05 17:50:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for test @ 192.168.1.16: Hello timed out
+2022-02-05 17:51:30 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 17:52:14 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
+2022-02-05 17:52:31 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 17:52:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 17:53:30 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
+2022-02-05 17:53:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 17:54:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 17:54:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 17:55:08 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 17:55:27 ERROR (MainThread) [homeassistant.components.hassio] Failed to to call /supervisor/options - Invalid Add-on repository!
+2022-02-05 17:56:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 17:57:42 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 17:57:47 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 17:58:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 17:59:06 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 17:59:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:00:08 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:00:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:02:30 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:02:40 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:02:41 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 18:03:10 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
+2022-02-05 18:03:10 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Mgerasika@gmail.com' for spotify integration not ready yet: http status: 429, code:-1 - /v1/me/:
+ Max Retries, reason: too many 429 error responses; Retrying in background
+2022-02-05 18:03:29 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:03:42 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 18:04:21 WARNING (MainThread) [homeassistant.components.media_player] Setup of media_player platform spotify is taking over 10 seconds.
+2022-02-05 18:04:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:05:10 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:05:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:05:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:06:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:06:11 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:06:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:06:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:07:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:07:11 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
+2022-02-05 18:07:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:07:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:08:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:08:11 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:08:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:08:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:09:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:09:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:09:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:09:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:10:06 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:10:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:10:12 ERROR (SyncWorker_1) [spotipy.client] Max Retries reached
+2022-02-05 18:10:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:10:55 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:11:05 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:11:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:11:12 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:11:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:11:56 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:12:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:12:11 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:12:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:13:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:13:11 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:13:29 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:13:42 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 18:13:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:14:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:14:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:14:22 ERROR (MainThread) [homeassistant.components.github] Git Repository is empty.
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/github/coordinator.py", line 65, in _async_update_data
+    response = await self.fetch_data()
+  File "/usr/src/homeassistant/homeassistant/components/github/coordinator.py", line 201, in fetch_data
+    return await self._client.repos.list_commits(
+  File "/usr/local/lib/python3.9/site-packages/aiogithubapi/namespaces/repos.py", line 105, in list_commits
+    response = await self._client.async_call_api(
+  File "/usr/local/lib/python3.9/site-packages/aiogithubapi/client.py", line 140, in async_call_api
+    raise GitHubException(message)
+aiogithubapi.exceptions.GitHubException: Git Repository is empty.
+2022-02-05 18:14:22 ERROR (MainThread) [homeassistant.components.github] Error fetching github data: Git Repository is empty.
+2022-02-05 18:14:28 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:14:31 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:14:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:15:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:15:11 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:15:44 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:15:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:16:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:16:12 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:16:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:16:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:17:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:17:12 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
+2022-02-05 18:17:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:17:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:18:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:18:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:18:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:18:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:19:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:19:12 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:19:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:19:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:20:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:20:12 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:20:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:20:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:21:03 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:21:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:21:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:21:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:21:54 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:22:05 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:22:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:22:12 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 18:22:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:22:55 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:23:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:23:12 ERROR (SyncWorker_1) [spotipy.client] Max Retries reached
+2022-02-05 18:23:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:24:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:24:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:24:29 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:24:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:25:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:25:12 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 18:25:29 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:25:41 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 18:25:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:26:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:26:12 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:26:43 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:26:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:27:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:27:12 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
+2022-02-05 18:27:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:27:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:28:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:28:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:28:12 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:28:43 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:28:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:29:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:29:12 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:29:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:29:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:30:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:30:12 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 18:30:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:30:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:31:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:31:12 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:31:46 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:31:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:32:02 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:32:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:32:12 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
+2022-02-05 18:32:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:32:54 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:33:03 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:33:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:33:12 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:33:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:33:53 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:34:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:34:12 ERROR (SyncWorker_1) [spotipy.client] Max Retries reached
+2022-02-05 18:34:13 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:34:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:35:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:35:12 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 18:35:29 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:35:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.16: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-05 18:35:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:36:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:36:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:36:28 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:36:41 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 18:36:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:37:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:37:12 ERROR (SyncWorker_1) [spotipy.client] Max Retries reached
+2022-02-05 18:37:43 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:37:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:38:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:38:12 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 18:38:43 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:38:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:39:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:39:12 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:39:14 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:39:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:40:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:40:11 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
+2022-02-05 18:40:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:40:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:41:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:41:12 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
+2022-02-05 18:41:45 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:41:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:42:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:42:12 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:42:44 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:42:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:43:01 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:43:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:43:12 ERROR (SyncWorker_1) [spotipy.client] Max Retries reached
+2022-02-05 18:43:36 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 27, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/usr/src/homeassistant/homeassistant/components/system_health/__init__.py", line 103, in handle_info
+    await asyncio.gather(
+  File "/usr/src/homeassistant/homeassistant/components/system_health/__init__.py", line 68, in get_integration_info
+    data = await registration.info_callback(hass)
+  File "/config/custom_components/hacs/system_health.py", line 22, in system_health_info
+    response = await hacs.githubapi.rate_limit()
+  File "/usr/local/lib/python3.9/site-packages/aiogithubapi/github.py", line 191, in rate_limit
+    response = await self._client.async_call_api(endpoint="/rate_limit", **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/aiogithubapi/client.py", line 134, in async_call_api
+    raise exception(message or response.data)
+aiogithubapi.exceptions.GitHubAuthenticationException: Bad credentials
+2022-02-05 18:43:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:43:53 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:44:01 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:28:A0:32
+2022-02-05 18:44:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:44:12 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 18:44:44 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 18:44:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:44:53 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:DF:06:52
+2022-02-05 18:45:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:45:12 ERROR (SyncWorker_3) [spotipy.client] Max Retries reached
+2022-02-05 18:45:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:46:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:46:12 ERROR (SyncWorker_1) [spotipy.client] Max Retries reached
+2022-02-05 18:46:28 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:46:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:47:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:47:12 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
+2022-02-05 18:47:27 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:BE:4C:FB
+2022-02-05 18:47:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:48:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:48:12 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 18:48:41 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:C0:F4:B7
+2022-02-05 18:48:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 18:49:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 18:49:12 ERROR (SyncWorker_5) [spotipy.client] Max Retries reached
+2022-02-05 18:49:28 ERROR (MainThread) [homeassistant.components.hassio.handler] Timeout on /homeassistant/restart request
