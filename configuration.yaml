@@ -5,10 +5,6 @@ default_config:
 tts:
   - platform: google_translate
 
-automation: !include automations.yaml
-script: !include scripts.yaml
-scene: !include scenes.yaml
-
 lovelace:
   mode: yaml
 
@@ -19,19 +15,18 @@ input_boolean:
     icon: mdi:car
 
 input_number:
-  kitchen_min:
-    name: Kitchen min
+  kitchen_night_max:
+    name: Kitchen night
     initial: 16
     min: 7
-    max: 24
-    step: 1
-  kitchen_max:
-    name: Kitchen max
+    max: 21
+    step: 0.5
+  kitchen_day_max:
+    name: Kitchen day
     initial: 20
     min: 7
-    max: 24
-    step: 1
-    mode: box
+    max: 21
+    step: 0.5
 
 input_datetime:
   kitchen_start:
@@ -45,6 +40,10 @@ input_datetime:
     initial: "20:00"
     has_date: false
     has_time: true
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
 
 ble_monitor:
   devices:
@@ -114,7 +113,7 @@ ble_monitor:
       restore_state: default
 
     - mac: "A4:C1:38:6E:30:3F"
-      name: "Proektor"
+      name: "Vulichya"
       encryption_key: "b36f398ac8842608370eb00dfaea07fa"
       temperature_unit: C
       decimals: 2
@@ -122,7 +121,7 @@ ble_monitor:
       restore_state: default
 
     - mac: "A4:C1:38:49:72:BA"
-      name: "Vulichya"
+      name: "Proektor"
       encryption_key: "f2f5efb0eb40045fdf32da7819171b6a"
       temperature_unit: C
       decimals: 2

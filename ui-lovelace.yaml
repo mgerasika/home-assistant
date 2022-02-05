@@ -77,8 +77,8 @@ views:
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
-          - entity: input_number.kitchen_min
-          - entity: input_number.kitchen_max
+          - entity: input_number.kitchen_night_max
+          - entity: input_number.kitchen_day_max
 
           - entity: input_datetime.kitchen_start
           - entity: input_datetime.kitchen_end
