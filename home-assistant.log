@@ -1706,3 +1706,17 @@ aiogithubapi.exceptions.GitHubAuthenticationException: Bad credentials
 2022-02-05 20:45:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
 2022-02-05 20:46:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
 2022-02-05 20:46:11 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 20:46:46 ERROR (MainThread) [homeassistant.components.github] Bad credentials
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/github/coordinator.py", line 65, in _async_update_data
+    response = await self.fetch_data()
+  File "/usr/src/homeassistant/homeassistant/components/github/coordinator.py", line 93, in fetch_data
+    return await self._client.repos.get(self.repository, **{"etag": self._etag})
+  File "/usr/local/lib/python3.9/site-packages/aiogithubapi/namespaces/repos.py", line 82, in get
+    response = await self._client.async_call_api(
+  File "/usr/local/lib/python3.9/site-packages/aiogithubapi/client.py", line 134, in async_call_api
+    raise exception(message or response.data)
+aiogithubapi.exceptions.GitHubAuthenticationException: Bad credentials
+2022-02-05 20:46:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 20:47:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 20:47:11 ERROR (SyncWorker_0) [spotipy.client] Max Retries reached
