@@ -6,22 +6,26 @@
         {
             "state": {
                 "entity_id": "person.admin",
-                "state": "unknown",
+                "state": "not_home",
                 "attributes": {
                     "editable": false,
                     "id": "admin",
+                    "latitude": 49.7695679,
+                    "longitude": 24.0898421,
+                    "gps_accuracy": 20,
+                    "source": "device_tracker.g8441",
                     "user_id": "c57ebe0a3b2c4797a6b0d747179adad4",
                     "friendly_name": "admin"
                 },
-                "last_changed": "2022-02-05T16:49:42.692278+00:00",
-                "last_updated": "2022-02-05T16:50:40.473573+00:00",
+                "last_changed": "2022-02-05T17:12:17.189684+00:00",
+                "last_updated": "2022-02-05T17:12:17.189684+00:00",
                 "context": {
-                    "id": "a624360d7cc4871e800002476aed6fac",
+                    "id": "78ec11ab535c82520dd57c091e4fee0b",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:50:40.497114+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -43,7 +47,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:50:40.497114+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -65,7 +69,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:50:40.497114+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -87,7 +91,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:50:40.497114+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -109,7 +113,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:50:40.497114+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -131,7 +135,7 @@
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:50:40.497114+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -145,15 +149,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T15:37:58.001162+00:00",
-                "last_updated": "2022-02-05T15:37:58.001162+00:00",
+                "last_changed": "2022-02-05T16:54:52.094621+00:00",
+                "last_updated": "2022-02-05T16:54:52.094621+00:00",
                 "context": {
-                    "id": "4d2fd3ce5e55e50e7cae2c66e272a3db",
+                    "id": "9e3bc2bb13b78fc91afa1ae607117756",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -167,15 +171,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T15:37:58.002270+00:00",
-                "last_updated": "2022-02-05T15:37:58.002270+00:00",
+                "last_changed": "2022-02-05T16:54:52.096155+00:00",
+                "last_updated": "2022-02-05T16:54:52.096155+00:00",
                 "context": {
-                    "id": "bd2ba5715956d49bbd080cf9846dab1a",
+                    "id": "dc79f7094a76cf0d10956d2d598cb77f",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -189,15 +193,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T15:37:58.003462+00:00",
-                "last_updated": "2022-02-05T15:37:58.003462+00:00",
+                "last_changed": "2022-02-05T16:54:52.097454+00:00",
+                "last_updated": "2022-02-05T16:54:52.097454+00:00",
                 "context": {
-                    "id": "40646536a3fcde9507923d18eb399208",
+                    "id": "c4ab0aa0d918d38fe33ba7a34985f155",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -211,15 +215,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T15:37:58.004441+00:00",
-                "last_updated": "2022-02-05T15:37:58.004441+00:00",
+                "last_changed": "2022-02-05T16:54:52.098695+00:00",
+                "last_updated": "2022-02-05T16:54:52.098695+00:00",
                 "context": {
-                    "id": "59f47e3d660df91b3221e53c48c558a8",
+                    "id": "1d821b2185d1b4bacb4378fccf91a440",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -233,15 +237,15 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C138DF0652"
                 },
-                "last_changed": "2022-02-05T15:37:58.005322+00:00",
-                "last_updated": "2022-02-05T15:37:58.005322+00:00",
+                "last_changed": "2022-02-05T16:54:52.101295+00:00",
+                "last_updated": "2022-02-05T16:54:52.101295+00:00",
                 "context": {
-                    "id": "832eb156e7021fbf8f133a1a65e10558",
+                    "id": "388e8165ec0b167b536b459bb74b89a0",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -255,15 +259,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C13825708A"
                 },
-                "last_changed": "2022-02-05T15:35:47.621564+00:00",
-                "last_updated": "2022-02-05T15:35:47.621564+00:00",
+                "last_changed": "2022-02-05T16:52:44.235121+00:00",
+                "last_updated": "2022-02-05T16:52:44.235121+00:00",
                 "context": {
-                    "id": "bcf6cddef2f7b084636d75cbff613597",
+                    "id": "8a9cb250e7b929da49d3293464e353ee",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -277,15 +281,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C13825708A"
                 },
-                "last_changed": "2022-02-05T15:35:47.622870+00:00",
-                "last_updated": "2022-02-05T15:35:47.622870+00:00",
+                "last_changed": "2022-02-05T16:52:44.236624+00:00",
+                "last_updated": "2022-02-05T16:52:44.236624+00:00",
                 "context": {
-                    "id": "6d8baee8e9ae7a240d5fc2da61797cfe",
+                    "id": "c28572e8bbf3283627f354e2a4e1eb4e",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -299,15 +303,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C13825708A"
                 },
-                "last_changed": "2022-02-05T15:35:47.623980+00:00",
-                "last_updated": "2022-02-05T15:35:47.623980+00:00",
+                "last_changed": "2022-02-05T16:52:44.238081+00:00",
+                "last_updated": "2022-02-05T16:52:44.238081+00:00",
                 "context": {
-                    "id": "3bb706121d681ae304b0e24b634face2",
+                    "id": "b1117c24e2d4a528ecad9306b64ebab9",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -321,15 +325,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C13825708A"
                 },
-                "last_changed": "2022-02-05T15:35:47.625276+00:00",
-                "last_updated": "2022-02-05T15:35:47.625276+00:00",
+                "last_changed": "2022-02-05T16:52:44.239450+00:00",
+                "last_updated": "2022-02-05T16:52:44.239450+00:00",
                 "context": {
-                    "id": "35321f51e5f25894e9b39180cd05631d",
+                    "id": "52f04ce6c8fbdcda0146613c344411c6",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -343,15 +347,15 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C13825708A"
                 },
-                "last_changed": "2022-02-05T15:35:47.626538+00:00",
-                "last_updated": "2022-02-05T15:35:47.626538+00:00",
+                "last_changed": "2022-02-05T16:52:44.240668+00:00",
+                "last_updated": "2022-02-05T16:52:44.240668+00:00",
                 "context": {
-                    "id": "1303102e056b32d91a510e16e493e847",
+                    "id": "e4dea105df6d2ac891e1f45a726868e1",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -365,15 +369,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C13828A032"
                 },
-                "last_changed": "2022-02-05T15:37:09.994381+00:00",
-                "last_updated": "2022-02-05T15:37:09.994381+00:00",
+                "last_changed": "2022-02-05T16:53:59.189636+00:00",
+                "last_updated": "2022-02-05T16:53:59.189636+00:00",
                 "context": {
-                    "id": "4ab4486c7aed11831ca2c930fbe3d975",
+                    "id": "3d7484fc2d47539d89cff616766b6610",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -387,15 +391,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C13828A032"
                 },
-                "last_changed": "2022-02-05T15:37:09.995630+00:00",
-                "last_updated": "2022-02-05T15:37:09.995630+00:00",
+                "last_changed": "2022-02-05T16:53:59.190167+00:00",
+                "last_updated": "2022-02-05T16:53:59.190167+00:00",
                 "context": {
-                    "id": "5b961ef3d48f13436873d352856a27f6",
+                    "id": "843321fe1771129dd31f61f3080d0185",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -409,15 +413,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C13828A032"
                 },
-                "last_changed": "2022-02-05T15:37:09.996785+00:00",
-                "last_updated": "2022-02-05T15:37:09.996785+00:00",
+                "last_changed": "2022-02-05T16:53:59.190607+00:00",
+                "last_updated": "2022-02-05T16:53:59.190607+00:00",
                 "context": {
-                    "id": "d7934772006fffacd46ab736f9e14b41",
+                    "id": "fd6ed8d3e1594ca0137a8a6ec4d1aac7",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -431,15 +435,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C13828A032"
                 },
-                "last_changed": "2022-02-05T15:37:09.997828+00:00",
-                "last_updated": "2022-02-05T15:37:09.997828+00:00",
+                "last_changed": "2022-02-05T16:53:59.191068+00:00",
+                "last_updated": "2022-02-05T16:53:59.191068+00:00",
                 "context": {
-                    "id": "90610e58921f799c9cd28fd7bfa1f549",
+                    "id": "1b2337fd91b84f214603d687e0cb7e1b",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -453,15 +457,15 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C13828A032"
                 },
-                "last_changed": "2022-02-05T15:37:09.998814+00:00",
-                "last_updated": "2022-02-05T15:37:09.998814+00:00",
+                "last_changed": "2022-02-05T16:53:59.191481+00:00",
+                "last_updated": "2022-02-05T16:53:59.191481+00:00",
                 "context": {
-                    "id": "62037fd9df5de0f24dac423effa262b5",
+                    "id": "429b606364225f686d5ce83a4daf1086",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -475,15 +479,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C1385729B5"
                 },
-                "last_changed": "2022-02-05T15:37:39.876523+00:00",
-                "last_updated": "2022-02-05T15:37:39.876523+00:00",
+                "last_changed": "2022-02-05T17:39:29.442303+00:00",
+                "last_updated": "2022-02-05T17:39:29.442303+00:00",
                 "context": {
-                    "id": "1dc763502b5c3e7d356f5aa918a056e9",
+                    "id": "66cf955a9e07d476f71f8e4d2cbbb6ed",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -497,15 +501,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C1385729B5"
                 },
-                "last_changed": "2022-02-05T15:37:39.877802+00:00",
-                "last_updated": "2022-02-05T15:37:39.877802+00:00",
+                "last_changed": "2022-02-05T17:39:29.443768+00:00",
+                "last_updated": "2022-02-05T17:39:29.443768+00:00",
                 "context": {
-                    "id": "165d5d6fb0cea12dbab0afd8f63df63a",
+                    "id": "03220a9f2576409d744a1179df4425d7",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -519,15 +523,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C1385729B5"
                 },
-                "last_changed": "2022-02-05T15:37:39.878901+00:00",
-                "last_updated": "2022-02-05T15:37:39.878901+00:00",
+                "last_changed": "2022-02-05T17:39:29.445134+00:00",
+                "last_updated": "2022-02-05T17:39:29.445134+00:00",
                 "context": {
-                    "id": "dfd341e74b1f3e0732392c8f45509ae1",
+                    "id": "820e89dbd1ebddd4400b33425ae226ee",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -541,15 +545,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C1385729B5"
                 },
-                "last_changed": "2022-02-05T15:37:39.879956+00:00",
-                "last_updated": "2022-02-05T15:37:39.879956+00:00",
+                "last_changed": "2022-02-05T17:39:29.446412+00:00",
+                "last_updated": "2022-02-05T17:39:29.446412+00:00",
                 "context": {
-                    "id": "08c20a45ff163952d5560d1fc935110d",
+                    "id": "e764d529954189497480fa18afa01178",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -563,15 +567,15 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C1385729B5"
                 },
-                "last_changed": "2022-02-05T15:37:39.880983+00:00",
-                "last_updated": "2022-02-05T15:37:39.880983+00:00",
+                "last_changed": "2022-02-05T17:39:29.447627+00:00",
+                "last_updated": "2022-02-05T17:39:29.447627+00:00",
                 "context": {
-                    "id": "1ff760a5d27ee255f5c3751e3545bfb2",
+                    "id": "08c65bee5008d51b09798ecc62949b54",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -585,15 +589,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C138BE4CFB"
                 },
-                "last_changed": "2022-02-05T15:40:31.235691+00:00",
-                "last_updated": "2022-02-05T15:40:31.235691+00:00",
+                "last_changed": "2022-02-05T16:57:27.881677+00:00",
+                "last_updated": "2022-02-05T16:57:27.881677+00:00",
                 "context": {
-                    "id": "d2e5898d665c2f644102a3ad318d773f",
+                    "id": "3dbba60178356c3e2e00e156d5f77768",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -607,15 +611,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C138BE4CFB"
                 },
-                "last_changed": "2022-02-05T15:40:31.236990+00:00",
-                "last_updated": "2022-02-05T15:40:31.236990+00:00",
+                "last_changed": "2022-02-05T16:57:27.882074+00:00",
+                "last_updated": "2022-02-05T16:57:27.882074+00:00",
                 "context": {
-                    "id": "abfc9fa96278ac5da88a1a694ba0cd8d",
+                    "id": "d354384057070c1d2a97a90a36b05551",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -629,15 +633,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C138BE4CFB"
                 },
-                "last_changed": "2022-02-05T15:40:31.238135+00:00",
-                "last_updated": "2022-02-05T15:40:31.238135+00:00",
+                "last_changed": "2022-02-05T16:57:27.882364+00:00",
+                "last_updated": "2022-02-05T16:57:27.882364+00:00",
                 "context": {
-                    "id": "c061530cd7ce48710545432ddd121f85",
+                    "id": "b5ad21c55f7088647956111265623f4f",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -651,15 +655,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C138BE4CFB"
                 },
-                "last_changed": "2022-02-05T15:40:31.239212+00:00",
-                "last_updated": "2022-02-05T15:40:31.239212+00:00",
+                "last_changed": "2022-02-05T16:57:27.882634+00:00",
+                "last_updated": "2022-02-05T16:57:27.882634+00:00",
                 "context": {
-                    "id": "5e15895b56d59f95dbbea925d4e52730",
+                    "id": "774651fba9fb4ac6f1a56cdb6a6b51fc",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -673,15 +677,15 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C138BE4CFB"
                 },
-                "last_changed": "2022-02-05T15:40:31.240211+00:00",
-                "last_updated": "2022-02-05T15:40:31.240211+00:00",
+                "last_changed": "2022-02-05T16:57:27.882891+00:00",
+                "last_updated": "2022-02-05T16:57:27.882891+00:00",
                 "context": {
-                    "id": "573a06f3b7eb6f9e6329fff1e4c93335",
+                    "id": "ac240f059d5a5559e8d09b14b77554a3",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -695,15 +699,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C1381D624B"
                 },
-                "last_changed": "2022-02-05T15:40:45.824792+00:00",
-                "last_updated": "2022-02-05T15:40:45.824792+00:00",
+                "last_changed": "2022-02-05T16:57:41.134267+00:00",
+                "last_updated": "2022-02-05T16:57:41.134267+00:00",
                 "context": {
-                    "id": "10cf1738434062a4e6407555ba09801b",
+                    "id": "8c84d23b2b4201786113be3cd8a79046",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -717,15 +721,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C1381D624B"
                 },
-                "last_changed": "2022-02-05T15:40:45.826096+00:00",
-                "last_updated": "2022-02-05T15:40:45.826096+00:00",
+                "last_changed": "2022-02-05T16:57:41.135765+00:00",
+                "last_updated": "2022-02-05T16:57:41.135765+00:00",
                 "context": {
-                    "id": "ba6e4fb62106bf774fb750fbeb8471c1",
+                    "id": "16d7a9b19321e035691ba7ef56e3df16",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -739,15 +743,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C1381D624B"
                 },
-                "last_changed": "2022-02-05T15:40:45.827190+00:00",
-                "last_updated": "2022-02-05T15:40:45.827190+00:00",
+                "last_changed": "2022-02-05T16:57:41.137170+00:00",
+                "last_updated": "2022-02-05T16:57:41.137170+00:00",
                 "context": {
-                    "id": "f0d847c7006f4eabdf97a57fff2f61b4",
+                    "id": "b646d9c11eb252a94400b98bb169f793",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -761,15 +765,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C1381D624B"
                 },
-                "last_changed": "2022-02-05T15:40:45.828266+00:00",
-                "last_updated": "2022-02-05T15:40:45.828266+00:00",
+                "last_changed": "2022-02-05T16:57:41.138508+00:00",
+                "last_updated": "2022-02-05T16:57:41.138508+00:00",
                 "context": {
-                    "id": "f11ea5c20299b3e946c042c8c5bf7ed0",
+                    "id": "d98dfbb31e857571c71ed9ecaadfab47",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -783,15 +787,15 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C1381D624B"
                 },
-                "last_changed": "2022-02-05T15:40:45.829472+00:00",
-                "last_updated": "2022-02-05T15:40:45.829472+00:00",
+                "last_changed": "2022-02-05T16:57:41.139794+00:00",
+                "last_updated": "2022-02-05T16:57:41.139794+00:00",
                 "context": {
-                    "id": "041a50c1be45fbea95e769cc594f5181",
+                    "id": "7a98324027f7e1c7a561351f8e3d4554",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -805,15 +809,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C138C0F4B7"
                 },
-                "last_changed": "2022-02-05T15:32:46.858287+00:00",
-                "last_updated": "2022-02-05T15:32:46.858287+00:00",
+                "last_changed": "2022-02-05T16:59:41.325528+00:00",
+                "last_updated": "2022-02-05T16:59:41.325528+00:00",
                 "context": {
-                    "id": "e00b7fb3c63c2c1bafd3a4b7b2ad70a0",
+                    "id": "d5dfbf72827ee3a3d48e28c86921b17c",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -827,15 +831,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C138C0F4B7"
                 },
-                "last_changed": "2022-02-05T15:32:46.859568+00:00",
-                "last_updated": "2022-02-05T15:32:46.859568+00:00",
+                "last_changed": "2022-02-05T16:59:41.326458+00:00",
+                "last_updated": "2022-02-05T16:59:41.326458+00:00",
                 "context": {
-                    "id": "dcd02d58a85a9cc9ff70d6d8de3d3bcd",
+                    "id": "143c31e604186431d007fa8a5d5efc9a",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -849,15 +853,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C138C0F4B7"
                 },
-                "last_changed": "2022-02-05T15:32:46.860716+00:00",
-                "last_updated": "2022-02-05T15:32:46.860716+00:00",
+                "last_changed": "2022-02-05T16:59:41.327308+00:00",
+                "last_updated": "2022-02-05T16:59:41.327308+00:00",
                 "context": {
-                    "id": "d4a845a5548ba3c05cecdfb8ba05e954",
+                    "id": "63c7e9c066a5fe18b20d49e419f6a5e0",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -871,15 +875,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C138C0F4B7"
                 },
-                "last_changed": "2022-02-05T15:32:46.861826+00:00",
-                "last_updated": "2022-02-05T15:32:46.861826+00:00",
+                "last_changed": "2022-02-05T16:59:41.328146+00:00",
+                "last_updated": "2022-02-05T16:59:41.328146+00:00",
                 "context": {
-                    "id": "e2a3157bceb0ef5f60df61e1a2a0c54e",
+                    "id": "61ef61fe8319c5a8243d2fee4d2728ce",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -893,15 +897,15 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C138C0F4B7"
                 },
-                "last_changed": "2022-02-05T15:32:46.862845+00:00",
-                "last_updated": "2022-02-05T15:32:46.862845+00:00",
+                "last_changed": "2022-02-05T16:59:41.328869+00:00",
+                "last_updated": "2022-02-05T16:59:41.328869+00:00",
                 "context": {
-                    "id": "f0bb32b9380ec254b935d614c78954bd",
+                    "id": "7d4eda9682780e880664655e991a7e0a",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -915,15 +919,15 @@
                     "device_class": "temperature",
                     "friendly_name": "ble temperature A4C13828BD62"
                 },
-                "last_changed": "2022-02-05T15:39:15.190138+00:00",
-                "last_updated": "2022-02-05T15:39:15.190138+00:00",
+                "last_changed": "2022-02-05T17:07:16.231341+00:00",
+                "last_updated": "2022-02-05T17:07:16.231341+00:00",
                 "context": {
-                    "id": "4579da993b27f0c4d1d332ba9eb69ab1",
+                    "id": "9b4611c9ecab8b377fe0474f649e84ae",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -937,15 +941,15 @@
                     "device_class": "humidity",
                     "friendly_name": "ble humidity A4C13828BD62"
                 },
-                "last_changed": "2022-02-05T15:39:15.191379+00:00",
-                "last_updated": "2022-02-05T15:39:15.191379+00:00",
+                "last_changed": "2022-02-05T17:07:16.232807+00:00",
+                "last_updated": "2022-02-05T17:07:16.232807+00:00",
                 "context": {
-                    "id": "5e394a536a3d2dd589ce7d710b947f69",
+                    "id": "d7c2e34ffe10cdd5a7819e4ea1924b1c",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -959,15 +963,15 @@
                     "device_class": "battery",
                     "friendly_name": "ble battery A4C13828BD62"
                 },
-                "last_changed": "2022-02-05T15:39:15.192484+00:00",
-                "last_updated": "2022-02-05T15:39:15.192484+00:00",
+                "last_changed": "2022-02-05T17:07:16.234240+00:00",
+                "last_updated": "2022-02-05T17:07:16.234240+00:00",
                 "context": {
-                    "id": "a846bce39f527b63bb9d5b696945b2d1",
+                    "id": "c2241f5718792c8878203f367bbe7cd5",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -981,15 +985,15 @@
                     "device_class": "voltage",
                     "friendly_name": "ble voltage A4C13828BD62"
                 },
-                "last_changed": "2022-02-05T15:39:15.193549+00:00",
-                "last_updated": "2022-02-05T15:39:15.193549+00:00",
+                "last_changed": "2022-02-05T17:07:16.235505+00:00",
+                "last_updated": "2022-02-05T17:07:16.235505+00:00",
                 "context": {
-                    "id": "1053a053dceb1e9312630afc01c92cdf",
+                    "id": "db1db08d4e776eea505c03aa182d6902",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {
@@ -1003,15 +1007,422 @@
                     "device_class": "signal_strength",
                     "friendly_name": "ble rssi A4C13828BD62"
                 },
-                "last_changed": "2022-02-05T15:39:15.194560+00:00",
-                "last_updated": "2022-02-05T15:39:15.194560+00:00",
+                "last_changed": "2022-02-05T17:07:16.237862+00:00",
+                "last_updated": "2022-02-05T17:07:16.237862+00:00",
                 "context": {
-                    "id": "b629a385ad94f4e89b77f68cf59e8fac",
+                    "id": "30cd8676ae6ccd5eaa8dce98030882a5",
                     "parent_id": null,
                     "user_id": null
                 }
             },
-            "last_seen": "2022-02-05T16:49:18.277836+00:00"
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.g8441",
+                "state": "not_home",
+                "attributes": {
+                    "source_type": "gps",
+                    "latitude": 49.7695679,
+                    "longitude": 24.0898421,
+                    "gps_accuracy": 20,
+                    "altitude": 380,
+                    "course": 0,
+                    "speed": 0,
+                    "vertical_accuracy": 1,
+                    "friendly_name": "G8441"
+                },
+                "last_changed": "2022-02-05T17:43:25.472844+00:00",
+                "last_updated": "2022-02-05T17:43:25.472844+00:00",
+                "context": {
+                    "id": "e62ab04374be6ba5ada65bf8d5569c85",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_detected_activity",
+                "state": "unknown",
+                "attributes": {
+                    "in_vehicle": 10,
+                    "on_bicycle": 10,
+                    "on_foot": 10,
+                    "running": 10,
+                    "still": 10,
+                    "unknown": 40,
+                    "walking": 10,
+                    "icon": "mdi:progress-question",
+                    "friendly_name": "G8441 Detected Activity"
+                },
+                "last_changed": "2022-02-05T17:38:25.432877+00:00",
+                "last_updated": "2022-02-05T17:38:25.432877+00:00",
+                "context": {
+                    "id": "8f492e2d3c0af74aa50f6cb1e6b24e63",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_ringer_mode",
+                "state": "vibrate",
+                "attributes": {
+                    "icon": "mdi:vibrate",
+                    "friendly_name": "G8441 Ringer Mode"
+                },
+                "last_changed": "2022-02-05T17:04:00.965317+00:00",
+                "last_updated": "2022-02-05T17:04:00.965317+00:00",
+                "context": {
+                    "id": "a130cf7f9bb57d81090fae006576cffd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_battery_level",
+                "state": "79",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "icon": "mdi:battery-70",
+                    "friendly_name": "G8441 Battery Level"
+                },
+                "last_changed": "2022-02-05T17:38:25.434812+00:00",
+                "last_updated": "2022-02-05T17:38:25.434812+00:00",
+                "context": {
+                    "id": "4374e16a36116ad84a01fc1f371d9f10",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_battery_state",
+                "state": "discharging",
+                "attributes": {
+                    "icon": "mdi:battery-minus",
+                    "friendly_name": "G8441 Battery State"
+                },
+                "last_changed": "2022-02-05T17:04:01.069413+00:00",
+                "last_updated": "2022-02-05T17:04:01.069413+00:00",
+                "context": {
+                    "id": "7cc7e45556c700e7dbb0edf888b9f014",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.g8441_is_charging",
+                "state": "off",
+                "attributes": {
+                    "device_class": "plug",
+                    "icon": "mdi:power-plug-off",
+                    "friendly_name": "G8441 Is Charging"
+                },
+                "last_changed": "2022-02-05T17:04:01.101653+00:00",
+                "last_updated": "2022-02-05T17:04:01.101653+00:00",
+                "context": {
+                    "id": "63b0bc3b2b520b4d301f57ec67a30656",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_charger_type",
+                "state": "none",
+                "attributes": {
+                    "icon": "mdi:battery",
+                    "friendly_name": "G8441 Charger Type"
+                },
+                "last_changed": "2022-02-05T17:04:01.129633+00:00",
+                "last_updated": "2022-02-05T17:04:01.129633+00:00",
+                "context": {
+                    "id": "6c613a1a035d4c0237c8ee77cd292d79",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_battery_health",
+                "state": "good",
+                "attributes": {
+                    "icon": "mdi:battery-heart-variant",
+                    "friendly_name": "G8441 Battery Health"
+                },
+                "last_changed": "2022-02-05T17:04:01.149572+00:00",
+                "last_updated": "2022-02-05T17:04:01.149572+00:00",
+                "context": {
+                    "id": "c3b40e28938f47beb7b44f600e75f361",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_battery_temperature",
+                "state": "27.7",
+                "attributes": {
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "icon": "mdi:battery",
+                    "friendly_name": "G8441 Battery Temperature"
+                },
+                "last_changed": "2022-02-05T17:38:43.387883+00:00",
+                "last_updated": "2022-02-05T17:38:43.387883+00:00",
+                "context": {
+                    "id": "c020d1e2c1db61a28eccf18d205e8bd5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_bluetooth_connection",
+                "state": "1",
+                "attributes": {
+                    "connected_not_paired_devices": "[]",
+                    "connected_paired_devices": "[00:18:09:9B:74:01]",
+                    "paired_devices": "[F4:4E:FD:B0:1D:7A, 7E:88:46:81:27:72, 5A:5A:5A:A6:43:79, 00:18:09:9B:74:01]",
+                    "unit_of_measurement": "connection(s)",
+                    "icon": "mdi:bluetooth",
+                    "friendly_name": "G8441 Bluetooth Connection"
+                },
+                "last_changed": "2022-02-05T17:27:47.482512+00:00",
+                "last_updated": "2022-02-05T17:27:47.482512+00:00",
+                "context": {
+                    "id": "ba8c60e19c1302df727bc483372f6976",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_do_not_disturb_sensor",
+                "state": "off",
+                "attributes": {
+                    "icon": "mdi:minus-circle",
+                    "friendly_name": "G8441 Do Not Disturb Sensor"
+                },
+                "last_changed": "2022-02-05T17:04:01.222230+00:00",
+                "last_updated": "2022-02-05T17:04:01.222230+00:00",
+                "context": {
+                    "id": "de0fd1d9f1472332adfac921727cfea9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_geocoded_location",
+                "state": "Q3CQ+3W, Pasiky-Zubrytski, Lviv Oblast, Ukraine",
+                "attributes": {
+                    "Administrative Area": "Lviv Oblast",
+                    "Country": "Ukraine",
+                    "ISO Country Code": "UA",
+                    "Latitude": 49.770103,
+                    "Locality": "Pasiky-Zubrytski",
+                    "Longitude": 24.089794,
+                    "Postal Code": "null",
+                    "Sub Administrative Area": "Pustomytivs'kyi district",
+                    "Sub Locality": "null",
+                    "Sub Thoroughfare": "null",
+                    "Thoroughfare": "null",
+                    "icon": "mdi:map",
+                    "friendly_name": "G8441 Geocoded Location"
+                },
+                "last_changed": "2022-02-05T17:04:01.237599+00:00",
+                "last_updated": "2022-02-05T17:04:01.237599+00:00",
+                "context": {
+                    "id": "d9e2e507ac5636c5bfb130f7c98e663f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_last_reboot",
+                "state": "2022-02-04T13:30:51+00:00",
+                "attributes": {
+                    "Local Time": "Fri Feb 04 15:30:51 GMT+02:00 2022",
+                    "Time in Milliseconds": 1643981451637,
+                    "device_class": "timestamp",
+                    "icon": "mdi:restart",
+                    "friendly_name": "G8441 Last Reboot"
+                },
+                "last_changed": "2022-02-05T17:04:01.323321+00:00",
+                "last_updated": "2022-02-05T17:04:01.323321+00:00",
+                "context": {
+                    "id": "509e851fdb2be811e9b05e8ad250087f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_light_sensor",
+                "state": "89",
+                "attributes": {
+                    "unit_of_measurement": "lx",
+                    "device_class": "illuminance",
+                    "icon": "mdi:brightness-5",
+                    "friendly_name": "G8441 Light Sensor"
+                },
+                "last_changed": "2022-02-05T17:39:21.393449+00:00",
+                "last_updated": "2022-02-05T17:39:21.393449+00:00",
+                "context": {
+                    "id": "ae519d1d3643676f1f08d9af6a00d949",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_wifi_connection",
+                "state": "zyxel",
+                "attributes": {
+                    "is_hidden": false,
+                    "icon": "mdi:wifi",
+                    "friendly_name": "G8441 WiFi Connection"
+                },
+                "last_changed": "2022-02-05T17:04:01.429384+00:00",
+                "last_updated": "2022-02-05T17:04:01.429384+00:00",
+                "context": {
+                    "id": "6fd955f85eb7b80d6c2d5d463662f922",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_next_alarm",
+                "state": "unavailable",
+                "attributes": {
+                    "device_class": "timestamp",
+                    "icon": "mdi:alarm",
+                    "friendly_name": "G8441 Next Alarm"
+                },
+                "last_changed": "2022-02-05T17:04:01.464893+00:00",
+                "last_updated": "2022-02-05T17:04:01.464893+00:00",
+                "context": {
+                    "id": "3d4759fc58a903a74d26aa3bf8e4ae97",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_pressure_sensor",
+                "state": "975.4",
+                "attributes": {
+                    "unit_of_measurement": "hPa",
+                    "device_class": "pressure",
+                    "icon": "mdi:gauge",
+                    "friendly_name": "G8441 Pressure Sensor"
+                },
+                "last_changed": "2022-02-05T17:39:21.395344+00:00",
+                "last_updated": "2022-02-05T17:39:21.395344+00:00",
+                "context": {
+                    "id": "bbdde7b822c71ad622385f706b6416e3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_proximity_sensor",
+                "state": "near",
+                "attributes": {
+                    "icon": "mdi:leak",
+                    "friendly_name": "G8441 Proximity Sensor"
+                },
+                "last_changed": "2022-02-05T17:35:56.987092+00:00",
+                "last_updated": "2022-02-05T17:35:56.987092+00:00",
+                "context": {
+                    "id": "6640276168bcc71e9478a5e7f8a1e17a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_steps_sensor",
+                "state": "1112",
+                "attributes": {
+                    "unit_of_measurement": "steps",
+                    "icon": "mdi:walk",
+                    "friendly_name": "G8441 Steps Sensor"
+                },
+                "last_changed": "2022-02-05T17:18:41.454382+00:00",
+                "last_updated": "2022-02-05T17:18:41.454382+00:00",
+                "context": {
+                    "id": "5d516c408c4b4cd7a78f97f1c34949fb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.g8441_internal_storage",
+                "state": "22",
+                "attributes": {
+                    "Free internal storage": "4GB",
+                    "Total internal storage": "21GB",
+                    "unit_of_measurement": "%",
+                    "icon": "mdi:harddisk",
+                    "friendly_name": "G8441 Internal Storage"
+                },
+                "last_changed": "2022-02-05T17:04:01.816765+00:00",
+                "last_updated": "2022-02-05T17:04:01.816765+00:00",
+                "context": {
+                    "id": "d223db6a0fcdf6a6dabbb6ae9a261317",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-05T17:50:40.501837+00:00"
         },
         {
             "state": {

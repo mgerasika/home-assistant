@@ -7,7 +7,9 @@
             {
                 "name": "admin",
                 "user_id": "c57ebe0a3b2c4797a6b0d747179adad4",
-                "device_trackers": [],
+                "device_trackers": [
+                    "device_tracker.g8441"
+                ],
                 "id": "admin"
             }
         ]

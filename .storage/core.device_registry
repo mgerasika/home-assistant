@@ -579,6 +579,30 @@
                 "name_by_user": null,
                 "disabled_by": null,
                 "configuration_url": "https://github.com/mgerasika/home-assistant"
+            },
+            {
+                "config_entries": [
+                    "b90e6c4f79b044879603725b9423fbc3"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "2ba5c79c59d347af"
+                    ]
+                ],
+                "manufacturer": "Sony",
+                "model": "G8441",
+                "name": "G8441",
+                "sw_version": "28",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "481ef374bde89750dccd1759da553ae6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
             }
         ],
         "deleted_devices": []
