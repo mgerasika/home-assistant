@@ -439,3 +439,10 @@ aiogithubapi.exceptions.GitHubAuthenticationException: Bad credentials
 2022-02-05 19:57:10 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:49:72:BA
 2022-02-05 19:57:12 ERROR (SyncWorker_1) [spotipy.client] Max Retries reached
 2022-02-05 19:57:39 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:1D:62:4B
+2022-02-05 19:57:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 19:58:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 19:58:12 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
+2022-02-05 19:58:43 ERROR (Thread-3) [custom_components.ble_monitor.ble_parser.xiaomi] No encryption key found for device with MAC A4:C1:38:25:70:8A
+2022-02-05 19:58:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 19:59:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 19:59:12 ERROR (SyncWorker_2) [spotipy.client] Max Retries reached
