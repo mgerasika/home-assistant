@@ -1704,3 +1704,5 @@ Traceback (most recent call last):
     raise exception(message or response.data)
 aiogithubapi.exceptions.GitHubAuthenticationException: Bad credentials
 2022-02-05 20:45:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.spotify_mgerasika_gmail_com is taking over 10 seconds
+2022-02-05 20:46:10 WARNING (MainThread) [homeassistant.components.media_player] Updating spotify media_player took longer than the scheduled update interval 0:00:30
+2022-02-05 20:46:11 ERROR (SyncWorker_4) [spotipy.client] Max Retries reached
