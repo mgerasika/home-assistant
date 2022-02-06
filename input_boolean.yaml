@@ -1,0 +1,4 @@
+  kitchen_on:
+    name: Кухня віртуальна кнопка
+    initial: false
+    icon: mdi:car

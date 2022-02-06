@@ -1,41 +1,56 @@
 title: My Awesome Home
 views:
   # View tab title.
-  - title: Колектор
+
+  - title: Загальні
     # Unique path for direct access /lovelace/${path}
     cards:
       # Entities card will take a list of entities and show their state.
       - type: entities
+        show_header_toggle: false
+        # Title of the entities card
+        title: Котел
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: switch.switch_d0
+            name: Реле котел
+
+          - entity: sensor.temperature_test1
+            name: Котел вихід
+
+          - entity: sensor.temperature_test2
+            name: Котел обратка
+      - type: entities
+        show_header_toggle: false
         # Title of the entities card
         title: Колектор
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
-          - entity: switch.switch_d0
-            name: реле котел
-
           - entity: switch.switch_relay1
-            name: кухня
+            name: Кухня
 
           - entity: switch.switch_relay2
-            name: спальня
+            name: Спальня
 
           - entity: switch.switch_relay3
-            name: майстерня
+            name: Майстерня
 
           - entity: switch.switch_relay4
-            name: ванна
+            name: Ванна
 
           - entity: switch.switch_relay5
-            name: вітальня
+            name: Вітальня
 
           - entity: switch.switch_relay6
-            name: ані
+            name: Ані
 
           - entity: switch.switch_relay7
-            name: коридор
+            name: Коридор
 
       - type: entities
+        show_header_toggle: false
         # Title of the entities card
         title: Температура
         # The entities here will be shown in the same order as specified.
@@ -73,17 +88,19 @@ views:
 
       - type: entities
         # Title of the entities card
-        title: Допоміжні
+        title: Кухня
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
+          - entity: sensor.ble_temperature_kitchen
+            name: Температура
           - entity: input_number.kitchen_night_max
           - entity: input_number.kitchen_day_max
 
           - entity: input_datetime.kitchen_start
           - entity: input_datetime.kitchen_end
-
           - entity: input_boolean.kitchen_on
+          - entity: switch.switch_relay1
 
         # The markdown card will render markdown text.
       - type: markdown
@@ -113,3 +130,170 @@ views:
         title: Lovelace
         content: >
           Welcome to your **Lovelace UI**.
+
+  - title: Система
+    cards:
+      # Entities card will take a list of entities and show their state.
+      - type: markdown
+        content: >
+          **Система**
+      - type: vertical-stack
+        cards:
+          - type: horizontal-stack
+            cards:
+              - type: gauge
+                name: Загрузка CPU
+                unit: "%"
+                entity: sensor.processor_use
+                severity:
+                  green: 0
+                  yellow: 60
+                  red: 85
+
+              - type: gauge
+                name: Загрузка ОЗУ
+                unit: "%"
+                entity: sensor.memory_use_percent
+                severity:
+                  green: 0
+                  yellow: 60
+                  red: 85
+
+          - type: horizontal-stack
+            cards:
+              - type: gauge
+                name: Температура ЦПУ
+                unit: "C"
+                entity: sensor.cpu_temp
+                severity:
+                  green: 0
+                  yellow: 60
+                  red: 85
+
+      - type: vertical-stack
+        cards:
+          - type: markdown
+            content: >
+              **Cостояние серверов**
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: sensor.main_state
+                name: Raspberry Pi 3 B+ в онлайне -
+                icon: mdi:clock-outline
+              - entity: sensor.reserve_state
+                name: Khadas VIM2 в онлайне -
+                icon: mdi:clock-outline
+
+          - type: entities
+            show_header_toggle: false
+            entities:
+              - entity: sensor.time
+                name: Текущее время -
+                icon: mdi:clock
+                secondary_info: entity-id
+              - entity: sensor.date
+                name: Дата -
+                icon: mdi:calendar
+                secondary_info: entity-id
+              - entity: sensor.home_assistant_v2_db
+                name: Объем базы данных HA -
+                icon: mdi:database
+                secondary_info: entity-id
+              - entity: sensor.maria_db_size
+                name: Объем базы данных Maria -
+                icon: mdi:database
+                secondary_info: entity-id
+              - type: divider
+              - type: call-service
+                icon: mdi:database-minus
+                name: База данных
+                action_name: Сжать
+                service: recorder.purge
+                service_data:
+                  keep_days: 1
+                  repack: true
+
+  - title: Графіки
+    cards:
+      - type: history-graph
+        title: "Температура"
+        entities:
+          - entity: sensor.ble_temperature_kitchen
+            name: Кухня
+          - entity: sensor.ble_temperature_spalnya
+            name: Спальня
+
+          - entity: sensor.ble_temperature_maysternya
+            name: Майстерня
+
+          - entity: sensor.ble_temperature_vanna
+            name: Ванна
+
+          - entity: sensor.ble_temperature_velika
+            name: Велика
+
+          - entity: sensor.ble_temperature_ani
+            name: Ані
+
+          - entity: sensor.ble_temperature_koridor
+            name: Коридор
+
+          - entity: sensor.ble_temperature_dax
+            name: Дах
+
+          - entity: sensor.ble_temperature_proektor
+            name: Проектор
+
+          - entity: sensor.ble_temperature_vulichya
+            name: Вулиця
+
+      - type: history-graph
+        title: "Кухня"
+        entities:
+          - entity: sensor.ble_temperature_kitchen
+
+      - type: history-graph
+        title: "Спальня"
+        entities:
+          - entity: sensor.ble_temperature_spalnya
+
+      - type: history-graph
+        title: "Майстерня"
+        entities:
+          - entity: sensor.ble_temperature_maysternya
+
+      - type: history-graph
+        title: "Ванна"
+        entities:
+          - entity: sensor.ble_temperature_vanna
+
+      - type: history-graph
+        title: "Велика"
+        entities:
+          - entity: sensor.ble_temperature_velika
+
+      - type: history-graph
+        title: "Ані"
+        entities:
+          - entity: sensor.ble_temperature_ani
+
+      - type: history-graph
+        title: "Коридор"
+        entities:
+          - entity: sensor.ble_temperature_koridor
+
+      - type: history-graph
+        title: "Дах"
+        entities:
+          - entity: sensor.ble_temperature_dax
+
+      - type: history-graph
+        title: "Проектор"
+        entities:
+          - entity: sensor.ble_temperature_proektor
+
+      - type: history-graph
+        title: "Вулиця"
+        entities:
+          - entity: sensor.ble_temperature_vulichya

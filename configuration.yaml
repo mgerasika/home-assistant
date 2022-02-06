@@ -8,122 +8,12 @@ tts:
 lovelace:
   mode: yaml
 
-input_boolean:
-  kitchen_on:
-    name: Kitchen on/off
-    initial: false
-    icon: mdi:car
-
-input_number:
-  kitchen_night_max:
-    name: Kitchen night
-    initial: 16
-    min: 7
-    max: 21
-    step: 0.5
-  kitchen_day_max:
-    name: Kitchen day
-    initial: 20
-    min: 7
-    max: 21
-    step: 0.5
-
-input_datetime:
-  kitchen_start:
-    name: Kitchen start
-    initial: "07:00"
-    has_date: false
-    has_time: true
-
-  kitchen_end:
-    name: Kitchen end
-    initial: "20:00"
-    has_date: false
-    has_time: true
-
+input_number: !include input_number.yaml
+input_boolean: !include input_boolean.yaml
+input_datetime: !include input_datetime.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
-
-ble_monitor:
-  devices:
-    # sensors
-    - mac: "A4:C1:38:25:70:8A"
-      name: "Kitchen"
-      encryption_key: "863f15f3f1b7bea7677e73eff9c25a3c"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:1D:62:4B"
-      name: "Spalnya"
-      encryption_key: "dde64bb1a02dc6da4e6d2f7717629a7f"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:BE:4C:FB"
-      name: "Maysternya"
-      encryption_key: "17919186b71446c7d7476c6c91f67576"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:28:BD:62"
-      name: "Vanna"
-      encryption_key: "29e7de271a93f03835a2b5ddc7f3dbb6"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:C0:F4:B7"
-      name: "Velika"
-      encryption_key: "ecf64e29be94b3f03df0acc96ed421eb"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:57:29:B5"
-      name: "Ani"
-      encryption_key: "7cf295834dcd03231b5e2da5db914359"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:28:A0:32"
-      name: "Koridor"
-      encryption_key: "535e6206b54eb622236c87383618c11f"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:DF:06:52"
-      name: "Dax"
-      encryption_key: "a4d07e7eb309a98facfd6a55738022e9"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:6E:30:3F"
-      name: "Vulichya"
-      encryption_key: "b36f398ac8842608370eb00dfaea07fa"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
-
-    - mac: "A4:C1:38:49:72:BA"
-      name: "Proektor"
-      encryption_key: "f2f5efb0eb40045fdf32da7819171b6a"
-      temperature_unit: C
-      decimals: 2
-      use_median: False
-      restore_state: default
+sensor: !include sensor.yaml
+recorder: !include recorder.yaml
+ble_monitor: !include ble_monitor.yaml

@@ -1,0 +1,11 @@
+kitchen_start:
+  name: Кухня початок дня
+  initial: "07:00"
+  has_date: false
+  has_time: true
+
+kitchen_end:
+  name: Кухня кінець дня
+  initial: "20:00"
+  has_date: false
+  has_time: true
