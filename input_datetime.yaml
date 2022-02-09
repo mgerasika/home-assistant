@@ -9,3 +9,83 @@ kitchen_end:
   initial: "20:00"
   has_date: false
   has_time: true
+
+# спальня
+spalnya_start:
+  name: Спальня початок дня
+  initial: "07:00"
+  has_date: false
+  has_time: true
+
+spalnya_end:
+  name: Спальня кінець дня
+  initial: "20:00"
+  has_date: false
+  has_time: true
+  
+
+# майстерня
+maysternya_start:
+  name: Майстерня початок дня
+  initial: "07:00"
+  has_date: false
+  has_time: true
+
+maysternya_end:
+  name: Майстерня кінець дня
+  initial: "20:00"
+  has_date: false
+  has_time: true
+
+
+  # Ванна
+vanna_start:
+  name: Ванна початок дня
+  initial: "07:00"
+  has_date: false
+  has_time: true
+
+vanna_end:
+  name: Ванна кінець дня
+  initial: "20:00"
+  has_date: false
+  has_time: true
+
+  # Велика
+velika_start:
+  name: Велика початок дня
+  initial: "07:00"
+  has_date: false
+  has_time: true
+
+velika_end:
+  name: Велика кінець дня
+  initial: "20:00"
+  has_date: false
+  has_time: true
+
+  # Ані
+ani_start:
+  name: Ані початок дня
+  initial: "07:00"
+  has_date: false
+  has_time: true
+
+ani_end:
+  name: Ані кінець дня
+  initial: "20:00"
+  has_date: false
+  has_time: true
+
+  # Коридор
+koridor_start:
+  name: Коридор початок дня
+  initial: "07:00"
+  has_date: false
+  has_time: true
+
+koridor_end:
+  name: Коридор кінець дня
+  initial: "20:00"
+  has_date: false
+  has_time: true

@@ -13,21 +13,60 @@ views:
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
+          - entity: input_boolean.kotel_haz
           - entity: switch.switch_d0
             name: Реле котел
 
-          - entity: sensor.temperature_test1
+          - entity: sensor.temperature_test2
             name: Котел вихід
 
-          - entity: sensor.temperature_test2
+          - entity: sensor.temperature_test1
             name: Котел обратка
+
+      - type: entities
+        show_header_toggle: false
+
+        title: Колектор віртуальний
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: input_boolean.hoch_odna
+          - entity: input_boolean.kotel_elektrika
+          - entity: input_boolean.kolektor_nasos
+
+          - entity: input_boolean.kitchen_btn
+            name: Кухня
+
+          - entity: input_boolean.spalnya_btn
+            name: Спальня
+
+          - entity: input_boolean.maysternya_btn
+            name: Майстерня
+
+          - entity: input_boolean.vanna_btn
+            name: Ванна
+
+          - entity: input_boolean.velika_btn
+            name: Вітальня
+
+          - entity: input_boolean.ani_btn
+            name: Ані
+
+          - entity: input_boolean.koridor_btn
+            name: Коридор
+
       - type: entities
         show_header_toggle: false
         # Title of the entities card
+
         title: Колектор
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
+          - entity: input_boolean.hoch_odna
+          - entity: input_boolean.kotel_elektrika
+          - entity: input_boolean.kolektor_nasos
+
           - entity: switch.switch_relay1
             name: Кухня
 
@@ -86,22 +125,6 @@ views:
           - entity: sensor.ble_temperature_vulichya
           - entity: sensor.ble_battery_vulichya
 
-      - type: entities
-        # Title of the entities card
-        title: Кухня
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
-        entities:
-          - entity: sensor.ble_temperature_kitchen
-            name: Температура
-          - entity: input_number.kitchen_night_max
-          - entity: input_number.kitchen_day_max
-
-          - entity: input_datetime.kitchen_start
-          - entity: input_datetime.kitchen_end
-          - entity: input_boolean.kitchen_on
-          - entity: switch.switch_relay1
-
         # The markdown card will render markdown text.
       - type: markdown
         title: Lovelace
@@ -110,26 +133,134 @@ views:
 
     # The cards to show on this view.
 
-  - title: Second view
+  - title: Детальні
     cards:
-      # Entities card will take a list of entities and show their state.
-      - type: entities
-        # Title of the entities card
-        title: Example
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
-        entities:
-          - light.kitchen
-          - switch.ac
-          - entity: light.living_room
-            # Override the name to use
-            name: LR Lights
+      - type: vertical-stack
+        cards:
+          - type: entities
+            # Title of the entities card
+            title: Кухня
+            show_header_toggle: false
 
-        # The markdown card will render markdown text.
-      - type: markdown
-        title: Lovelace
-        content: >
-          Welcome to your **Lovelace UI**.
+            entities:
+              - entity: sensor.ble_temperature_kitchen
+                name: Температура
+              - entity: sensor.ble_battery_kitchen
+                name: Батарейка
+              - entity: input_number.kitchen_night_max
+              - entity: input_number.kitchen_day_max
+              - entity: input_datetime.kitchen_start
+              - entity: input_datetime.kitchen_end
+              - entity: input_boolean.kitchen_btn
+              - entity: switch.switch_relay1
+
+          - type: entities
+            # Title of the entities card
+            title: Спальня
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_spalnya
+                name: Температура
+              - entity: sensor.ble_battery_spalnya
+                name: Батарейка
+              - entity: input_number.spalnya_night_max
+              - entity: input_number.spalnya_day_max
+
+              - entity: input_datetime.spalnya_start
+              - entity: input_datetime.spalnya_end
+              - entity: input_boolean.spalnya_btn
+              - entity: switch.switch_relay2
+
+          - type: entities
+            # Title of the entities card
+            title: Майстерня
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_maysternya
+                name: Температура
+              - entity: sensor.ble_battery_maysternya
+                name: Батарейка
+              - entity: input_number.maysternya_night_max
+              - entity: input_number.maysternya_day_max
+
+              - entity: input_datetime.maysternya_start
+              - entity: input_datetime.maysternya_end
+              - entity: input_boolean.maysternya_btn
+              - entity: switch.switch_relay3
+
+          - type: entities
+            # Title of the entities card
+            title: Ванна
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_vanna
+                name: Температура
+              - entity: sensor.ble_battery_vanna
+                name: Батарейка
+              - entity: input_number.vanna_night_max
+              - entity: input_number.vanna_day_max
+
+              - entity: input_datetime.vanna_start
+              - entity: input_datetime.vanna_end
+              - entity: input_boolean.vanna_btn
+              - entity: switch.switch_relay4
+
+          - type: entities
+            # Title of the entities card
+            title: Велика
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_velika
+                name: Температура
+              - entity: sensor.ble_battery_velika
+                name: Батарейка
+              - entity: input_number.velika_night_max
+              - entity: input_number.velika_day_max
+
+              - entity: input_datetime.velika_start
+              - entity: input_datetime.velika_end
+              - entity: input_boolean.velika_btn
+              - entity: switch.switch_relay5
+
+          - type: entities
+            # Title of the entities card
+            title: Ані
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_ani
+                name: Температура
+              - entity: sensor.ble_battery_ani
+                name: Батарейка
+              - entity: input_number.ani_night_max
+              - entity: input_number.ani_day_max
+
+              - entity: input_datetime.ani_start
+              - entity: input_datetime.ani_end
+              - entity: input_boolean.ani_btn
+              - entity: switch.switch_relay6
+
+          - type: entities
+            # Title of the entities card
+            title: Коридор
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_koridor
+                name: Температура
+              - entity: sensor.ble_battery_koridor
+                name: Батарейка
+              - entity: input_number.koridor_night_max
+              - entity: input_number.koridor_day_max
+
+              - entity: input_datetime.koridor_start
+              - entity: input_datetime.koridor_end
+              - entity: input_boolean.koridor_btn
+              - entity: switch.switch_relay7
 
   - title: Система
     cards:
@@ -297,3 +428,24 @@ views:
         title: "Вулиця"
         entities:
           - entity: sensor.ble_temperature_vulichya
+
+  - title: UI Lovelace
+    cards:
+      # Entities card will take a list of entities and show their state.
+      - type: entities
+        # Title of the entities card
+        title: Example
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - light.kitchen
+          - switch.ac
+          - entity: light.living_room
+            # Override the name to use
+            name: LR Lights
+
+        # The markdown card will render markdown text.
+      - type: markdown
+        title: Lovelace
+        content: >
+          Welcome to your **Lovelace UI**.

@@ -1,4 +1,54 @@
-- alias: "Rule 1 Light on in the evening"
+- alias: "hoch odna rule"
+  trigger:
+    - seconds: /5
+      platform: time_pattern
+
+    - platform: state
+      entity_id:
+        - input_boolean.kitchen_btn
+        - input_boolean.spalnya_btn
+        - input_boolean.maysternya_btn
+        - input_boolean.vanna_btn
+        - input_boolean.velika_btn
+        - input_boolean.ani_btn
+        - input_boolean.koridor_btn
+
+  action:
+    entity_id:
+      - input_boolean.hoch_odna
+    service: >-
+      {% if 
+      is_state('input_boolean.kitchen_btn','on') or
+      is_state('input_boolean.spalnya_btn','on') or
+      is_state('input_boolean.maysternya_btn','on') or
+      is_state('input_boolean.vanna_btn','on') or
+      is_state('input_boolean.velika_btn','on') or
+      is_state('input_boolean.ani_btn','on') or
+      is_state('input_boolean.koridor_btn','on') 
+       %}
+      input_boolean.turn_on
+      {% else %} 
+      input_boolean.turn_off
+      {% endif %}
+
+- alias: "relay kazoviy kotel by timer"
+  trigger:
+    - seconds: /5
+      platform: time_pattern
+
+  action:
+    entity_id:
+      - switch.switch_d0
+    service: >-
+      {% if 
+      is_state('input_boolean.hoch_odna','on') 
+       %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off
+      {% endif %}
+
+- alias: "kitchen rule 1"
   trigger:
     - platform: state
       entity_id:
@@ -7,7 +57,10 @@
 
   action:
     entity_id:
-      - input_boolean.kitchen_on
-    service: >
-      {%- if states('input_number.kitchen_night_max')|int > states('sensor.ble_temperature_kitchen')|int %}input_boolean.turn_on
-      {% else %} input_boolean.turn_off {% endif %}
+      - input_boolean.kitchen_btn
+    service: >-
+      {% if states('input_number.kitchen_night_max')|int > states('sensor.ble_temperature_kitchen')|int %}
+      input_boolean.turn_on
+      {% else %} 
+      input_boolean.turn_off 
+      {% endif %}      
