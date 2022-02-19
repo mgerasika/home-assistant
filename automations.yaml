@@ -31,7 +31,7 @@
       input_boolean.turn_off
       {% endif %}
 
-- alias: "relay kazoviy kotel by timer"
+- alias: "relay gazoviy kotel by timer"
   trigger:
     - seconds: /5
       platform: time_pattern
@@ -41,6 +41,25 @@
       - switch.switch_d0
     service: >-
       {% if 
+      is_state('input_boolean.kotel_haz_on_off','on') and
+      is_state('input_boolean.hoch_odna','on') 
+       %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off
+      {% endif %}
+
+- alias: "relay elektichniy kotel by timer"
+  trigger:
+    - seconds: /5
+      platform: time_pattern
+
+  action:
+    entity_id:
+      - switch.switch_relay0
+    service: >-
+      {% if 
+      is_state('input_boolean.kotel_elektrika_on_off','on') and
       is_state('input_boolean.hoch_odna','on') 
        %}
       switch.turn_on
@@ -54,13 +73,128 @@
       entity_id:
         - input_number.kitchen_night_max
         - input_number.kitchen_day_max
-
+        - input_datetime.kitchen_start
+        - input_datetime.kitchen_end
   action:
     entity_id:
       - input_boolean.kitchen_btn
-    service: >-
-      {% if states('input_number.kitchen_night_max')|int > states('sensor.ble_temperature_kitchen')|int %}
-      input_boolean.turn_on
+    service: >
+      {% set current_time = strptime(states('sensor.date__time'), '%Y-%m-%d %H:%M').timestamp()   %}
+      {% set startTime = states('input_datetime.kitchen_start', 'timestamp') | int %}
+      {% set endTime = states('input_datetime.kitchen_end', 'timestamp') | int %}
+      {% if startTime < current_time and current_time < endTime %}
+          {% if states('input_number.kitchen_day_max')|int > states('sensor.ble_temperature_kitchen')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off 
+      {% else %}     
+          {% if states('input_number.kitchen_night_max')|int > states('sensor.ble_temperature_kitchen')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off   
+      {% endif %}
+
+- alias: "sync kitchen"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.kitchen_btn
+  action:
+    entity_id:
+      - switch.switch_relay1
+    service: >
+      {% if is_state('input_boolean.kitchen_btn', 'on') %}
+      switch.turn_on
       {% else %} 
-      input_boolean.turn_off 
-      {% endif %}      
+      switch.turn_off 
+      {% endif %}
+
+- alias: "sync spalnya"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.spalnya_btn
+  action:
+    entity_id:
+      - switch.switch_relay2
+    service: >
+      {% if is_state('input_boolean.spalnya_btn', 'on') %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off 
+      {% endif %}
+
+- alias: "sync maysternya"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.maysternya_btn
+  action:
+    entity_id:
+      - switch.switch_relay3
+    service: >
+      {% if is_state('input_boolean.maysternya_btn', 'on') %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off 
+      {% endif %}
+
+- alias: "sync vanna"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.vanna_btn
+  action:
+    entity_id:
+      - switch.switch_relay4
+    service: >
+      {% if is_state('input_boolean.vanna_btn', 'on') %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off 
+      {% endif %}
+
+- alias: "sync velika"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.velika_btn
+  action:
+    entity_id:
+      - switch.switch_relay5
+    service: >
+      {% if is_state('input_boolean.velika_btn', 'on') %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off 
+      {% endif %}
+
+- alias: "sync ani"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.ani_btn
+  action:
+    entity_id:
+      - switch.switch_relay6
+    service: >
+      {% if is_state('input_boolean.ani_btn', 'on') %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off 
+      {% endif %}
+
+- alias: "sync koridor"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.koridor_btn
+  action:
+    entity_id:
+      - switch.switch_relay7
+    service: >
+      {% if is_state('input_boolean.koridor_btn', 'on') %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off 
+      {% endif %}

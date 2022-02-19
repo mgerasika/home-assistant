@@ -3,13 +3,13 @@ kitchen_night_max:
   name: Кухня ніч
   initial: 16
   min: 7
-  max: 21
+  max: 23
   step: 0.5
 kitchen_day_max:
   name: Кухня день
   initial: 20
   min: 7
-  max: 21
+  max: 23
   step:
     0.5
 

@@ -38,17 +38,17 @@ hoch_odna:
   initial: false
   icon: mdi:car
 
-kotel_haz:
-  name: Газовий котел віртуальна
+kotel_haz_on_off:
+  name: Газовий котел вкл/викл
   initial: false
   icon: mdi:car
 
-kotel_elektrika:
-  name: Електричний котел віртуальна
+kotel_elektrika_on_off:
+  name: Електричний котел вкл/викл
   initial: false
   icon: mdi:car
 
-kolektor_nasos:
-  name: Насос на колекторі віртуальна
+kolektor_nasos_on_off:
+  name: Насос на колекторі 
   initial: false
   icon: mdi:car

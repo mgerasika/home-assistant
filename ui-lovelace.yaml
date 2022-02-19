@@ -9,11 +9,10 @@ views:
       - type: entities
         show_header_toggle: false
         # Title of the entities card
-        title: Котел
+        title: Котел Газовий
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
-          - entity: input_boolean.kotel_haz
           - entity: switch.switch_d0
             name: Реле котел
 
@@ -25,14 +24,25 @@ views:
 
       - type: entities
         show_header_toggle: false
-
-        title: Колектор віртуальний
+        # Title of the entities card
+        title: Котел Електричний
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
+          - entity: switch.switch_relay0
+            name: Реле електричний котел
+
+      - type: entities
+        show_header_toggle: false
+
+        title: Віртуальні
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: input_boolean.kotel_haz_on_off
+          - entity: input_boolean.kotel_elektrika_on_off
           - entity: input_boolean.hoch_odna
-          - entity: input_boolean.kotel_elektrika
-          - entity: input_boolean.kolektor_nasos
+          - entity: input_boolean.kolektor_nasos_on_off
 
           - entity: input_boolean.kitchen_btn
             name: Кухня
@@ -63,10 +73,6 @@ views:
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
-          - entity: input_boolean.hoch_odna
-          - entity: input_boolean.kotel_elektrika
-          - entity: input_boolean.kolektor_nasos
-
           - entity: switch.switch_relay1
             name: Кухня
 
