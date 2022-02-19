@@ -33,7 +33,7 @@
 
 - alias: "relay gazoviy kotel by timer"
   trigger:
-    - seconds: /5
+    - minutes: /10
       platform: time_pattern
 
   action:
@@ -51,7 +51,7 @@
 
 - alias: "relay elektichniy kotel by timer"
   trigger:
-    - seconds: /5
+    - minutes: /10
       platform: time_pattern
 
   action:
@@ -180,6 +180,7 @@
         - input_number.kitchen_day_max
         - input_datetime.kitchen_start
         - input_datetime.kitchen_end
+        - sensor.ble_temperature_kitchen
   action:
     entity_id:
       - input_boolean.kitchen_btn
@@ -209,6 +210,7 @@
         - input_number.spalnya_day_max
         - input_datetime.spalnya_start
         - input_datetime.spalnya_end
+        - sensor.ble_temperature_spalnya
   action:
     entity_id:
       - input_boolean.spalnya_btn
@@ -238,6 +240,7 @@
         - input_number.maysternya_day_max
         - input_datetime.maysternya_start
         - input_datetime.maysternya_end
+        - sensor.ble_temperature_maysternya
   action:
     entity_id:
       - input_boolean.maysternya_btn
@@ -267,6 +270,7 @@
         - input_number.vanna_day_max
         - input_datetime.vanna_start
         - input_datetime.vanna_end
+        - sensor.ble_temperature_vanna
   action:
     entity_id:
       - input_boolean.vanna_btn
@@ -296,6 +300,7 @@
         - input_number.velika_day_max
         - input_datetime.velika_start
         - input_datetime.velika_end
+        - sensor.ble_temperature_velika
   action:
     entity_id:
       - input_boolean.velika_btn
@@ -325,6 +330,7 @@
         - input_number.ani_day_max
         - input_datetime.ani_start
         - input_datetime.ani_end
+        - sensor.ble_temperature_ani
   action:
     entity_id:
       - input_boolean.ani_btn
@@ -354,6 +360,7 @@
         - input_number.koridor_day_max
         - input_datetime.koridor_start
         - input_datetime.koridor_end
+        - sensor.ble_temperature_koridor
   action:
     entity_id:
       - input_boolean.koridor_btn

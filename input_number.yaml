@@ -15,14 +15,14 @@ kitchen_day_max:
 
     #спальня
 spalnya_night_max:
-  name: Кухня ніч
-  initial: 16
+  name: Спальня ніч
+  initial: 18
   min: 7
   max: 21
   step: 0.5
 spalnya_day_max:
-  name: Кухня день
-  initial: 20
+  name: Спальня день
+  initial: 16
   min: 7
   max: 21
   step:
@@ -30,13 +30,13 @@ spalnya_day_max:
 
     #майстерня
 maysternya_night_max:
-  name: Кухня ніч
+  name: Майстерня ніч
   initial: 16
   min: 7
   max: 21
   step: 0.5
 maysternya_day_max:
-  name: Кухня день
+  name: Майстерня день
   initial: 20
   min: 7
   max: 21
@@ -45,13 +45,13 @@ maysternya_day_max:
 
     #ванна
 vanna_night_max:
-  name: Кухня ніч
+  name: Ванна ніч
   initial: 16
   min: 7
   max: 21
   step: 0.5
 vanna_day_max:
-  name: Кухня день
+  name: Ванна день
   initial: 20
   min: 7
   max: 21
@@ -60,14 +60,14 @@ vanna_day_max:
 
     #велика
 velika_night_max:
-  name: Кухня ніч
+  name: Велика ніч
   initial: 16
   min: 7
   max: 21
   step: 0.5
 velika_day_max:
-  name: Кухня день
-  initial: 20
+  name: Велика день
+  initial: 19
   min: 7
   max: 21
   step:
@@ -75,14 +75,14 @@ velika_day_max:
 
     #ані
 ani_night_max:
-  name: Кухня ніч
-  initial: 16
+  name: Ані ніч
+  initial: 7
   min: 7
   max: 21
   step: 0.5
 ani_day_max:
-  name: Кухня день
-  initial: 20
+  name: Ані день
+  initial: 7
   min: 7
   max: 21
   step:
@@ -90,14 +90,14 @@ ani_day_max:
 
     #коридор
 koridor_night_max:
-  name: Кухня ніч
-  initial: 16
+  name: Коридор ніч
+  initial: 15
   min: 7
   max: 21
   step: 0.5
 koridor_day_max:
-  name: Кухня день
-  initial: 20
+  name: Коридор день
+  initial: 17
   min: 7
   max: 21
   step: 0.5

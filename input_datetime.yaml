@@ -13,13 +13,13 @@ kitchen_end:
 # спальня
 spalnya_start:
   name: Спальня початок дня
-  initial: "07:00"
+  initial: "09:00"
   has_date: false
   has_time: true
 
 spalnya_end:
   name: Спальня кінець дня
-  initial: "20:00"
+  initial: "19:00"
   has_date: false
   has_time: true
   
@@ -27,13 +27,13 @@ spalnya_end:
 # майстерня
 maysternya_start:
   name: Майстерня початок дня
-  initial: "07:00"
+  initial: "06:00"
   has_date: false
   has_time: true
 
 maysternya_end:
   name: Майстерня кінець дня
-  initial: "20:00"
+  initial: "16:00"
   has_date: false
   has_time: true
 
@@ -41,20 +41,20 @@ maysternya_end:
   # Ванна
 vanna_start:
   name: Ванна початок дня
-  initial: "07:00"
+  initial: "06:00"
   has_date: false
   has_time: true
 
 vanna_end:
   name: Ванна кінець дня
-  initial: "20:00"
+  initial: "22:00"
   has_date: false
   has_time: true
 
   # Велика
 velika_start:
   name: Велика початок дня
-  initial: "07:00"
+  initial: "12:00"
   has_date: false
   has_time: true
 
@@ -67,13 +67,13 @@ velika_end:
   # Ані
 ani_start:
   name: Ані початок дня
-  initial: "07:00"
+  initial: "09:00"
   has_date: false
   has_time: true
 
 ani_end:
   name: Ані кінець дня
-  initial: "20:00"
+  initial: "19:00"
   has_date: false
   has_time: true
 
