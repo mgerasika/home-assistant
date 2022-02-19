@@ -67,33 +67,6 @@
       switch.turn_off
       {% endif %}
 
-- alias: "kitchen rule 1"
-  trigger:
-    - platform: state
-      entity_id:
-        - input_number.kitchen_night_max
-        - input_number.kitchen_day_max
-        - input_datetime.kitchen_start
-        - input_datetime.kitchen_end
-  action:
-    entity_id:
-      - input_boolean.kitchen_btn
-    service: >
-      {% set current_time = strptime(states('sensor.date__time'), '%Y-%m-%d %H:%M').timestamp()   %}
-      {% set startTime = states('input_datetime.kitchen_start', 'timestamp') | int %}
-      {% set endTime = states('input_datetime.kitchen_end', 'timestamp') | int %}
-      {% if startTime < current_time and current_time < endTime %}
-          {% if states('input_number.kitchen_day_max')|int > states('sensor.ble_temperature_kitchen')|int %}
-          input_boolean.turn_on
-          {% else %} 
-          input_boolean.turn_off 
-      {% else %}     
-          {% if states('input_number.kitchen_night_max')|int > states('sensor.ble_temperature_kitchen')|int %}
-          input_boolean.turn_on
-          {% else %} 
-          input_boolean.turn_off   
-      {% endif %}
-
 - alias: "sync kitchen"
   trigger:
     - platform: state
@@ -197,4 +170,207 @@
       switch.turn_on
       {% else %} 
       switch.turn_off 
+      {% endif %}
+
+- alias: "kitchen rule"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_number.kitchen_night_max
+        - input_number.kitchen_day_max
+        - input_datetime.kitchen_start
+        - input_datetime.kitchen_end
+  action:
+    entity_id:
+      - input_boolean.kitchen_btn
+    service: >
+      {% set current_time = states('sensor.time')    %}
+      {% set startTime = states('input_datetime.kitchen_start')   %}
+      {% set endTime = states('input_datetime.kitchen_end')   %}
+      {% if startTime < current_time and current_time < endTime %}
+          {% if states('input_number.kitchen_day_max')|int > states('sensor.ble_temperature_kitchen')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% else %}     
+          {% if states('input_number.kitchen_night_max')|int > states('sensor.ble_temperature_kitchen')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% endif %}
+
+- alias: "spalnya rule"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_number.spalnya_night_max
+        - input_number.spalnya_day_max
+        - input_datetime.spalnya_start
+        - input_datetime.spalnya_end
+  action:
+    entity_id:
+      - input_boolean.spalnya_btn
+    service: >
+      {% set current_time = states('sensor.time')    %}
+      {% set startTime = states('input_datetime.spalnya_start')   %}
+      {% set endTime = states('input_datetime.spalnya_end')   %}
+      {% if startTime < current_time and current_time < endTime %}
+          {% if states('input_number.spalnya_day_max')|int > states('sensor.ble_temperature_spalnya')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% else %}     
+          {% if states('input_number.spalnya_night_max')|int > states('sensor.ble_temperature_spalnya')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% endif %}
+
+- alias: "maysternya rule"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_number.maysternya_night_max
+        - input_number.maysternya_day_max
+        - input_datetime.maysternya_start
+        - input_datetime.maysternya_end
+  action:
+    entity_id:
+      - input_boolean.maysternya_btn
+    service: >
+      {% set current_time = states('sensor.time')    %}
+      {% set startTime = states('input_datetime.maysternya_start')   %}
+      {% set endTime = states('input_datetime.maysternya_end')   %}
+      {% if startTime < current_time and current_time < endTime %}
+          {% if states('input_number.maysternya_day_max')|int > states('sensor.ble_temperature_maysternya')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% else %}     
+          {% if states('input_number.maysternya_night_max')|int > states('sensor.ble_temperature_maysternya')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% endif %}
+
+- alias: "vanna rule"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_number.vanna_night_max
+        - input_number.vanna_day_max
+        - input_datetime.vanna_start
+        - input_datetime.vanna_end
+  action:
+    entity_id:
+      - input_boolean.vanna_btn
+    service: >
+      {% set current_time = states('sensor.time')    %}
+      {% set startTime = states('input_datetime.vanna_start')   %}
+      {% set endTime = states('input_datetime.vanna_end')   %}
+      {% if startTime < current_time and current_time < endTime %}
+          {% if states('input_number.vanna_day_max')|int > states('sensor.ble_temperature_vanna')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% else %}     
+          {% if states('input_number.vanna_night_max')|int > states('sensor.ble_temperature_vanna')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% endif %}
+
+- alias: "velika rule"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_number.velika_night_max
+        - input_number.velika_day_max
+        - input_datetime.velika_start
+        - input_datetime.velika_end
+  action:
+    entity_id:
+      - input_boolean.velika_btn
+    service: >
+      {% set current_time = states('sensor.time')    %}
+      {% set startTime = states('input_datetime.velika_start')   %}
+      {% set endTime = states('input_datetime.velika_end')   %}
+      {% if startTime < current_time and current_time < endTime %}
+          {% if states('input_number.velika_day_max')|int > states('sensor.ble_temperature_velika')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% else %}     
+          {% if states('input_number.velika_night_max')|int > states('sensor.ble_temperature_velika')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% endif %}
+
+- alias: "ani rule"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_number.ani_night_max
+        - input_number.ani_day_max
+        - input_datetime.ani_start
+        - input_datetime.ani_end
+  action:
+    entity_id:
+      - input_boolean.ani_btn
+    service: >
+      {% set current_time = states('sensor.time')    %}
+      {% set startTime = states('input_datetime.ani_start')   %}
+      {% set endTime = states('input_datetime.ani_end')   %}
+      {% if startTime < current_time and current_time < endTime %}
+          {% if states('input_number.ani_day_max')|int > states('sensor.ble_temperature_ani')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% else %}     
+          {% if states('input_number.ani_night_max')|int > states('sensor.ble_temperature_ani')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% endif %}
+
+- alias: "koridor rule"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_number.koridor_night_max
+        - input_number.koridor_day_max
+        - input_datetime.koridor_start
+        - input_datetime.koridor_end
+  action:
+    entity_id:
+      - input_boolean.koridor_btn
+    service: >
+      {% set current_time = states('sensor.time')    %}
+      {% set startTime = states('input_datetime.koridor_start')   %}
+      {% set endTime = states('input_datetime.koridor_end')   %}
+      {% if startTime < current_time and current_time < endTime %}
+          {% if states('input_number.koridor_day_max')|int > states('sensor.ble_temperature_koridor')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
+      {% else %}     
+          {% if states('input_number.koridor_night_max')|int > states('sensor.ble_temperature_koridor')|int %}
+          input_boolean.turn_on
+          {% else %} 
+          input_boolean.turn_off
+          {% endif %}
       {% endif %}

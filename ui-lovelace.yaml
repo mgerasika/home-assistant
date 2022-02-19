@@ -69,7 +69,7 @@ views:
         show_header_toggle: false
         # Title of the entities card
 
-        title: Колектор
+        title: Колектор (не міняти рід онлі)
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
