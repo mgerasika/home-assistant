@@ -31,6 +31,7 @@ views:
         entities:
           - entity: switch.switch_relay0
             name: Реле електричний котел
+          - entity: input_boolean.kolektor_nasos_on_off
 
       - type: entities
         show_header_toggle: false
@@ -149,6 +150,8 @@ views:
             show_header_toggle: false
 
             entities:
+              - entity: input_boolean.kitchen_btn
+              - entity: switch.switch_relay1
               - entity: sensor.ble_temperature_kitchen
                 name: Температура
               - entity: sensor.ble_battery_kitchen
@@ -157,8 +160,6 @@ views:
               - entity: input_number.kitchen_day_max
               - entity: input_datetime.kitchen_start
               - entity: input_datetime.kitchen_end
-              - entity: input_boolean.kitchen_btn
-              - entity: switch.switch_relay1
 
           - type: entities
             # Title of the entities card
@@ -166,6 +167,8 @@ views:
             show_header_toggle: false
 
             entities:
+              - entity: input_boolean.spalnya_btn
+              - entity: switch.switch_relay2
               - entity: sensor.ble_temperature_spalnya
                 name: Температура
               - entity: sensor.ble_battery_spalnya
@@ -175,8 +178,6 @@ views:
 
               - entity: input_datetime.spalnya_start
               - entity: input_datetime.spalnya_end
-              - entity: input_boolean.spalnya_btn
-              - entity: switch.switch_relay2
 
           - type: entities
             # Title of the entities card
@@ -184,6 +185,8 @@ views:
             show_header_toggle: false
 
             entities:
+              - entity: input_boolean.maysternya_btn
+              - entity: switch.switch_relay3
               - entity: sensor.ble_temperature_maysternya
                 name: Температура
               - entity: sensor.ble_battery_maysternya
@@ -193,8 +196,6 @@ views:
 
               - entity: input_datetime.maysternya_start
               - entity: input_datetime.maysternya_end
-              - entity: input_boolean.maysternya_btn
-              - entity: switch.switch_relay3
 
           - type: entities
             # Title of the entities card
@@ -202,6 +203,8 @@ views:
             show_header_toggle: false
 
             entities:
+              - entity: input_boolean.vanna_btn
+              - entity: switch.switch_relay4
               - entity: sensor.ble_temperature_vanna
                 name: Температура
               - entity: sensor.ble_battery_vanna
@@ -211,8 +214,6 @@ views:
 
               - entity: input_datetime.vanna_start
               - entity: input_datetime.vanna_end
-              - entity: input_boolean.vanna_btn
-              - entity: switch.switch_relay4
 
           - type: entities
             # Title of the entities card
@@ -220,6 +221,8 @@ views:
             show_header_toggle: false
 
             entities:
+              - entity: input_boolean.velika_btn
+              - entity: switch.switch_relay5
               - entity: sensor.ble_temperature_velika
                 name: Температура
               - entity: sensor.ble_battery_velika
@@ -229,8 +232,6 @@ views:
 
               - entity: input_datetime.velika_start
               - entity: input_datetime.velika_end
-              - entity: input_boolean.velika_btn
-              - entity: switch.switch_relay5
 
           - type: entities
             # Title of the entities card
@@ -238,6 +239,8 @@ views:
             show_header_toggle: false
 
             entities:
+              - entity: input_boolean.ani_btn
+              - entity: switch.switch_relay6
               - entity: sensor.ble_temperature_ani
                 name: Температура
               - entity: sensor.ble_battery_ani
@@ -247,8 +250,6 @@ views:
 
               - entity: input_datetime.ani_start
               - entity: input_datetime.ani_end
-              - entity: input_boolean.ani_btn
-              - entity: switch.switch_relay6
 
           - type: entities
             # Title of the entities card
@@ -256,6 +257,8 @@ views:
             show_header_toggle: false
 
             entities:
+              - entity: input_boolean.koridor_btn
+              - entity: switch.switch_relay7
               - entity: sensor.ble_temperature_koridor
                 name: Температура
               - entity: sensor.ble_battery_koridor
@@ -265,8 +268,6 @@ views:
 
               - entity: input_datetime.koridor_start
               - entity: input_datetime.koridor_end
-              - entity: input_boolean.koridor_btn
-              - entity: switch.switch_relay7
 
   - title: Система
     cards:
