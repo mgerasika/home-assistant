@@ -1,12 +1,17 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
+homeassistant:
+  time_zone: Europe/Kiev
+
+
 # Text to speech
 tts:
   - platform: google_translate
 
 lovelace:
   mode: yaml
+  resources: !include resources.yaml
 
 input_number: !include input_number.yaml
 input_boolean: !include input_boolean.yaml

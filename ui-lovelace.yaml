@@ -4,7 +4,45 @@ views:
 
   - title: Загальні
     # Unique path for direct access /lovelace/${path}
+
     cards:
+      - type: "custom:content-card-example"
+        entities:
+          - entity: Кухня
+            button: input_boolean.kitchen_btn
+            button_relay: switch.switch_relay1
+            temperature: sensor.ble_temperature_kitchen
+
+          - entity: Спальня
+            button: input_boolean.spalnya_btn
+            button_relay: switch.switch_relay2
+            temperature: sensor.ble_temperature_spalnya
+
+          - entity: Майстерня
+            button: input_boolean.maysternya_btn
+            button_relay: switch.switch_relay3
+            temperature: sensor.ble_temperature_maysternya
+
+          - entity: Ванна
+            button: input_boolean.vanna_btn
+            button_relay: switch.switch_relay4
+            temperature: sensor.ble_temperature_vanna
+
+          - entity: Велика
+            button: input_boolean.velika_btn
+            button_relay: switch.switch_relay5
+            temperature: sensor.ble_temperature_velika
+
+          - entity: Ані
+            button: input_boolean.ani_btn
+            button_relay: switch.switch_relay6
+            temperature: sensor.ble_temperature_ani
+
+          - entity: Коридор
+            button: input_boolean.koridor_btn
+            button_relay: switch.switch_relay7
+            temperature: sensor.ble_temperature_koridor
+
       # Entities card will take a list of entities and show their state.
       - type: entities
         show_header_toggle: false
@@ -94,43 +132,6 @@ views:
 
           - entity: switch.switch_relay7
             name: Коридор
-
-      - type: entities
-        show_header_toggle: false
-        # Title of the entities card
-        title: Температура
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
-        entities:
-          - entity: sensor.ble_temperature_kitchen
-          - entity: sensor.ble_battery_kitchen
-
-          - entity: sensor.ble_temperature_spalnya
-          - entity: sensor.ble_battery_spalnya
-
-          - entity: sensor.ble_temperature_maysternya
-          - entity: sensor.ble_battery_maysternya
-
-          - entity: sensor.ble_temperature_vanna
-          - entity: sensor.ble_battery_vanna
-
-          - entity: sensor.ble_temperature_velika
-          - entity: sensor.ble_battery_velika
-
-          - entity: sensor.ble_temperature_ani
-          - entity: sensor.ble_battery_ani
-
-          - entity: sensor.ble_temperature_koridor
-          - entity: sensor.ble_battery_koridor
-
-          - entity: sensor.ble_temperature_dax
-          - entity: sensor.ble_battery_dax
-
-          - entity: sensor.ble_temperature_proektor
-          - entity: sensor.ble_battery_proektor
-
-          - entity: sensor.ble_temperature_vulichya
-          - entity: sensor.ble_battery_vulichya
 
         # The markdown card will render markdown text.
       - type: markdown
@@ -268,6 +269,39 @@ views:
 
               - entity: input_datetime.koridor_start
               - entity: input_datetime.koridor_end
+
+          - type: entities
+            # Title of the entities card
+            title: Дах
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_dax
+                name: Температура
+              - entity: sensor.ble_battery_dax
+                name: Батарейка
+
+          - type: entities
+            # Title of the entities card
+            title: Proektor
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_proektor
+                name: Температурa
+              - entity: sensor.ble_battery_proektor
+                name: Батарейка
+
+          - type: entities
+            # Title of the entities card
+            title: Вулиця
+            show_header_toggle: false
+
+            entities:
+              - entity: sensor.ble_temperature_vulichya
+                name: Температурa
+              - entity: sensor.ble_battery_vulichya
+                name: Батарейка
 
   - title: Система
     cards:

@@ -1,54 +1,54 @@
 kitchen_btn:
   name: Кухня віртуальна кнопка
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 spalnya_btn:
   name: Спальня віртуальна кнопка
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 maysternya_btn:
   name: Майстерня віртуальна кнопка
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 vanna_btn:
   name: Ванна віртуальна кнопка
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 velika_btn:
   name: Велика віртуальна кнопка
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 ani_btn:
   name: Ані віртуальна кнопка
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 koridor_btn:
   name: Коридор віртуальна кнопка
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 hoch_odna:
   name: Хоч одна батарея
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 kotel_haz_on_off:
   name: Газовий котел вкл/викл
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 kotel_elektrika_on_off:
   name: Електричний котел вкл/викл
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
 
 kolektor_nasos_on_off:
-  name: Насос на колекторі 
+  name: Насос на колекторі
   initial: false
-  icon: mdi:car
+  icon: mdi:lightbulb
