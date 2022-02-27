@@ -12,36 +12,50 @@ views:
             button: input_boolean.kitchen_btn
             button_relay: switch.switch_relay1
             temperature: sensor.ble_temperature_kitchen
+            night_temperature: input_number.kitchen_night_max
+            day_temperature: input_number.kitchen_day_max
 
-          - entity: Спальня
+          - entity: Спал
             button: input_boolean.spalnya_btn
             button_relay: switch.switch_relay2
             temperature: sensor.ble_temperature_spalnya
+            night_temperature: input_number.spalnya_night_max
+            day_temperature: input_number.spalnya_day_max
 
-          - entity: Майстерня
+          - entity: Майст
             button: input_boolean.maysternya_btn
             button_relay: switch.switch_relay3
             temperature: sensor.ble_temperature_maysternya
+            night_temperature: input_number.maysternya_night_max
+            day_temperature: input_number.maysternya_day_max
 
-          - entity: Ванна
+          - entity: Ванн
             button: input_boolean.vanna_btn
             button_relay: switch.switch_relay4
             temperature: sensor.ble_temperature_vanna
+            night_temperature: input_number.vanna_night_max
+            day_temperature: input_number.vanna_day_max
 
-          - entity: Велика
+          - entity: Вел
             button: input_boolean.velika_btn
             button_relay: switch.switch_relay5
             temperature: sensor.ble_temperature_velika
+            night_temperature: input_number.velika_night_max
+            day_temperature: input_number.velika_day_max
 
           - entity: Ані
             button: input_boolean.ani_btn
             button_relay: switch.switch_relay6
             temperature: sensor.ble_temperature_ani
+            night_temperature: input_number.ani_night_max
+            day_temperature: input_number.ani_day_max
 
-          - entity: Коридор
+          - entity: Кор
             button: input_boolean.koridor_btn
             button_relay: switch.switch_relay7
             temperature: sensor.ble_temperature_koridor
+            night_temperature: input_number.kitchen_night_max
+            day_temperature: input_number.kitchen_day_max
 
       # Entities card will take a list of entities and show their state.
       - type: entities
