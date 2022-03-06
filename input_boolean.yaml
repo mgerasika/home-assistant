@@ -40,7 +40,7 @@ hoch_odna:
 
 kotel_haz_on_off:
   name: Газовий котел вкл/викл
-  initial: false
+  initial: true
   icon: mdi:lightbulb
 
 kotel_elektrika_on_off:
