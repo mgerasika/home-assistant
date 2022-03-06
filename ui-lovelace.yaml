@@ -54,8 +54,8 @@ views:
             button: input_boolean.koridor_btn
             button_relay: switch.switch_relay7
             temperature: sensor.ble_temperature_koridor
-            night_temperature: input_number.kitchen_night_max
-            day_temperature: input_number.kitchen_day_max
+            night_temperature: input_number.koridor_night_max
+            day_temperature: input_number.koridor_day_max
 
       # Entities card will take a list of entities and show their state.
       - type: entities
