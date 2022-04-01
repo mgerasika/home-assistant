@@ -28,28 +28,28 @@ views:
             night_temperature: input_number.kitchen_night_max
             day_temperature: input_number.kitchen_day_max
 
-          - entity: Спал
+          - entity: Спальня
             button: input_boolean.spalnya_btn
             button_relay: switch.switch_relay2
             temperature: sensor.ble_temperature_spalnya
             night_temperature: input_number.spalnya_night_max
             day_temperature: input_number.spalnya_day_max
 
-          - entity: Майст
+          - entity: Майстерня
             button: input_boolean.maysternya_btn
             button_relay: switch.switch_relay3
             temperature: sensor.ble_temperature_maysternya
             night_temperature: input_number.maysternya_night_max
             day_temperature: input_number.maysternya_day_max
 
-          - entity: Ванн
+          - entity: Ванна
             button: input_boolean.vanna_btn
             button_relay: switch.switch_relay4
             temperature: sensor.ble_temperature_vanna
             night_temperature: input_number.vanna_night_max
             day_temperature: input_number.vanna_day_max
 
-          - entity: Вел
+          - entity: Велика
             button: input_boolean.velika_btn
             button_relay: switch.switch_relay5
             temperature: sensor.ble_temperature_velika
@@ -63,7 +63,7 @@ views:
             night_temperature: input_number.ani_night_max
             day_temperature: input_number.ani_day_max
 
-          - entity: Кор
+          - entity: Коридор
             button: input_boolean.koridor_btn
             button_relay: switch.switch_relay7
             temperature: sensor.ble_temperature_koridor

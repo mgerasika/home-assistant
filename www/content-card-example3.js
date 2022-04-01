@@ -103,8 +103,21 @@ class ContentCardExample extends HTMLElement {
           }
        .custom-card button {
          font-size:50px;
-         padding: 4px 16px;
+         padding: 4px;
+         width:100%;
+         margin:1px;
+         color:white;
+         background-color:gray;
+         border:0px;
+         border-radius:4px;
        }
+
+       .custom-card button.active {
+        background-color:green;
+      }
+      .custom-card button.warning {
+        background-color:red;
+      }
           .custom-card ha-state-icon{
            cursor:pointer;
            padding:4px;
@@ -135,21 +148,22 @@ class ContentCardExample extends HTMLElement {
         const dayTmperatureState = hass.states[day_temperatureId] || {};
 
         return `<div class="custom-card"> 
-        <div style="display:flex;justify-content:space-between;"> 
-            <div>${entity.entity} ${temperatureState.state}</div>
-              <ha-state-icon class="${buttonState.state === 'on' ? 'active' : ''}" index="${index}" onclick="clickManager.lampClick(event)" icon=${buttonState.attributes.icon} data-state="${buttonState.state}"></ha-state-icon>
-              <ha-state-icon class="${buttonRelayState.state === 'on' ? 'active' : ''}" index="${index}" onclick="clickManager.lampClick(event)" icon=${buttonState.attributes.icon} data-state="${buttonRelayState.state}"></ha-state-icon>
-          </div>
+            <h3>${entity.entity} ${temperatureState.state}</h3>
             <div style="display:flex;justify-content:space-between;"> 
-                <button index="${index}"  onclick="clickManager.nightPlusClick(event)">+</button>
-                <span>ніч ${nightTemperatureState.state}</span>
-                <button index="${index}"  onclick="clickManager.nightMinusClick(event)">-</button>
+              <button index="${index}"  onclick="clickManager.nightMinusClick(event)">-</button>    
+              <button class="${buttonRelayState.state === 'on' ? 'active' : ''} ${buttonRelayState.state !== buttonState.state ? 'warning' : ''}" index="${index}" style="font-size:20px;" index="${index}" onclick="clickManager.lampClick(event)" icon=${buttonState.attributes.icon} data-state="${buttonRelayState.state}">
+              ${nightTemperatureState.state}
+              </button>    
+              <button index="${index}"  onclick="clickManager.nightPlusClick(event)">+</button>    
             </div>
 
           <div style="display:flex;justify-content:space-between;"> 
-              <button index="${index}"  onclick="clickManager.dayPlusClick(event)">+</button>
-              <span>день ${dayTmperatureState.state} </span>
+              
               <button index="${index}"  onclick="clickManager.dayMinusClick(event)">-</button>
+              <button class="${buttonRelayState.state === 'on' ? 'active' : ''} ${buttonRelayState.state !== buttonState.state ? 'warning' : ''}" index="${index}" style="font-size:20px;" index="${index}" onclick="clickManager.lampClick(event)" icon=${buttonState.attributes.icon} data-state="${buttonRelayState.state}">
+              ${dayTmperatureState.state}
+              </button>    
+              <button index="${index}"  onclick="clickManager.dayPlusClick(event)">+</button>
           </div>
         </div>`
 
