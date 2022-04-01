@@ -14,10 +14,10 @@ views:
         # Each entry is an entity ID or a map with extra options.
         entities:
           - entity: input_boolean.kotel_haz_on_off
-            name: Газовий котел
+            name: Газовий котел (віртуальна)
 
           - entity: input_boolean.kotel_elektrika_on_off
-            name: Електричний котел
+            name: Електричний котел (віртуальна)
 
       - type: "custom:content-card-example"
         entities:
@@ -105,8 +105,6 @@ views:
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
-          - entity: input_boolean.kotel_haz_on_off
-          - entity: input_boolean.kotel_elektrika_on_off
           - entity: input_boolean.hoch_odna
           - entity: input_boolean.kolektor_nasos_on_off
 
