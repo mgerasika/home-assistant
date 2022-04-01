@@ -93,7 +93,7 @@ class ContentCardExample extends HTMLElement {
           <style>
           .card-content {
             display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
           }
           .custom-card {
             border: 1px  dotted gray;
@@ -101,8 +101,13 @@ class ContentCardExample extends HTMLElement {
             margin:4px;
             padding:2px;
           }
+       .custom-card button {
+         font-size:50px;
+         padding: 4px 16px;
+       }
           .custom-card ha-state-icon{
            cursor:pointer;
+           padding:4px;
           }
        
           .custom-card ha-state-icon.active {
@@ -130,30 +135,22 @@ class ContentCardExample extends HTMLElement {
         const dayTmperatureState = hass.states[day_temperatureId] || {};
 
         return `<div class="custom-card"> 
-                  <div style="display:flex;justify-content:space-between;"> 
-                    <div >
-                      <ha-state-icon class="${buttonState.state === 'on' ? 'active' : ''}" index=${index} onclick="clickManager.lampClick(event)" icon=${buttonState.attributes.icon} data-state="${buttonState.state}"></ha-state-icon>
-                      <ha-state-icon class="${buttonRelayState.state === 'on' ? 'active' : ''}" index=${index} onclick="clickManager.lampClick(event)" icon=${buttonState.attributes.icon} data-state="${buttonRelayState.state}"></ha-state-icon>
-                    </div>
-                    <div>
-                      <button style="font-size:20px;" onclick="clickManager.nightPlusClick(event)">+</button>
-                     <span> ${nightTemperatureState.state}</span>
-                      <button style="font-size:20px;" onclick="clickManager.nightMinusClick(event)">-</button>
-                    </div>
-                  </div>
+        <div style="display:flex;justify-content:space-between;"> 
+            <div>${entity.entity} ${temperatureState.state}</div>
+              <ha-state-icon class="${buttonState.state === 'on' ? 'active' : ''}" index="${index}" onclick="clickManager.lampClick(event)" icon=${buttonState.attributes.icon} data-state="${buttonState.state}"></ha-state-icon>
+              <ha-state-icon class="${buttonRelayState.state === 'on' ? 'active' : ''}" index="${index}" onclick="clickManager.lampClick(event)" icon=${buttonState.attributes.icon} data-state="${buttonRelayState.state}"></ha-state-icon>
+          </div>
+            <div style="display:flex;justify-content:space-between;"> 
+                <button index="${index}"  onclick="clickManager.nightPlusClick(event)">+</button>
+                <span>ніч ${nightTemperatureState.state}</span>
+                <button index="${index}"  onclick="clickManager.nightMinusClick(event)">-</button>
+            </div>
 
-                <div style="display:flex;justify-content:space-between;"> 
-                  <h3>${entity.entity}</h3>
-                  <div>
-                    <button style="font-size:20px;" onclick="clickManager.dayPlusClick(event)">+</button>
-                    <span> ${dayTmperatureState.state} </span>
-                    <button style="font-size:20px;" onclick="clickManager.dayMinusClick(event)">-</button>
-                  </div>
-                </div>
-                <div style="font-size:14px;display:flex;justify-content:space-between;">
-                    <span style="font-weight:bold;">${temperatureState.state}</span> 
-                </div>
-
+          <div style="display:flex;justify-content:space-between;"> 
+              <button index="${index}"  onclick="clickManager.dayPlusClick(event)">+</button>
+              <span>день ${dayTmperatureState.state} </span>
+              <button index="${index}"  onclick="clickManager.dayMinusClick(event)">-</button>
+          </div>
         </div>`
 
       }).join('')

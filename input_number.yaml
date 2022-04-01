@@ -16,7 +16,7 @@ kitchen_day_max:
     #спальня
 spalnya_night_max:
   name: Спальня ніч
-  initial: 18
+  initial: 16
   min: 14
   max: 21
   step: 1
