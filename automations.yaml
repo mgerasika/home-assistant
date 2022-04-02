@@ -67,6 +67,22 @@
       switch.turn_off
       {% endif %}
 
+
+- alias: "sync hoch odan to relay8"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.hoch_odna
+  action:
+    entity_id:
+      - switch.switch_relay8
+    service: >
+      {% if is_state('input_boolean.hoch_odna', 'on') %}
+      switch.turn_on
+      {% else %} 
+      switch.turn_off 
+      {% endif %}
+
 - alias: "sync kitchen"
   trigger:
     - platform: state

@@ -68,7 +68,7 @@ views:
             button_relay: switch.switch_relay7
             temperature: sensor.ble_temperature_koridor
             night_temperature: input_number.koridor_night_max
-            day_temperature: input_number.koridor _day_max
+            day_temperature: input_number.koridor_day_max
 
       # Entities card will take a list of entities and show their state.
       - type: entities
@@ -96,7 +96,8 @@ views:
         entities:
           - entity: switch.switch_relay0
             name: Реле електричний котел
-          - entity: input_boolean.kolektor_nasos_on_off
+          - entity: switch.switch_relay8
+            name: Реле насос
 
       - type: entities
         show_header_toggle: false
@@ -106,7 +107,6 @@ views:
         # Each entry is an entity ID or a map with extra options.
         entities:
           - entity: input_boolean.hoch_odna
-          - entity: input_boolean.kolektor_nasos_on_off
 
           - entity: input_boolean.kitchen_btn
             name: Кухня
@@ -137,6 +137,9 @@ views:
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
+          - entity: switch.switch_relay0
+            name: Електричний котел
+
           - entity: switch.switch_relay1
             name: Кухня
 
@@ -157,6 +160,9 @@ views:
 
           - entity: switch.switch_relay7
             name: Коридор
+
+          - entity: switch.switch_relay8
+            name: Насос
 
         # The markdown card will render markdown text.
       - type: markdown

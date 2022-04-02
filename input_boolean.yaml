@@ -47,8 +47,3 @@ kotel_elektrika_on_off:
   name: Електричний котел вкл/викл
   initial: false
   icon: mdi:lightbulb
-
-kolektor_nasos_on_off:
-  name: Насос на колекторі
-  initial: false
-  icon: mdi:lightbulb
