@@ -1,6 +1,6 @@
 - alias: "hoch odna rule"
   trigger:
-    - seconds: /5
+    - seconds: /10
       platform: time_pattern
 
     - platform: state
@@ -56,7 +56,7 @@
 
   action:
     entity_id:
-      - switch.switch_relay0
+      - switch.switch_relay_d1
     service: >-
       {% if 
       is_state('input_boolean.kotel_elektrika_on_off','on') and
@@ -67,20 +67,67 @@
       switch.turn_off
       {% endif %}
 
-
-- alias: "sync hoch odan to relay8"
+- alias: "логіка роботи насосу"
   trigger:
     - platform: state
       entity_id:
         - input_boolean.hoch_odna
+        - input_boolean.kotel_haz_on_off
+        - input_boolean.kotel_elektrika_on_off
   action:
     entity_id:
-      - switch.switch_relay8
+      - switch.switch_relay_d3
     service: >
-      {% if is_state('input_boolean.hoch_odna', 'on') %}
+      {% if is_state('input_boolean.hoch_odna', 'on') and is_state('input_boolean.kotel_haz_on_off', 'on') or is_state('input_boolean.hoch_odna', 'on') and is_state('input_boolean.kotel_elektrika_on_off', 'on') %}
       switch.turn_on
       {% else %} 
       switch.turn_off 
+      {% endif %}
+
+- alias: "якщо вкл газовий виключити електричний"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.kotel_haz_on_off
+  action:
+    entity_id:
+      - input_boolean.kotel_elektrika_on_off
+    service: >
+      {% if is_state('input_boolean.kotel_haz_on_off', 'on') %}
+      input_boolean.turn_off
+      {% endif %}
+
+- alias: "якщо вкл електричний виключити газовий"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.kotel_elektrika_on_off
+  action:
+    entity_id:
+      - input_boolean.kotel_haz_on_off
+    service: >
+      {% if is_state('input_boolean.kotel_elektrika_on_off', 'on') %}
+      input_boolean.turn_off
+      {% endif %}
+
+- alias: "sync вхід низ"
+  trigger:
+    - platform: state
+      entity_id:
+        - input_boolean.kotel_haz_on_off
+        - input_boolean.kotel_elektrika_on_off
+  action:
+    entity_id:
+      - switch.switch_relay_d2
+    service: >
+      {% if is_state('input_boolean.kotel_elektrika_on_off', 'on') %}
+      switch.turn_off
+      {% else %}
+        {%if is_state('input_boolean.kotel_haz_on_off', 'on') %}
+        switch.turn_on
+        {% else %} 
+        switch.turn_off 
+        {% endif %}
       {% endif %}
 
 - alias: "sync kitchen"
@@ -90,7 +137,7 @@
         - input_boolean.kitchen_btn
   action:
     entity_id:
-      - switch.switch_relay1
+      - switch.switch_relay_d4
     service: >
       {% if is_state('input_boolean.kitchen_btn', 'on') %}
       switch.turn_on
@@ -105,7 +152,7 @@
         - input_boolean.spalnya_btn
   action:
     entity_id:
-      - switch.switch_relay2
+      - switch.switch_relay_d5
     service: >
       {% if is_state('input_boolean.spalnya_btn', 'on') %}
       switch.turn_on
@@ -120,7 +167,7 @@
         - input_boolean.maysternya_btn
   action:
     entity_id:
-      - switch.switch_relay3
+      - switch.switch_relay_d6
     service: >
       {% if is_state('input_boolean.maysternya_btn', 'on') %}
       switch.turn_on
@@ -135,7 +182,7 @@
         - input_boolean.vanna_btn
   action:
     entity_id:
-      - switch.switch_relay4
+      - switch.switch_relay_d7
     service: >
       {% if is_state('input_boolean.vanna_btn', 'on') %}
       switch.turn_on
@@ -150,7 +197,7 @@
         - input_boolean.velika_btn
   action:
     entity_id:
-      - switch.switch_relay5
+      - switch.switch_relay_d8
     service: >
       {% if is_state('input_boolean.velika_btn', 'on') %}
       switch.turn_on
@@ -165,7 +212,7 @@
         - input_boolean.ani_btn
   action:
     entity_id:
-      - switch.switch_relay6
+      - switch.switch_relay_d9
     service: >
       {% if is_state('input_boolean.ani_btn', 'on') %}
       switch.turn_on
@@ -180,7 +227,7 @@
         - input_boolean.koridor_btn
   action:
     entity_id:
-      - switch.switch_relay7
+      - switch.switch_relay_d10
     service: >
       {% if is_state('input_boolean.koridor_btn', 'on') %}
       switch.turn_on

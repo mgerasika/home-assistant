@@ -32,7 +32,7 @@ spalnya_day_max:
 maysternya_night_max:
   name: Майстерня ніч
   initial: 16
-  min: 14
+  min: 12
   max: 21
   step: 1
 maysternya_day_max:

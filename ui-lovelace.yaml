@@ -23,49 +23,49 @@ views:
         entities:
           - entity: Кухня
             button: input_boolean.kitchen_btn
-            button_relay: switch.switch_relay1
+            button_relay: switch.switch_relay_d4
             temperature: sensor.ble_temperature_kitchen
             night_temperature: input_number.kitchen_night_max
             day_temperature: input_number.kitchen_day_max
 
           - entity: Спальня
             button: input_boolean.spalnya_btn
-            button_relay: switch.switch_relay2
+            button_relay: switch.switch_relay_d5
             temperature: sensor.ble_temperature_spalnya
             night_temperature: input_number.spalnya_night_max
             day_temperature: input_number.spalnya_day_max
 
           - entity: Майстерня
             button: input_boolean.maysternya_btn
-            button_relay: switch.switch_relay3
+            button_relay: switch.switch_relay_d6
             temperature: sensor.ble_temperature_maysternya
             night_temperature: input_number.maysternya_night_max
             day_temperature: input_number.maysternya_day_max
 
           - entity: Ванна
             button: input_boolean.vanna_btn
-            button_relay: switch.switch_relay4
+            button_relay: switch.switch_relay_d7
             temperature: sensor.ble_temperature_vanna
             night_temperature: input_number.vanna_night_max
             day_temperature: input_number.vanna_day_max
 
           - entity: Велика
             button: input_boolean.velika_btn
-            button_relay: switch.switch_relay5
+            button_relay: switch.switch_relay_d8
             temperature: sensor.ble_temperature_velika
             night_temperature: input_number.velika_night_max
             day_temperature: input_number.velika_day_max
 
           - entity: Ані
             button: input_boolean.ani_btn
-            button_relay: switch.switch_relay6
+            button_relay: switch.switch_relay_d9
             temperature: sensor.ble_temperature_ani
             night_temperature: input_number.ani_night_max
             day_temperature: input_number.ani_day_max
 
           - entity: Коридор
             button: input_boolean.koridor_btn
-            button_relay: switch.switch_relay7
+            button_relay: switch.switch_relay_d10
             temperature: sensor.ble_temperature_koridor
             night_temperature: input_number.koridor_night_max
             day_temperature: input_number.koridor_day_max
@@ -87,6 +87,12 @@ views:
           - entity: sensor.temperature_test1
             name: Котел обратка
 
+          - entity: switch.switch_relay_d2
+            name: Вхід низ
+
+          - entity: switch.switch_relay_d3
+            name: Реле насос
+
       - type: entities
         show_header_toggle: false
         # Title of the entities card
@@ -94,9 +100,11 @@ views:
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
-          - entity: switch.switch_relay0
+          - entity: switch.switch_relay_d1
             name: Реле електричний котел
-          - entity: switch.switch_relay8
+          - entity: switch.switch_relay_d2
+            name: Вхід низ
+          - entity: switch.switch_relay_d3
             name: Реле насос
 
       - type: entities
@@ -137,32 +145,38 @@ views:
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
-          - entity: switch.switch_relay0
-            name: Електричний котел
+          - entity: switch.switch_relay_d0
+            name: Не використовується
 
-          - entity: switch.switch_relay1
+          - entity: switch.switch_relay_d1
+            name: Елктро-котел
+
+          - entity: switch.switch_relay_d2
+            name: Вхід Низ
+
+          - entity: switch.switch_relay_d3
+            name: Насос
+
+          - entity: switch.switch_relay_d4
             name: Кухня
 
-          - entity: switch.switch_relay2
+          - entity: switch.switch_relay_d5
             name: Спальня
 
-          - entity: switch.switch_relay3
+          - entity: switch.switch_relay_d6
             name: Майстерня
 
-          - entity: switch.switch_relay4
+          - entity: switch.switch_relay_d7
             name: Ванна
 
-          - entity: switch.switch_relay5
+          - entity: switch.switch_relay_d8
             name: Вітальня
 
-          - entity: switch.switch_relay6
+          - entity: switch.switch_relay_d9
             name: Ані
 
-          - entity: switch.switch_relay7
+          - entity: switch.switch_relay_d10
             name: Коридор
-
-          - entity: switch.switch_relay8
-            name: Насос
 
         # The markdown card will render markdown text.
       - type: markdown
@@ -171,6 +185,23 @@ views:
           Welcome to your **Lovelace UI**.
 
     # The cards to show on this view.
+
+  - title: Басейн
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: entities
+            # Title of the entities card
+            title: Підігрів води
+            show_header_toggle: false
+
+            entities:
+              - entity: switch.water_pool_relay_1
+                name: Насос
+              - entity: sensor.water_pool_temperature_in
+                name: Температура Вхідна
+              - entity: sensor.water_pool_temperature_out
+                name: Температура Вихід
 
   - title: Детальні
     cards:
