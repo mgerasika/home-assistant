@@ -186,22 +186,22 @@ views:
 
     # The cards to show on this view.
 
-  - title: Басейн
-    cards:
-      - type: vertical-stack
-        cards:
-          - type: entities
-            # Title of the entities card
-            title: Підігрів води
-            show_header_toggle: false
+  # - title: Басейн
+  #   cards:
+  #     - type: vertical-stack
+  #       cards:
+  #         - type: entities
+  #           # Title of the entities card
+  #           title: Підігрів води
+  #           show_header_toggle: false
 
-            entities:
-              - entity: switch.water_pool_relay_1
-                name: Насос
-              - entity: sensor.water_pool_temperature_in
-                name: Температура Вхідна
-              - entity: sensor.water_pool_temperature_out
-                name: Температура Вихід
+  #           entities:
+  #             - entity: switch.water_pool_relay_1
+  #               name: Насос
+  #             - entity: sensor.water_pool_temperature_in
+  #               name: Температура Вхідна
+  #             - entity: sensor.water_pool_temperature_out
+  #               name: Температура Вихід
 
   - title: Детальні
     cards:
@@ -345,7 +345,7 @@ views:
 
           - type: entities
             # Title of the entities card
-            title: Proektor
+            title: Проектор
             show_header_toggle: false
 
             entities:
