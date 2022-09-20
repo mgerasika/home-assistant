@@ -406,19 +406,6 @@ views:
 
       - type: vertical-stack
         cards:
-          - type: markdown
-            content: >
-              **Cостояние серверов**
-          - type: entities
-            show_header_toggle: false
-            entities:
-              - entity: sensor.main_state
-                name: Raspberry Pi 3 B+ в онлайне -
-                icon: mdi:clock-outline
-              - entity: sensor.reserve_state
-                name: Khadas VIM2 в онлайне -
-                icon: mdi:clock-outline
-
           - type: entities
             show_header_toggle: false
             entities:
@@ -430,10 +417,7 @@ views:
                 name: Дата -
                 icon: mdi:calendar
                 secondary_info: entity-id
-              - entity: sensor.home_assistant_v2_db
-                name: Объем базы данных HA -
-                icon: mdi:database
-                secondary_info: entity-id
+
               - entity: sensor.maria_db_size
                 name: Объем базы данных Maria -
                 icon: mdi:database
@@ -531,24 +515,3 @@ views:
         title: "Вулиця"
         entities:
           - entity: sensor.ble_temperature_vulichya
-
-  - title: UI Lovelace
-    cards:
-      # Entities card will take a list of entities and show their state.
-      - type: entities
-        # Title of the entities card
-        title: Example
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
-        entities:
-          - light.kitchen
-          - switch.ac
-          - entity: light.living_room
-            # Override the name to use
-            name: LR Lights
-
-        # The markdown card will render markdown text.
-      - type: markdown
-        title: Lovelace
-        content: >
-          Welcome to your **Lovelace UI**.
