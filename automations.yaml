@@ -110,24 +110,34 @@
       input_boolean.turn_off
       {% endif %}
 
-- alias: "sync вхід низ"
+- alias: "sync вхід низ по газу"
   trigger:
     - platform: state
       entity_id:
         - input_boolean.kotel_haz_on_off
+  action:
+    entity_id:
+      - switch.switch_relay_d2
+    service: >
+      {% if is_state('input_boolean.kotel_haz_on_off', 'on') %}
+      switch.turn_on
+      {% else %}
+      switch.turn_off 
+      {% endif %}
+
+- alias: "sync вхід низ по електриці"
+  trigger:
+    - platform: state
+      entity_id:
         - input_boolean.kotel_elektrika_on_off
   action:
     entity_id:
       - switch.switch_relay_d2
     service: >
-      {% if is_state('input_boolean.kotel_elektrika_on_off', 'on') %}
+      {% if is_state('input_boolean.kotel_elektrika_on_off', 'on') and if is_state('input_boolean.kotel_haz_on_off', 'on') %}
       switch.turn_off
       {% else %}
-        {%if is_state('input_boolean.kotel_haz_on_off', 'on') %}
-        switch.turn_on
-        {% else %} 
-        switch.turn_off 
-        {% endif %}
+      switch.turn_on
       {% endif %}
 
 - alias: "sync kitchen"

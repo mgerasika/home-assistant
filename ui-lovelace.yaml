@@ -56,12 +56,12 @@ views:
             night_temperature: input_number.velika_night_max
             day_temperature: input_number.velika_day_max
 
-          - entity: Ані
-            button: input_boolean.ani_btn
-            button_relay: switch.switch_relay_d9
-            temperature: sensor.ble_temperature_ani
-            night_temperature: input_number.ani_night_max
-            day_temperature: input_number.ani_day_max
+          # - entity: Ані
+          #   button: input_boolean.ani_btn
+          #   button_relay: switch.switch_relay_d9
+          #   temperature: sensor.ble_temperature_ani
+          #   night_temperature: input_number.ani_night_max
+          #   day_temperature: input_number.ani_day_max
 
           - entity: Коридор
             button: input_boolean.koridor_btn
@@ -70,13 +70,9 @@ views:
             night_temperature: input_number.koridor_night_max
             day_temperature: input_number.koridor_day_max
 
-      # Entities card will take a list of entities and show their state.
       - type: entities
         show_header_toggle: false
-        # Title of the entities card
-        title: Котел Газовий
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
+        title: Котел Газовий (esphome)
         entities:
           - entity: switch.switch_d0
             name: Реле котел
@@ -87,32 +83,9 @@ views:
           - entity: sensor.temperature_test1
             name: Котел обратка
 
-          - entity: switch.switch_relay_d2
-            name: Вхід низ
-
-          - entity: switch.switch_relay_d3
-            name: Реле насос
-
       - type: entities
         show_header_toggle: false
-        # Title of the entities card
-        title: Котел Електричний
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
-        entities:
-          - entity: switch.switch_relay_d1
-            name: Реле електричний котел
-          - entity: switch.switch_relay_d2
-            name: Вхід низ
-          - entity: switch.switch_relay_d3
-            name: Реле насос
-
-      - type: entities
-        show_header_toggle: false
-
         title: Віртуальні
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
         entities:
           - entity: input_boolean.hoch_odna
 
@@ -139,23 +112,16 @@ views:
 
       - type: entities
         show_header_toggle: false
-        # Title of the entities card
-
-        title: Колектор (не міняти рід онлі)
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
+        title: Колектор (esphome)
         entities:
-          - entity: switch.switch_relay_d0
-            name: Не використовується
-
           - entity: switch.switch_relay_d1
             name: Елктро-котел
 
-          - entity: switch.switch_relay_d2
-            name: Вхід Низ
-
           - entity: switch.switch_relay_d3
             name: Насос
+
+          - entity: switch.switch_relay_d2
+            name: Вхід Низ
 
           - entity: switch.switch_relay_d4
             name: Кухня
@@ -178,12 +144,6 @@ views:
           - entity: switch.switch_relay_d10
             name: Коридор
 
-        # The markdown card will render markdown text.
-      - type: markdown
-        title: Lovelace
-        content: >
-          Welcome to your **Lovelace UI**.
-
   - title: Детальні
     cards:
       - type: vertical-stack
@@ -195,7 +155,7 @@ views:
 
             entities:
               - entity: input_boolean.kitchen_btn
-              - entity: switch.switch_relay1
+              - entity: switch.switch_relay_d1
               - entity: sensor.ble_temperature_kitchen
                 name: Температура
               - entity: sensor.ble_battery_kitchen
@@ -212,7 +172,7 @@ views:
 
             entities:
               - entity: input_boolean.spalnya_btn
-              - entity: switch.switch_relay2
+              - entity: switch.switch_relay_d2
               - entity: sensor.ble_temperature_spalnya
                 name: Температура
               - entity: sensor.ble_battery_spalnya
@@ -230,7 +190,7 @@ views:
 
             entities:
               - entity: input_boolean.maysternya_btn
-              - entity: switch.switch_relay3
+              - entity: switch.switch_relay_d3
               - entity: sensor.ble_temperature_maysternya
                 name: Температура
               - entity: sensor.ble_battery_maysternya
@@ -248,7 +208,7 @@ views:
 
             entities:
               - entity: input_boolean.vanna_btn
-              - entity: switch.switch_relay4
+              - entity: switch.switch_relay_d4
               - entity: sensor.ble_temperature_vanna
                 name: Температура
               - entity: sensor.ble_battery_vanna
@@ -266,7 +226,7 @@ views:
 
             entities:
               - entity: input_boolean.velika_btn
-              - entity: switch.switch_relay5
+              - entity: switch.switch_relay_d5
               - entity: sensor.ble_temperature_velika
                 name: Температура
               - entity: sensor.ble_battery_velika
@@ -284,7 +244,7 @@ views:
 
             entities:
               - entity: input_boolean.ani_btn
-              - entity: switch.switch_relay6
+              - entity: switch.switch_relay_d6
               - entity: sensor.ble_temperature_ani
                 name: Температура
               - entity: sensor.ble_battery_ani
@@ -302,7 +262,7 @@ views:
 
             entities:
               - entity: input_boolean.koridor_btn
-              - entity: switch.switch_relay7
+              - entity: switch.switch_relay_d7
               - entity: sensor.ble_temperature_koridor
                 name: Температура
               - entity: sensor.ble_battery_koridor
