@@ -1,0 +1,51 @@
+esphome:
+  name: invertor
+
+esp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "fRmbPGdZrEi9DgDu88Y9Ih/TS9HpdH5sLGMB3y40z2s="
+
+ota:
+  password: "200cb9f7451c5d2a436d09b5bc85291b"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Invertor Fallback Hotspot"
+    password: "zxc123=-"
+
+captive_portal:
+
+switch:
+- platform: gpio
+  pin: 16
+  name: "switch_ssr_battery" 
+
+- platform: gpio
+  pin: 5
+  name: "switch_ssr_battery2" 
+
+- platform: gpio
+  pin: 4
+  name: "switch_ssr_battery3" 
+
+
+
+sensor:
+  - platform: adc
+    pin: A0
+    name: "Battery voltage"
+    update_interval: 30s
+    filters:
+    - multiply: 35.37
+    

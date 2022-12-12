@@ -1,0 +1,188 @@
+esphome:
+  name: bridge
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "2XBqoN4nAkLUYeR8FJRweTDWFy6CUc1h/J8aZ8nZ+uQ="
+
+ota:
+  password: "d750f653a163f26092e38972c9ac6c43"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Bridge Fallback Hotspot"
+    password: "zxc123=-"
+
+captive_portal:
+
+esp32_ble_tracker:
+  
+sensor:
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:25:70:8A"
+  bindkey: "863f15f3f1b7bea7677e73eff9c25a3c"
+  temperature:
+    name: "ble_temperature_v2_kitchen"
+  humidity:
+    name: "ble_humidity_v2_kitchen"
+  battery_level:
+    name: "ble_battery_v2_kitchen"
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:1D:62:4B"
+  bindkey: "dde64bb1a02dc6da4e6d2f7717629a7f"
+  temperature:
+    name: "ble_temperature_v2_spalnya"
+  humidity:
+    name: "ble_humidity_v2_spalnya"
+  battery_level:
+    name: "ble_battery_v2_spalnya"    
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:BE:4C:FB"
+  bindkey: "17919186b71446c7d7476c6c91f67576"
+  temperature:
+    name: "ble_temperature_v2_maysternya"
+  humidity:
+    name: "ble_humidity_v2_maysternya"
+  battery_level:
+    name: "ble_battery_v2_maysternya" 
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:28:BD:62"
+  bindkey: "29e7de271a93f03835a2b5ddc7f3dbb6"
+  temperature:
+    name: "ble_temperature_v2_vanna"
+  humidity:
+    name: "ble_humidity_v2_vanna"
+  battery_level:
+    name: "ble_battery_v2_vanna"    
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:C0:F4:B7"
+  bindkey: "ecf64e29be94b3f03df0acc96ed421eb"
+  temperature:
+    name: "ble_temperature_v2_velika"
+  humidity:
+    name: "ble_humidity_v2_velika"
+  battery_level:
+    name: "ble_battery_v2_velika"    
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:57:29:B5"
+  bindkey: "7cf295834dcd03231b5e2da5db914359"
+  temperature:
+    name: "ble_temperature_v2_ani"
+  humidity:
+    name: "ble_humidity_v2_ani"
+  battery_level:
+    name: "ble_battery_v2_ani"     
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:28:A0:32"
+  bindkey: "535e6206b54eb622236c87383618c11f"
+  temperature:
+    name: "ble_temperature_v2_koridor"
+  humidity:
+    name: "ble_humidity_v2_koridor"
+  battery_level:
+    name: "ble_battery_v2_koridor" 
+
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:DF:06:52"
+  bindkey: "a4d07e7eb309a98facfd6a55738022e9"
+  temperature:
+    name: "ble_temperature_v2_dax"
+  humidity:
+    name: "ble_humidity_v2_dax"
+  battery_level:
+    name: "ble_battery_v2_dax"
+
+
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:6E:30:3F"
+  bindkey: "b36f398ac8842608370eb00dfaea07fa"
+  temperature:
+    name: "ble_temperature_v2_vulichya"
+  humidity:
+    name: "ble_humidity_v2_vulichya"
+  battery_level:
+    name: "ble_battery_v2_vulichya"
+
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:49:72:BA"
+  bindkey: "f2f5efb0eb40045fdf32da7819171b6a"
+  temperature:
+    name: "ble_temperature_v2_proektor"
+  humidity:
+    name: "ble_humidity_v2_proektor"
+  battery_level:
+    name: "ble_battery_v2_proektor"    
+
+
+
+
+switch:
+  - platform: gpio
+    pin: 23
+    name: "switch_relay_v2_d1"   
+
+  - platform: gpio
+    pin: 22
+    name: "switch_relay_v2_d2"   
+
+  - platform: gpio
+    pin: 21
+    name: "switch_relay_v2_d3"   
+
+  - platform: gpio
+    pin: 19
+    name: "switch_relay_v2_d4"   
+
+  - platform: gpio
+    pin: 18
+    name: "switch_relay_v2_d5"   
+
+  - platform: gpio
+    pin: 5
+    name: "switch_relay_v2_d6"   
+
+  - platform: gpio
+    pin: 17
+    name: "switch_relay_v2_d7"   
+
+  - platform: gpio
+    pin: 16
+    name: "switch_relay_v2_d8"   
+
+  - platform: gpio
+    pin: 4
+    name: "switch_relay_v2_d9"   
+
+  - platform: gpio
+    pin: 0
+    name: "switch_relay_v2_d10"   
+
+  - platform: gpio
+    pin: 2
+    name: "switch_relay_v2_d11"  
+
+  - platform: gpio
+    pin: 15
+    name: "switch_relay_v2_d12"   
