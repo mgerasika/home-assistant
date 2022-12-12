@@ -33,20 +33,39 @@
 
 - alias: "relay gazoviy kotel by timer"
   trigger:
-    - minutes: /10
+    - minutes: /30
+      # - seconds: /5
       platform: time_pattern
+
+    - platform: state
+      entity_id:
+        - input_boolean.kotel_haz_eko
 
   action:
     entity_id:
-      - switch.switch_d0
+      - switch.switch_relay_v2_d12
     service: >-
-      {% if 
-      is_state('input_boolean.kotel_haz_on_off','on') and
+      {% if
+      is_state('input_boolean.kotel_haz_on_off','on') and 
+      is_state('input_boolean.kotel_haz_eko','on') and
       is_state('input_boolean.hoch_odna','on') 
        %}
-      switch.turn_on
+       {% if 
+        is_state('switch.switch_relay_v2_d12','off') 
+        %}
+        switch.turn_on
+        {% else %} 
+        switch.turn_off
+        {% endif %}
       {% else %} 
-      switch.turn_off
+        {% if 
+        is_state('input_boolean.kotel_haz_on_off','on') and
+        is_state('input_boolean.hoch_odna','on') 
+        %}
+        switch.turn_on
+        {% else %} 
+        switch.turn_off
+        {% endif %}
       {% endif %}
 
 - alias: "relay elektichniy kotel by timer"
@@ -56,7 +75,7 @@
 
   action:
     entity_id:
-      - switch.switch_relay_d1
+      - switch.switch_relay_v2_d1
     service: >-
       {% if 
       is_state('input_boolean.kotel_elektrika_on_off','on') and
@@ -76,7 +95,7 @@
         - input_boolean.kotel_elektrika_on_off
   action:
     entity_id:
-      - switch.switch_relay_d3
+      - switch.switch_relay_v2_d3
     service: >
       {% if is_state('input_boolean.hoch_odna', 'on') and is_state('input_boolean.kotel_haz_on_off', 'on') or is_state('input_boolean.hoch_odna', 'on') and is_state('input_boolean.kotel_elektrika_on_off', 'on') %}
       switch.turn_on
@@ -117,7 +136,7 @@
         - input_boolean.kotel_haz_on_off
   action:
     entity_id:
-      - switch.switch_relay_d2
+      - switch.switch_relay_v2_d2
     service: >
       {% if is_state('input_boolean.kotel_haz_on_off', 'on') %}
       switch.turn_on
@@ -132,7 +151,7 @@
         - input_boolean.kotel_elektrika_on_off
   action:
     entity_id:
-      - switch.switch_relay_d2
+      - switch.switch_relay_v2_d2
     service: >
       {% if is_state('input_boolean.kotel_elektrika_on_off', 'on') and if is_state('input_boolean.kotel_haz_on_off', 'on') %}
       switch.turn_off
@@ -147,7 +166,7 @@
         - input_boolean.kitchen_btn
   action:
     entity_id:
-      - switch.switch_relay_d4
+      - switch.switch_relay_v2_d4
     service: >
       {% if is_state('input_boolean.kitchen_btn', 'on') %}
       switch.turn_on
@@ -162,7 +181,7 @@
         - input_boolean.spalnya_btn
   action:
     entity_id:
-      - switch.switch_relay_d5
+      - switch.switch_relay_v2_d5
     service: >
       {% if is_state('input_boolean.spalnya_btn', 'on') %}
       switch.turn_on
@@ -177,7 +196,7 @@
         - input_boolean.maysternya_btn
   action:
     entity_id:
-      - switch.switch_relay_d6
+      - switch.switch_relay_v2_d6
     service: >
       {% if is_state('input_boolean.maysternya_btn', 'on') %}
       switch.turn_on
@@ -192,7 +211,7 @@
         - input_boolean.vanna_btn
   action:
     entity_id:
-      - switch.switch_relay_d7
+      - switch.switch_relay_v2_d7
     service: >
       {% if is_state('input_boolean.vanna_btn', 'on') %}
       switch.turn_on
@@ -207,7 +226,7 @@
         - input_boolean.velika_btn
   action:
     entity_id:
-      - switch.switch_relay_d8
+      - switch.switch_relay_v2_d8
     service: >
       {% if is_state('input_boolean.velika_btn', 'on') %}
       switch.turn_on
@@ -222,7 +241,7 @@
         - input_boolean.ani_btn
   action:
     entity_id:
-      - switch.switch_relay_d9
+      - switch.switch_relay_v2_d9
     service: >
       {% if is_state('input_boolean.ani_btn', 'on') %}
       switch.turn_on
@@ -237,7 +256,7 @@
         - input_boolean.koridor_btn
   action:
     entity_id:
-      - switch.switch_relay_d10
+      - switch.switch_relay_v2_d10
     service: >
       {% if is_state('input_boolean.koridor_btn', 'on') %}
       switch.turn_on
@@ -253,7 +272,7 @@
         - input_number.kitchen_day_max
         - input_datetime.kitchen_start
         - input_datetime.kitchen_end
-        - sensor.ble_temperature_kitchen
+        - sensor.ble_temperature_v2_kitchen
   action:
     entity_id:
       - input_boolean.kitchen_btn
@@ -262,13 +281,13 @@
       {% set startTime = states('input_datetime.kitchen_start')   %}
       {% set endTime = states('input_datetime.kitchen_end')   %}
       {% if startTime < current_time and current_time < endTime %}
-          {% if states('input_number.kitchen_day_max')|int > states('sensor.ble_temperature_kitchen')|int %}
+          {% if states('input_number.kitchen_day_max')|int > states('sensor.ble_temperature_v2_kitchen')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
           {% endif %}
       {% else %}     
-          {% if states('input_number.kitchen_night_max')|int > states('sensor.ble_temperature_kitchen')|int %}
+          {% if states('input_number.kitchen_night_max')|int > states('sensor.ble_temperature_v2_kitchen')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
@@ -283,7 +302,7 @@
         - input_number.spalnya_day_max
         - input_datetime.spalnya_start
         - input_datetime.spalnya_end
-        - sensor.ble_temperature_spalnya
+        - sensor.ble_temperature_v2_spalnya
   action:
     entity_id:
       - input_boolean.spalnya_btn
@@ -292,13 +311,13 @@
       {% set startTime = states('input_datetime.spalnya_start')   %}
       {% set endTime = states('input_datetime.spalnya_end')   %}
       {% if startTime < current_time and current_time < endTime %}
-          {% if states('input_number.spalnya_day_max')|int > states('sensor.ble_temperature_spalnya')|int %}
+          {% if states('input_number.spalnya_day_max')|int > states('sensor.ble_temperature_v2_spalnya')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
           {% endif %}
       {% else %}     
-          {% if states('input_number.spalnya_night_max')|int > states('sensor.ble_temperature_spalnya')|int %}
+          {% if states('input_number.spalnya_night_max')|int > states('sensor.ble_temperature_v2_spalnya')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
@@ -313,7 +332,7 @@
         - input_number.maysternya_day_max
         - input_datetime.maysternya_start
         - input_datetime.maysternya_end
-        - sensor.ble_temperature_maysternya
+        - sensor.ble_temperature_v2_maysternya
   action:
     entity_id:
       - input_boolean.maysternya_btn
@@ -322,13 +341,13 @@
       {% set startTime = states('input_datetime.maysternya_start')   %}
       {% set endTime = states('input_datetime.maysternya_end')   %}
       {% if startTime < current_time and current_time < endTime %}
-          {% if states('input_number.maysternya_day_max')|int > states('sensor.ble_temperature_maysternya')|int %}
+          {% if states('input_number.maysternya_day_max')|int > states('sensor.ble_temperature_v2_maysternya')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
           {% endif %}
       {% else %}     
-          {% if states('input_number.maysternya_night_max')|int > states('sensor.ble_temperature_maysternya')|int %}
+          {% if states('input_number.maysternya_night_max')|int > states('sensor.ble_temperature_v2_maysternya')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
@@ -343,7 +362,7 @@
         - input_number.vanna_day_max
         - input_datetime.vanna_start
         - input_datetime.vanna_end
-        - sensor.ble_temperature_vanna
+        - sensor.ble_temperature_v2_vanna
   action:
     entity_id:
       - input_boolean.vanna_btn
@@ -352,13 +371,13 @@
       {% set startTime = states('input_datetime.vanna_start')   %}
       {% set endTime = states('input_datetime.vanna_end')   %}
       {% if startTime < current_time and current_time < endTime %}
-          {% if states('input_number.vanna_day_max')|int > states('sensor.ble_temperature_vanna')|int %}
+          {% if states('input_number.vanna_day_max')|int > states('sensor.ble_temperature_v2_vanna')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
           {% endif %}
       {% else %}     
-          {% if states('input_number.vanna_night_max')|int > states('sensor.ble_temperature_vanna')|int %}
+          {% if states('input_number.vanna_night_max')|int > states('sensor.ble_temperature_v2_vanna')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
@@ -373,7 +392,7 @@
         - input_number.velika_day_max
         - input_datetime.velika_start
         - input_datetime.velika_end
-        - sensor.ble_temperature_velika
+        - sensor.ble_temperature_v2_velika
   action:
     entity_id:
       - input_boolean.velika_btn
@@ -382,13 +401,13 @@
       {% set startTime = states('input_datetime.velika_start')   %}
       {% set endTime = states('input_datetime.velika_end')   %}
       {% if startTime < current_time and current_time < endTime %}
-          {% if states('input_number.velika_day_max')|int > states('sensor.ble_temperature_velika')|int %}
+          {% if states('input_number.velika_day_max')|int > states('sensor.ble_temperature_v2_velika')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
           {% endif %}
       {% else %}     
-          {% if states('input_number.velika_night_max')|int > states('sensor.ble_temperature_velika')|int %}
+          {% if states('input_number.velika_night_max')|int > states('sensor.ble_temperature_v2_velika')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
@@ -403,7 +422,7 @@
         - input_number.ani_day_max
         - input_datetime.ani_start
         - input_datetime.ani_end
-        - sensor.ble_temperature_ani
+        - sensor.ble_temperature_v2_ani
   action:
     entity_id:
       - input_boolean.ani_btn
@@ -412,13 +431,13 @@
       {% set startTime = states('input_datetime.ani_start')   %}
       {% set endTime = states('input_datetime.ani_end')   %}
       {% if startTime < current_time and current_time < endTime %}
-          {% if states('input_number.ani_day_max')|int > states('sensor.ble_temperature_ani')|int %}
+          {% if states('input_number.ani_day_max')|int > states('sensor.ble_temperature_v2_ani')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
           {% endif %}
       {% else %}     
-          {% if states('input_number.ani_night_max')|int > states('sensor.ble_temperature_ani')|int %}
+          {% if states('input_number.ani_night_max')|int > states('sensor.ble_temperature_v2_ani')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
@@ -433,7 +452,7 @@
         - input_number.koridor_day_max
         - input_datetime.koridor_start
         - input_datetime.koridor_end
-        - sensor.ble_temperature_koridor
+        - sensor.ble_temperature_v2_koridor
   action:
     entity_id:
       - input_boolean.koridor_btn
@@ -442,15 +461,82 @@
       {% set startTime = states('input_datetime.koridor_start')   %}
       {% set endTime = states('input_datetime.koridor_end')   %}
       {% if startTime < current_time and current_time < endTime %}
-          {% if states('input_number.koridor_day_max')|int > states('sensor.ble_temperature_koridor')|int %}
+          {% if states('input_number.koridor_day_max')|int > states('sensor.ble_temperature_v2_koridor')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
           {% endif %}
       {% else %}     
-          {% if states('input_number.koridor_night_max')|int > states('sensor.ble_temperature_koridor')|int %}
+          {% if states('input_number.koridor_night_max')|int > states('sensor.ble_temperature_v2_koridor')|int %}
           input_boolean.turn_on
           {% else %} 
           input_boolean.turn_off
           {% endif %}
       {% endif %}
+
+- alias: "battery minimal voltage - turn off invertor"
+  trigger:
+    - platform: state
+      entity_id:
+        - sensor.battery_voltage
+  action:
+    entity_id:
+      - switch.switch_ssr_battery
+    service: >
+      {% if states('sensor.battery_voltage')|float < 25.65 %}
+      switch.turn_off
+      {% endif %}
+
+- alias: "battery high voltage - turn off zaryadka"
+  trigger:
+    - platform: state
+      entity_id:
+        - sensor.battery_voltage
+  action:
+    entity_id:
+      - switch.switch_ssr_battery2
+    service: >
+      {% if states('sensor.battery_voltage')|float > 26.65 %}
+      switch.turn_off
+      {% else %} 
+      switch.turn_on
+      {% endif %}
+
+# - alias: "battery percentage"
+#   trigger:
+#     - platform: state
+#       entity_id:
+#         - sensor.battery_voltage
+#     - seconds: /5
+#       platform: time_pattern
+
+#   action:
+#     entity_id:
+#       - input_number.battery_percentage
+#     service: >
+#       {% if states('sensor.battery_voltage')|float > 25 %}
+#       input_number.set_value 99
+#       {% elseif states('sensor.battery_voltage')|float > 24 %}
+#       input_number.set_value 98
+#       {% endif %}
+
+# - alias: "battery minimal voltage - turn on load by timer"
+#   trigger:
+#     - minutes: /10
+#       platform: time_pattern
+
+#   action:
+#     entity_id:
+#       - switch.switch_ssr_battery
+#     service: >
+#       {% if states('sensor.battery_voltage')|float > 24 %}
+#       switch.turn_on
+#       {% endif %}
+
+# 26.6 - 80 best start
+# 26.4 - 70
+# 26.2 - 60
+# 26.1 - 50
+# 26.0 - 40
+# 25.8 - 30
+# 25.6 - 20 best end

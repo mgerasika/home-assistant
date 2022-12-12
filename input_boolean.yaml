@@ -40,10 +40,15 @@ hoch_odna:
 
 kotel_haz_on_off:
   name: Газовий котел вкл/викл вірт
-  initial: false
+  initial: true
   icon: mdi:lightbulb
 
 kotel_elektrika_on_off:
   name: Електричний котел вкл/викл вірт
   initial: false
+  icon: mdi:lightbulb
+
+kotel_haz_eko:
+  name: Газ еко режим
+  initial: true
   icon: mdi:lightbulb

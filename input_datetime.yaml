@@ -1,6 +1,6 @@
 kitchen_start:
   name: Кухня початок дня
-  initial: "07:00"
+  initial: "06:00"
   has_date: false
   has_time: true
 
@@ -54,7 +54,7 @@ vanna_end:
   # Велика
 velika_start:
   name: Велика початок дня
-  initial: "12:00"
+  initial: "11:00"
   has_date: false
   has_time: true
 
@@ -80,7 +80,7 @@ ani_end:
   # Коридор
 koridor_start:
   name: Коридор початок дня
-  initial: "07:00"
+  initial: "06:00"
   has_date: false
   has_time: true
 

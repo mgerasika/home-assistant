@@ -4,7 +4,6 @@ default_config:
 homeassistant:
   time_zone: Europe/Kiev
 
-
 # Text to speech
 tts:
   - platform: google_translate
@@ -21,4 +20,4 @@ script: !include scripts.yaml
 scene: !include scenes.yaml
 sensor: !include sensor.yaml
 recorder: !include recorder.yaml
-ble_monitor: !include ble_monitor.yaml
+# ble_monitor: !include ble_monitor.yaml

@@ -9,12 +9,39 @@ views:
       - type: entities
         show_header_toggle: false
 
+        title: Інвертор
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: switch.switch_ssr_battery
+            name: Інвертор вкл/викл
+
+          - entity: switch.switch_ssr_battery2
+            name: Зарядка вкл/викл
+
+          - entity: sensor.battery_voltage
+            name: Напруга
+
+          # - entity: input_number.battery_percentage
+          #   name: Рівень заряду у відсотках
+
+          - entity: switch.invertor
+            name: Інвертор
+          - entity: sensor.invertor_current_power
+            name: Інвертор споживання
+
+      - type: entities
+        show_header_toggle: false
+
         title: Котел
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
           - entity: input_boolean.kotel_haz_on_off
             name: Газовий котел (віртуальна)
+
+          - entity: input_boolean.kotel_haz_eko
+            name: Еко режим
 
           - entity: input_boolean.kotel_elektrika_on_off
             name: Електричний котел (віртуальна)
@@ -23,65 +50,52 @@ views:
         entities:
           - entity: Кухня
             button: input_boolean.kitchen_btn
-            button_relay: switch.switch_relay_d4
-            temperature: sensor.ble_temperature_kitchen
+            button_relay: switch.switch_relay_v2_d4
+            temperature: sensor.ble_temperature_v2_kitchen
             night_temperature: input_number.kitchen_night_max
             day_temperature: input_number.kitchen_day_max
 
           - entity: Спальня
             button: input_boolean.spalnya_btn
-            button_relay: switch.switch_relay_d5
-            temperature: sensor.ble_temperature_spalnya
+            button_relay: switch.switch_relay_v2_d5
+            temperature: sensor.ble_temperature_v2_spalnya
             night_temperature: input_number.spalnya_night_max
             day_temperature: input_number.spalnya_day_max
 
           - entity: Майстерня
             button: input_boolean.maysternya_btn
-            button_relay: switch.switch_relay_d6
-            temperature: sensor.ble_temperature_maysternya
+            button_relay: switch.switch_relay_v2_d6
+            temperature: sensor.ble_temperature_v2_maysternya
             night_temperature: input_number.maysternya_night_max
             day_temperature: input_number.maysternya_day_max
 
           - entity: Ванна
             button: input_boolean.vanna_btn
-            button_relay: switch.switch_relay_d7
-            temperature: sensor.ble_temperature_vanna
+            button_relay: switch.switch_relay_v2_d7
+            temperature: sensor.ble_temperature_v2_vanna
             night_temperature: input_number.vanna_night_max
             day_temperature: input_number.vanna_day_max
 
           - entity: Велика
             button: input_boolean.velika_btn
-            button_relay: switch.switch_relay_d8
-            temperature: sensor.ble_temperature_velika
+            button_relay: switch.switch_relay_v2_d8
+            temperature: sensor.ble_temperature_v2_velika
             night_temperature: input_number.velika_night_max
             day_temperature: input_number.velika_day_max
 
-          # - entity: Ані
-          #   button: input_boolean.ani_btn
-          #   button_relay: switch.switch_relay_d9
-          #   temperature: sensor.ble_temperature_ani
-          #   night_temperature: input_number.ani_night_max
-          #   day_temperature: input_number.ani_day_max
+          - entity: Ані
+            button: input_boolean.ani_btn
+            button_relay: switch.switch_relay_v2_d9
+            temperature: sensor.ble_temperature_v2_ani
+            night_temperature: input_number.ani_night_max
+            day_temperature: input_number.ani_day_max
 
           - entity: Коридор
             button: input_boolean.koridor_btn
-            button_relay: switch.switch_relay_d10
-            temperature: sensor.ble_temperature_koridor
+            button_relay: switch.switch_relay_v2_d10
+            temperature: sensor.ble_temperature_v2_koridor
             night_temperature: input_number.koridor_night_max
             day_temperature: input_number.koridor_day_max
-
-      - type: entities
-        show_header_toggle: false
-        title: Котел Газовий (esphome)
-        entities:
-          - entity: switch.switch_d0
-            name: Реле котел
-
-          - entity: sensor.temperature_test2
-            name: Котел вихід
-
-          - entity: sensor.temperature_test1
-            name: Котел обратка
 
       - type: entities
         show_header_toggle: false
@@ -114,34 +128,37 @@ views:
         show_header_toggle: false
         title: Колектор (esphome)
         entities:
-          - entity: switch.switch_relay_d1
+          - entity: switch.switch_relay_v2_d1
             name: Елктро-котел
 
-          - entity: switch.switch_relay_d3
+          - entity: switch.switch_relay_v2_d12
+            name: Газ (замикання)
+
+          - entity: switch.switch_relay_v2_d3
             name: Насос
 
-          - entity: switch.switch_relay_d2
+          - entity: switch.switch_relay_v2_d2
             name: Вхід Низ
 
-          - entity: switch.switch_relay_d4
+          - entity: switch.switch_relay_v2_d4
             name: Кухня
 
-          - entity: switch.switch_relay_d5
+          - entity: switch.switch_relay_v2_d5
             name: Спальня
 
-          - entity: switch.switch_relay_d6
+          - entity: switch.switch_relay_v2_d6
             name: Майстерня
 
-          - entity: switch.switch_relay_d7
+          - entity: switch.switch_relay_v2_d7
             name: Ванна
 
-          - entity: switch.switch_relay_d8
+          - entity: switch.switch_relay_v2_d8
             name: Вітальня
 
-          - entity: switch.switch_relay_d9
+          - entity: switch.switch_relay_v2_d9
             name: Ані
 
-          - entity: switch.switch_relay_d10
+          - entity: switch.switch_relay_v2_d10
             name: Коридор
 
   - title: Детальні
@@ -155,10 +172,10 @@ views:
 
             entities:
               - entity: input_boolean.kitchen_btn
-              - entity: switch.switch_relay_d1
-              - entity: sensor.ble_temperature_kitchen
+              - entity: switch.switch_relay_v2_d1
+              - entity: sensor.ble_temperature_v2_kitchen
                 name: Температура
-              - entity: sensor.ble_battery_kitchen
+              - entity: sensor.ble_battery_v2_kitchen
                 name: Батарейка
               - entity: input_number.kitchen_night_max
               - entity: input_number.kitchen_day_max
@@ -172,10 +189,10 @@ views:
 
             entities:
               - entity: input_boolean.spalnya_btn
-              - entity: switch.switch_relay_d2
-              - entity: sensor.ble_temperature_spalnya
+              - entity: switch.switch_relay_v2_d2
+              - entity: sensor.ble_temperature_v2_spalnya
                 name: Температура
-              - entity: sensor.ble_battery_spalnya
+              - entity: sensor.ble_battery_v2_spalnya
                 name: Батарейка
               - entity: input_number.spalnya_night_max
               - entity: input_number.spalnya_day_max
@@ -190,10 +207,10 @@ views:
 
             entities:
               - entity: input_boolean.maysternya_btn
-              - entity: switch.switch_relay_d3
-              - entity: sensor.ble_temperature_maysternya
+              - entity: switch.switch_relay_v2_d3
+              - entity: sensor.ble_temperature_v2_maysternya
                 name: Температура
-              - entity: sensor.ble_battery_maysternya
+              - entity: sensor.ble_battery_v2_maysternya
                 name: Батарейка
               - entity: input_number.maysternya_night_max
               - entity: input_number.maysternya_day_max
@@ -208,10 +225,10 @@ views:
 
             entities:
               - entity: input_boolean.vanna_btn
-              - entity: switch.switch_relay_d4
-              - entity: sensor.ble_temperature_vanna
+              - entity: switch.switch_relay_v2_d4
+              - entity: sensor.ble_temperature_v2_vanna
                 name: Температура
-              - entity: sensor.ble_battery_vanna
+              - entity: sensor.ble_battery_v2_vanna
                 name: Батарейка
               - entity: input_number.vanna_night_max
               - entity: input_number.vanna_day_max
@@ -226,10 +243,10 @@ views:
 
             entities:
               - entity: input_boolean.velika_btn
-              - entity: switch.switch_relay_d5
-              - entity: sensor.ble_temperature_velika
+              - entity: switch.switch_relay_v2_d5
+              - entity: sensor.ble_temperature_v2_velika
                 name: Температура
-              - entity: sensor.ble_battery_velika
+              - entity: sensor.ble_battery_v2_velika
                 name: Батарейка
               - entity: input_number.velika_night_max
               - entity: input_number.velika_day_max
@@ -244,10 +261,10 @@ views:
 
             entities:
               - entity: input_boolean.ani_btn
-              - entity: switch.switch_relay_d6
-              - entity: sensor.ble_temperature_ani
+              - entity: switch.switch_relay_v2_d6
+              - entity: sensor.ble_temperature_v2_ani
                 name: Температура
-              - entity: sensor.ble_battery_ani
+              - entity: sensor.ble_battery_v2_ani
                 name: Батарейка
               - entity: input_number.ani_night_max
               - entity: input_number.ani_day_max
@@ -262,10 +279,10 @@ views:
 
             entities:
               - entity: input_boolean.koridor_btn
-              - entity: switch.switch_relay_d7
-              - entity: sensor.ble_temperature_koridor
+              - entity: switch.switch_relay_v2_d7
+              - entity: sensor.ble_temperature_v2_koridor
                 name: Температура
-              - entity: sensor.ble_battery_koridor
+              - entity: sensor.ble_battery_v2_koridor
                 name: Батарейка
               - entity: input_number.koridor_night_max
               - entity: input_number.koridor_day_max
@@ -279,9 +296,9 @@ views:
             show_header_toggle: false
 
             entities:
-              - entity: sensor.ble_temperature_dax
+              - entity: sensor.ble_temperature_v2_dax
                 name: Температура
-              - entity: sensor.ble_battery_dax
+              - entity: sensor.ble_battery_v2_dax
                 name: Батарейка
 
           - type: entities
@@ -290,9 +307,9 @@ views:
             show_header_toggle: false
 
             entities:
-              - entity: sensor.ble_temperature_proektor
+              - entity: sensor.ble_temperature_v2_proektor
                 name: Температурa
-              - entity: sensor.ble_battery_proektor
+              - entity: sensor.ble_battery_v2_proektor
                 name: Батарейка
 
           - type: entities
@@ -301,9 +318,9 @@ views:
             show_header_toggle: false
 
             entities:
-              - entity: sensor.ble_temperature_vulichya
+              - entity: sensor.ble_temperature_v2_vulichya
                 name: Температурa
-              - entity: sensor.ble_battery_vulichya
+              - entity: sensor.ble_battery_v2_vulichya
                 name: Батарейка
 
   - title: Графіки
@@ -311,81 +328,81 @@ views:
       - type: history-graph
         title: "Температура"
         entities:
-          - entity: sensor.ble_temperature_kitchen
+          - entity: sensor.ble_temperature_v2_kitchen
             name: Кухня
-          - entity: sensor.ble_temperature_spalnya
+          - entity: sensor.ble_temperature_v2_spalnya
             name: Спальня
 
-          - entity: sensor.ble_temperature_maysternya
+          - entity: sensor.ble_temperature_v2_maysternya
             name: Майстерня
 
-          - entity: sensor.ble_temperature_vanna
+          - entity: sensor.ble_temperature_v2_vanna
             name: Ванна
 
-          - entity: sensor.ble_temperature_velika
+          - entity: sensor.ble_temperature_v2_velika
             name: Велика
 
-          - entity: sensor.ble_temperature_ani
+          - entity: sensor.ble_temperature_v2_ani
             name: Ані
 
-          - entity: sensor.ble_temperature_koridor
+          - entity: sensor.ble_temperature_v2_koridor
             name: Коридор
 
-          - entity: sensor.ble_temperature_dax
+          - entity: sensor.ble_temperature_v2_dax
             name: Дах
 
-          - entity: sensor.ble_temperature_proektor
+          - entity: sensor.ble_temperature_v2_proektor
             name: Проектор
 
-          - entity: sensor.ble_temperature_vulichya
+          - entity: sensor.ble_temperature_v2_vulichya
             name: Вулиця
 
       - type: history-graph
         title: "Кухня"
         entities:
-          - entity: sensor.ble_temperature_kitchen
+          - entity: sensor.ble_temperature_v2_kitchen
 
       - type: history-graph
         title: "Спальня"
         entities:
-          - entity: sensor.ble_temperature_spalnya
+          - entity: sensor.ble_temperature_v2_spalnya
 
       - type: history-graph
         title: "Майстерня"
         entities:
-          - entity: sensor.ble_temperature_maysternya
+          - entity: sensor.ble_temperature_v2_maysternya
 
       - type: history-graph
         title: "Ванна"
         entities:
-          - entity: sensor.ble_temperature_vanna
+          - entity: sensor.ble_temperature_v2_vanna
 
       - type: history-graph
         title: "Велика"
         entities:
-          - entity: sensor.ble_temperature_velika
+          - entity: sensor.ble_temperature_v2_velika
 
       - type: history-graph
         title: "Ані"
         entities:
-          - entity: sensor.ble_temperature_ani
+          - entity: sensor.ble_temperature_v2_ani
 
       - type: history-graph
         title: "Коридор"
         entities:
-          - entity: sensor.ble_temperature_koridor
+          - entity: sensor.ble_temperature_v2_koridor
 
       - type: history-graph
         title: "Дах"
         entities:
-          - entity: sensor.ble_temperature_dax
+          - entity: sensor.ble_temperature_v2_dax
 
       - type: history-graph
         title: "Проектор"
         entities:
-          - entity: sensor.ble_temperature_proektor
+          - entity: sensor.ble_temperature_v2_proektor
 
       - type: history-graph
         title: "Вулиця"
         entities:
-          - entity: sensor.ble_temperature_vulichya
+          - entity: sensor.ble_temperature_v2_vulichya
