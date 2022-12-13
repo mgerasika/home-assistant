@@ -474,33 +474,33 @@
           {% endif %}
       {% endif %}
 
-- alias: "battery minimal voltage - turn off invertor"
-  trigger:
-    - platform: state
-      entity_id:
-        - sensor.battery_voltage
-  action:
-    entity_id:
-      - switch.switch_ssr_battery
-    service: >
-      {% if states('sensor.battery_voltage')|float < 25.65 %}
-      switch.turn_off
-      {% endif %}
+# - alias: "battery minimal voltage - turn off invertor"
+#   trigger:
+#     - platform: state
+#       entity_id:
+#         - sensor.battery_voltage
+#   action:
+#     entity_id:
+#       - switch.switch_ssr_battery
+#     service: >
+#       {% if states('sensor.battery_voltage')|float < 25.65 %}
+#       switch.turn_off
+#       {% endif %}
 
-- alias: "battery high voltage - turn off zaryadka"
-  trigger:
-    - platform: state
-      entity_id:
-        - sensor.battery_voltage
-  action:
-    entity_id:
-      - switch.switch_ssr_battery2
-    service: >
-      {% if states('sensor.battery_voltage')|float > 26.65 %}
-      switch.turn_off
-      {% else %} 
-      switch.turn_on
-      {% endif %}
+# - alias: "battery high voltage - turn off zaryadka"
+#   trigger:
+#     - platform: state
+#       entity_id:
+#         - sensor.battery_voltage
+#   action:
+#     entity_id:
+#       - switch.switch_ssr_battery2
+#     service: >
+#       {% if states('sensor.battery_voltage')|float > 26.65 %}
+#       switch.turn_off
+#       {% else %} 
+#       switch.turn_on
+#       {% endif %}
 
 # - alias: "battery percentage"
 #   trigger:

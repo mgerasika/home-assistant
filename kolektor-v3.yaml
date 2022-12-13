@@ -1,0 +1,230 @@
+esphome:
+  name: kolektor-v3
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "9p7gFUViXLARYe2pcml9d9SAA50TD3Ys3J1XoHrenzU="
+
+ota:
+  password: "zxc123=-"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Kolektor-V3 Fallback Hotspot"
+    password: "zxc123=-"
+
+captive_portal:
+
+
+esp32_ble_tracker:
+  
+sensor:
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:25:70:8A"
+  bindkey: "863f15f3f1b7bea7677e73eff9c25a3c"
+  temperature:
+    name: "ble_temperature_kitchen"
+    id: ble_temperature_kitchen
+  humidity:
+    name: "ble_humidity_kitchen"
+    id: ble_humidity_kitchen
+  battery_level:
+    name: "ble_battery_kitchen"
+    id: ble_battery_kitchen
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:1D:62:4B"
+  bindkey: "dde64bb1a02dc6da4e6d2f7717629a7f"
+  temperature:
+    name: "ble_temperature_spalnya"
+    id: ble_temperature_spalnya
+  humidity:
+    name: "ble_humidity_spalnya"
+    id: ble_humidity_spalnya
+  battery_level:
+    name: "ble_battery_spalnya"
+    id: ble_battery_spalnya    
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:BE:4C:FB"
+  bindkey: "17919186b71446c7d7476c6c91f67576"
+  temperature:
+    name: "ble_temperature_maysternya"
+    id: ble_temperature_maysternya
+  humidity:
+    name: "ble_humidity_maysternya"
+    id: ble_humidity_maysternya
+  battery_level:
+    name: "ble_battery_maysternya" 
+    id: ble_battery_maysternya
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:28:BD:62"
+  bindkey: "29e7de271a93f03835a2b5ddc7f3dbb6"
+  temperature:
+    name: "ble_temperature_vanna"
+    id: ble_temperature_vanna
+  humidity:
+    name: "ble_humidity_vanna"
+    id: ble_humidity_vanna
+  battery_level:
+    name: "ble_battery_vanna" 
+    id: ble_battery_vanna   
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:C0:F4:B7"
+  bindkey: "ecf64e29be94b3f03df0acc96ed421eb"
+  temperature:
+    name: "ble_temperature_velika"
+    id: ble_temperature_velika
+  humidity:
+    name: "ble_humidity_velika"
+    id: ble_humidity_velika
+  battery_level:
+    name: "ble_battery_velika" 
+    id: ble_battery_velika   
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:57:29:B5"
+  bindkey: "7cf295834dcd03231b5e2da5db914359"
+  temperature:
+    name: "ble_temperature_ani"
+    id: ble_temperature_ani
+  humidity:
+    name: "ble_humidity_ani"
+    id: ble_humidity_ani
+  battery_level:
+    name: "ble_battery_ani" 
+    id: ble_battery_ani    
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:28:A0:32"
+  bindkey: "535e6206b54eb622236c87383618c11f"
+  temperature:
+    name: "ble_temperature_koridor"
+    id: ble_temperature_koridor
+  humidity:
+    name: "ble_humidity_koridor"
+    id: ble_humidity_koridor
+  battery_level:
+    name: "ble_battery_koridor"
+    id: ble_battery_koridor 
+
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:DF:06:52"
+  bindkey: "a4d07e7eb309a98facfd6a55738022e9"
+  temperature:
+    name: "ble_temperature_dax"
+    id: ble_temperature_dax
+  humidity:
+    name: "ble_humidity_dax"
+    id: ble_humidity_dax
+  battery_level:
+    name: "ble_battery_dax"
+    id: ble_battery_dax
+
+
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:6E:30:3F"
+  bindkey: "b36f398ac8842608370eb00dfaea07fa"
+  temperature:
+    name: "ble_temperature_vulichya"
+    id: ble_temperature_vulichya
+  humidity:
+    name: "ble_humidity_vulichya"
+    id: ble_humidity_vulichya
+  battery_level:
+    name: "ble_battery_vulichya"
+    id: ble_battery_vulichya
+
+
+- platform: xiaomi_lywsd03mmc
+  mac_address: "A4:C1:38:49:72:BA"
+  bindkey: "f2f5efb0eb40045fdf32da7819171b6a"
+  temperature:
+    name: "ble_temperature_proektor"
+    id: ble_temperature_proektor
+  humidity:
+    name: "ble_humidity_proektor"
+    id: ble_humidity_proektor
+  battery_level:
+    name: "ble_battery_proektor" 
+    id: ble_battery_proektor   
+
+
+switch:
+  - platform: gpio
+    pin: 23
+    name: "switch_relay_d1_electro_kotel"
+    id: switch_relay_d1_electro_kotel   
+
+  - platform: gpio
+    pin: 22
+    name: "switch_relay_d2_vhid_niz"
+    id: switch_relay_d2_vhid_niz
+
+  - platform: gpio
+    pin: 21
+    name: "switch_relay_d3_nasos"  
+    id: switch_relay_d3_nasos 
+
+  - platform: gpio
+    pin: 19
+    name: "switch_relay_d4_kitchen"   
+    id: switch_relay_d4_kitchen
+
+  - platform: gpio
+    pin: 18
+    name: "switch_relay_d5_spalnya"  
+    id: switch_relay_d5_spalnya 
+
+  - platform: gpio
+    pin: 5
+    name: "switch_relay_d6_maysternya"   
+    id: switch_relay_d6_maysternya
+
+  - platform: gpio
+    pin: 17
+    name: "switch_relay_d7_vanna"  
+    id: switch_relay_d7_vanna 
+
+  - platform: gpio
+    pin: 16
+    name: "switch_relay_d8_velika"
+    id: switch_relay_d8_velika   
+
+  - platform: gpio
+    pin: 4
+    name: "switch_relay_d9_ani"   
+    id: switch_relay_d9_ani
+
+  - platform: gpio
+    pin: 0
+    name: "switch_relay_d10_koridor"
+    id: switch_relay_d10_koridor   
+
+  - platform: gpio
+    pin: 2
+    name: "switch_relay_d11"  
+    id: switch_relay_d11
+
+  - platform: gpio
+    pin: 15
+    name: "switch_relay_d12_haz_zamikannya" 
+    id: switch_relay_d12_haz_zamikannya    
+    

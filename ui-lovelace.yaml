@@ -9,15 +9,15 @@ views:
       - type: entities
         show_header_toggle: false
 
-        title: Інвертор
+        title: Акумулятор
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
-          - entity: switch.switch_ssr_battery
-            name: Інвертор вкл/викл
+          - entity: switch.switch_invertor
+            name: Інвертор (автоматично)
 
-          - entity: switch.switch_ssr_battery2
-            name: Зарядка вкл/викл
+          - entity: switch.switch_zaryadka
+            name: Зарядка (автоматично)
 
           - entity: sensor.battery_voltage
             name: Напруга
@@ -25,10 +25,10 @@ views:
           # - entity: input_number.battery_percentage
           #   name: Рівень заряду у відсотках
 
-          - entity: switch.invertor
-            name: Інвертор
-          - entity: sensor.invertor_current_power
-            name: Інвертор споживання
+          # - entity: switch.invertor
+          #   name: Інвертор
+          # - entity: sensor.invertor_current_power
+          #   name: Інвертор споживання
 
       - type: entities
         show_header_toggle: false
