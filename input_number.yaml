@@ -102,7 +102,7 @@ koridor_night_max:
   mode: box
   name: Коридор ніч
   initial: 14
-  min: 14
+  min: 14 ok
   max: 21
   step: 1
 koridor_day_max:

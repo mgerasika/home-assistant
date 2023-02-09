@@ -12,10 +12,10 @@ lovelace:
   mode: yaml
   resources: !include resources.yaml
 
-input_number: !include input_number.yaml
-input_boolean: !include input_boolean.yaml
-input_datetime: !include input_datetime.yaml
-automation: !include automations.yaml
+# input_number: !include input_number.yaml
+# input_boolean: !include input_boolean.yaml
+# input_datetime: !include input_datetime.yaml
+# automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 sensor: !include sensor.yaml
