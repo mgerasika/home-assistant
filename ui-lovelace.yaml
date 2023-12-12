@@ -8,19 +8,74 @@ views:
     cards:
       - type: gauge
         name: Генерація
+        unit: "вт"
+        entity: sensor.solar_energy_diff
+        min: 0
+        max: 9000
+        segments:
+          - from: 4000
+            color: "red"
+
+      - type: gauge
+        name: Генерація
         unit: "%"
         entity: sensor.solar_energy_diff_in_percentage
         segments:
           - from: 90
-            color: "#43a047"
+            color: "red"
 
       - type: gauge
-        name: Генерація VA
-        unit: "%"
-        entity: sensor.pzem_reactive_va_diff_in_percentage
+        name: Навантаження
+        unit: "вт"
+        #unity_to_solar_in_percentage
+        entity: sensor.pzem_004t_2_v3_power
+        min: 0
+        max: 6500
         segments:
-          - from: 90
-            color: "#43a047"
+          - from: 5000
+            color: "red"
+
+      - type: entities
+        show_header_toggle: false
+        title: Сонячні панелі
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - entity: switch.switch_solar_meter_restart_esp
+            name: Рестарт ЕSP
+
+          - entity: sensor.total_dayly_energy_diff
+            name: Панелі за добу
+
+          - entity: sensor.220v_total_daily_energy_1
+            name: Мережа за добу
+
+          - entity: sensor.220v_total_daily_energy_2
+            name: Сумма за добу
+
+          - entity: sensor.solar_energy_diff
+            name: Панелі
+
+          - entity: sensor.pzem_004t_1_v3_power
+            name: Мережа
+
+          - entity: sensor.pzem_004t_2_v3_power
+            name: Сумма
+
+          - entity: switch.switch_relay_0
+            name: Реле 0
+
+          - entity: switch.switch_relay_1
+            name: Реле 1
+
+          - entity: switch.switch_relay_2
+            name: Реле 2
+
+          - entity: switch.switch_relay_3
+            name: Реле 3
+
+          - entity: sensor.battery_voltage
+            name: Акумулятор Напруга
 
       - type: entities
         show_header_toggle: false
@@ -57,40 +112,6 @@ views:
           - entity: sensor.pzem_004t_2_v3_frequency
           - entity: sensor.pzem_004t_2_v3_power_factor
           - entity: sensor.pzem_004t_2_v3_voltage
-
-      - type: entities
-        show_header_toggle: false
-        title: Сонячні панелі
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
-        entities:
-          - entity: switch.switch_solar_meter_restart_esp
-            name: Рестарт ЕSP
-
-          - entity: sensor.solar_energy_diff
-            name: Генерація
-
-          - entity: sensor.pzem_reactive_va_diff
-            name: Генерація (VA)
-
-          - entity: sensor.total_dayly_energy_diff
-            name: Всього за день
-
-          - entity: sensor.total_dayly_energy_reactive_diff
-            name: Всього за день (VA)
-
-          - entity: sensor.pzem_004t_1_v3_power
-            name: Вхід
-
-          - entity: sensor.pzem_004t_2_v3_power
-            name: Вихід
-
-          - entity: switch.switch_relay_0
-            name: Реле 1квт
-          - entity: switch.switch_relay_1
-            name: Реле 1квт
-          - entity: switch.switch_relay_2
-            name: Реле 1квт
 
       # - type: "custom:content-card-example"
       #   entities:
@@ -174,29 +195,17 @@ views:
         show_header_toggle: false
         title: Колектор (esphome)
         entities:
-          - entity: switch.switch_relay_d1_electro_kotel
-            name: Елктро-котел
+          - entity: switch.switch_relay_d7_vanna
+            name: Ванна
 
-          - entity: switch.switch_relay_d12_haz_zamikannya
-            name: Газ (замикання)
-
-          - entity: switch.switch_relay_d3_nasos
-            name: Насос
-
-          - entity: switch.switch_relay_d2_vhid_niz
-            name: Вхід Низ
-
-          - entity: switch.switch_relay_d4_kitchen
-            name: Кухня
+          - entity: switch.switch_relay_d10_koridor
+            name: Коридор
 
           - entity: switch.switch_relay_d5_spalnya
             name: Спальня
 
-          - entity: switch.switch_relay_d6_maysternya
-            name: Майстерня
-
-          - entity: switch.switch_relay_d7_vanna
-            name: Ванна
+          - entity: switch.switch_relay_d4_kitchen
+            name: Кухня
 
           - entity: switch.switch_relay_d8_velika
             name: Вітальня
@@ -204,8 +213,20 @@ views:
           - entity: switch.switch_relay_d9_ani
             name: Ані
 
-          - entity: switch.switch_relay_d10_koridor
-            name: Коридор
+          - entity: switch.switch_relay_d6_maysternya
+            name: Майстерня
+
+          - entity: switch.switch_relay_d3_nasos
+            name: Насос 220
+
+          - entity: switch.switch_relay_not_used1
+            name: Не використовується 220
+
+          - entity: switch.switch_relay_d12_haz_zamikannya
+            name: Газ (замикання)
+
+          - entity: switch.switch_relay_not_used2
+            name: Не використовується
 
   - title: Детальні
     cards:
@@ -220,8 +241,6 @@ views:
                 name: Реле
               - entity: sensor.ble_temperature_kitchen_2
                 name: Температура
-              - entity: sensor.ble_battery_kitchen_2
-                name: Батарейка
 
           - type: entities
             title: Спальня
@@ -232,8 +251,6 @@ views:
                 name: Реле
               - entity: sensor.ble_temperature_spalnya_2
                 name: Температура
-              - entity: sensor.ble_battery_spalnya_2
-                name: Батарейка
 
           - type: entities
             title: Майстерня
@@ -244,8 +261,6 @@ views:
                 name: Реле
               - entity: sensor.ble_temperature_maysternya_2
                 name: Температура
-              - entity: sensor.ble_battery_maysternya_2
-                name: Батарейка
 
           - type: entities
             title: Ванна
@@ -256,8 +271,6 @@ views:
                 name: Реле
               - entity: sensor.ble_temperature_vanna_2
                 name: Температура
-              - entity: sensor.ble_battery_vanna_2
-                name: Батарейка
 
           - type: entities
             title: Велика
@@ -268,8 +281,6 @@ views:
                 name: Реле
               - entity: sensor.ble_temperature_velika_2
                 name: Температура
-              - entity: sensor.ble_battery_velika_2
-                name: Батарейка
 
           - type: entities
             title: Ані
@@ -280,8 +291,6 @@ views:
                 name: Реле
               - entity: sensor.ble_temperature_ani_2
                 name: Температура
-              - entity: sensor.ble_battery_ani_2
-                name: Батарейка
 
           - type: entities
             title: Коридор
@@ -292,8 +301,6 @@ views:
                 name: Реле
               - entity: sensor.ble_temperature_koridor_2
                 name: Температура
-              - entity: sensor.ble_battery_koridor_2
-                name: Батарейка
 
           - type: entities
             title: Дах
@@ -302,8 +309,6 @@ views:
             entities:
               - entity: sensor.ble_temperature_dax_2
                 name: Температура
-              - entity: sensor.ble_battery_dax_2
-                name: Батарейка
 
           - type: entities
             title: Проектор
@@ -312,8 +317,6 @@ views:
             entities:
               - entity: sensor.ble_temperature_proektor
                 name: Температурa
-              - entity: sensor.ble_battery_proektor
-                name: Батарейка
 
           - type: entities
             title: Вулиця
@@ -322,8 +325,6 @@ views:
             entities:
               - entity: sensor.ble_temperature_vulichya
                 name: Температурa
-              - entity: sensor.ble_battery_vulichya
-                name: Батарейка
 
   - title: Графіки
     cards:

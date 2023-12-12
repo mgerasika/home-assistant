@@ -1,8 +1,10 @@
-db_url: mysql://hass:hass@core-mariadb/homeassistant?charset=utf8
-purge_keep_days: 1
+# db_url: mysql://hass:hass@core-mariadb/homeassistant?charset=utf8
+# purge_keep_days: 1
 include:
   domains:
     - switch
-    - light
     - binary_sensor
     - sensor
+db_url: !secret db_link
+purge_keep_days: 365
+auto_purge: false
