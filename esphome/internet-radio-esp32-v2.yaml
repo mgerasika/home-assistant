@@ -1,0 +1,232 @@
+esphome:
+  name: internet-radio-esp32-v2
+  on_boot:
+    then:
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "rY9jEJsCbVDKsAeYMreaN61xymP9OzFtTMOWqmN/Doo="
+
+ota:
+  password: "522bc687ef14210512b4130026fed440"
+
+wifi:
+  networks:
+  - ssid: zyxel2
+    password: zxc123=- 
+        
+  - ssid: zyxel
+    password: zxc123=-  
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Internet-Radio-Esp32-V2"
+    password: "k7iidJ2StqpX"
+
+
+captive_portal:
+
+media_player:
+  - platform: i2s_audio
+    name: ESPHome I2S Media Player
+    id: player
+    dac_type: external
+    i2s_dout_pin: GPIO19
+    mode: mono
+    i2s_lrclk_pin: GPIO33
+    i2s_bclk_pin: GPIO22   
+          
+
+binary_sensor:
+  - platform: gpio
+    pin: GPIO2
+    id: next
+    name: next
+    on_click:
+
+    - min_length: 50ms
+      max_length: 350ms      
+      then:        
+      - logger.log: 'volume down' 
+      - number.decrement: 
+          id: volume
+          cycle: false            
+ 
+
+    - min_length: 500ms
+      max_length: 8000ms
+      then:    
+      - logger.log: 'next' 
+      - number.increment: station_index
+
+  - platform: gpio
+    pin: GPIO4
+    id: prev
+    name: prev
+    on_click:
+    - min_length: 50ms
+      max_length: 350ms    
+      then:    
+      - logger.log: 'volume up' 
+      - number.increment: 
+          id: volume
+          cycle: false     
+
+    - min_length: 500ms
+      max_length: 8000ms
+      then:        
+      - logger.log: 'prev' 
+      - number.decrement: station_index
+
+  
+
+  - platform: template
+    name: "two_buttons"
+    id: two_buttons
+    on_state:
+        if:
+          condition:
+            lambda: !lambda |-
+              if (id(next).state and id(prev).state) {
+                return true;
+              } else {
+                return false;
+              }   
+          then:
+          - media_player.toggle:
+              id: player 
+
+
+  - platform: template
+    name: "station_index_init"
+    id: station_index_init
+
+  - platform: template
+    name: "volume_init"
+    id: volume_init    
+   
+
+number:
+  - platform: template
+    name: "station_index"
+    id: station_index
+    optimistic: true
+    step: 1
+    # initial_value : 1
+    restore_value: true
+    min_value: 1
+    max_value: 8
+    on_value:
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return !id(station_index_init).state;
+          then:
+          - lambda: !lambda |-
+               id(station_index_init).publish_state(true);
+          - delay: 5s 
+
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return (id(station_index).state == 1);
+          then:
+          - media_player.play_media:
+              id: player
+              media_url: 'http://media-ice.musicradio.com/LBCUKMP3Low' 
+
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return (id(station_index).state == 2);
+          then:
+          - media_player.play_media:
+              id: player
+              media_url: 'http://streaming05.liveboxstream.uk:8039/streamLow' 
+
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return (id(station_index).state == 3);
+          then:
+          - media_player.play_media:
+              id: player
+              media_url: 'http://media-ice.musicradio.com/ClassicFMMP3'    
+
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return (id(station_index).state == 4);
+          then:
+          - media_player.play_media:
+              id: player
+              media_url: 'http://media-ice.musicradio.com/LBC1152MP3Low'   
+
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return (id(station_index).state == 5);
+          then:
+          - media_player.play_media:
+              id: player
+              media_url: 'https://cast.radiogroup.com.ua/chillout128'   
+
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return (id(station_index).state == 6);
+          then:
+          - media_player.play_media:
+              id: player
+              media_url: 'https://edge-bauerall-01-gos2.sharp-stream.com/jazz.aac'                                               
+
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return (id(station_index).state == 7);
+          then:
+          - media_player.play_media:
+              id: player
+              media_url: 'https://radio.nrcu.gov.ua:8443/kazka-mp3'  
+
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return (id(station_index).state == 8);
+          then:
+          - media_player.play_media:
+              id: player
+              media_url: 'http://live.radioec.com.ua:8000/drimayko'                 
+
+  - platform: template
+    name: "volume"
+    id: volume
+    optimistic: true
+    step: 0.05
+    # initial_value : 0.4
+    restore_value: true
+    min_value: 0
+    max_value: 1
+    on_value:
+      - if:
+          condition:
+          - lambda: !lambda |-
+              return !id(volume_init).state;
+          then:
+          - lambda: !lambda |-
+               id(volume_init).publish_state(true);
+          - delay: 5s 
+
+
+      - media_player.volume_set:
+          id: player
+          volume: !lambda "return id(volume).state;"

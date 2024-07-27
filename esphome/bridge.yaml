@@ -1,0 +1,386 @@
+esphome:
+  name: bridge
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "2XBqoN4nAkLUYeR8FJRweTDWFy6CUc1h/J8aZ8nZ+uQ="
+
+ota:
+  password: "d750f653a163f26092e38972c9ac6c43"
+
+wifi:
+  networks:
+  - ssid: zyxel2
+    password: zxc123=- 
+        
+  - ssid: zyxel
+    password: zxc123=-  
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Bridge Fallback Hotspot"
+    password: "zxc123=-"
+web_server:
+  port: 80
+  
+captive_portal:
+
+esp32_ble_tracker:
+  scan_parameters:
+    interval: 1100ms
+    window: 1100ms
+  
+sensor:
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:25:70:8A"
+  temperature:
+    name: "ble_temperature_kitchen"
+    id: ble_temperature_kitchen
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:1D:62:4B"
+  temperature:
+    name: "ble_temperature_spalnya"
+    id: ble_temperature_spalnya 
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:BE:4C:FB"
+  temperature:
+    name: "ble_temperature_maysternya"
+    id: ble_temperature_maysternya
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:28:BD:62"
+  temperature:
+    name: "ble_temperature_vanna"
+    id: ble_temperature_vanna 
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:C0:F4:B7"
+  temperature:
+    name: "ble_temperature_velika"
+    id: ble_temperature_velika
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:57:29:B5"
+  temperature:
+    name: "ble_temperature_ani"
+    id: ble_temperature_ani  
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:28:A0:32"
+  temperature:
+    name: "ble_temperature_koridor"
+    id: ble_temperature_koridor
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:DF:06:52"
+  temperature:
+    name: "ble_temperature_dax"
+    id: ble_temperature_dax
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:6E:30:3F"
+  temperature:
+    name: "ble_temperature_vulichya"
+    id: ble_temperature_vulichya
+    force_update: true
+
+- platform: atc_mithermometer
+  mac_address: "A4:C1:38:49:72:BA"
+  temperature:
+    name: "ble_temperature_proektor"
+    id: ble_temperature_proektor 
+    force_update: true
+
+
+switch:
+  - platform: gpio
+    pin: 27
+    name: "switch_relay_not_used2"
+    id: switch_relay_not_used2   
+
+  - platform: gpio
+    pin: 14
+    name: "switch_relay_d12_haz_zamikannya" 
+    id: switch_relay_d12_haz_zamikannya 
+
+  - platform: gpio
+    pin: 12
+    name: "switch_relay_not_used1"
+    id: switch_relay_not_used1
+
+  - platform: gpio
+    pin: 13
+    name: "switch_relay_d3_nasos"  
+    id: switch_relay_d3_nasos 
+
+
+  - platform: gpio
+    pin: 15
+    name: "switch_relay_not_used_0"   
+    id: switch_relay_not_used_0
+
+  - platform: gpio
+    pin: 2
+    name: "switch_relay_d7_vanna"  
+    id: switch_relay_d7_vanna 
+
+  - platform: gpio
+    pin: 26
+    name: "switch_relay_d10_koridor"
+    id: switch_relay_d10_koridor     
+
+
+  - platform: gpio
+    pin: 25
+    name: "switch_relay_d5_spalnya"  
+    id: switch_relay_d5_spalnya 
+
+  - platform: gpio
+    pin: 33
+    name: "switch_relay_d4_kitchen"   
+    id: switch_relay_d4_kitchen
+
+
+  - platform: gpio
+    pin: 32
+    name: "switch_relay_d8_velika"
+    id: switch_relay_d8_velika   
+
+  - platform: gpio
+    pin: 23
+    name: "switch_relay_d9_ani"   
+    id: switch_relay_d9_ani
+
+  - platform: gpio
+    pin: 22
+    name: "switch_relay_d6_maysternya"   
+    id: switch_relay_d6_maysternya
+
+
+  - platform: template
+    name: "hoch_odna"
+    id: hoch_odna
+    lambda: return id(switch_relay_d4_kitchen).state or 
+                    id(switch_relay_d5_spalnya).state or 
+                    id(switch_relay_d6_maysternya).state or 
+                    id(switch_relay_d7_vanna).state or 
+                    id(switch_relay_d8_velika).state or 
+                    id(switch_relay_d9_ani).state or                                                                                 
+                    id(switch_relay_d10_koridor).state;
+    turn_on_action:
+      - logger.log: 'on'
+    turn_off_action:
+      - logger.log: 'off'
+
+
+  # - platform: template
+  #   name: "is_night"
+  #   id: is_night
+  #   lambda: !lambda |-
+  #     auto time = id(sntp_time).now();
+  #     return (time.hour > 22 or time.hour < 7);    
+
+  #   turn_on_action:
+  #     - switch.turn_on: switch_relay_d2_vhid_niz  
+  #     - logger.log: 'is night'
+  #   turn_off_action:
+  #     - logger.log: 'is day'  
+  #     - switch.turn_off: switch_relay_d2_vhid_niz        
+
+
+globals:
+  - id: hoz_odna2
+    type: bool
+    restore_value: no 
+
+time:
+  - platform: sntp
+    id: sntp_time
+    on_time:
+      - seconds: 0
+        minutes: /10
+        then:
+          #kitchen
+          - if:
+              condition:
+                lambda: !lambda |-
+                  auto time = id(sntp_time).now();
+                  if(time.hour > 6 and time.hour < 20) {
+                    return id(ble_temperature_kitchen).state > 19;
+                  } else {
+                    return id(ble_temperature_kitchen).state > 16;
+                  } 
+              then:
+                - switch.turn_off: switch_relay_d4_kitchen
+              else:
+                - switch.turn_on: switch_relay_d4_kitchen          
+
+           #spalnya
+          - if:
+              condition:
+                lambda: !lambda |-
+                  auto time = id(sntp_time).now();
+                  if(time.hour > 9 and time.hour < 20) {
+                    return id(ble_temperature_spalnya).state > 16;
+                  } else {
+                    return id(ble_temperature_spalnya).state > 16;
+                  } 
+              then:
+                - switch.turn_off: switch_relay_d5_spalnya
+              else:
+                - switch.turn_on: switch_relay_d5_spalnya       
+
+           #maysternya
+          - if:
+              condition:
+                lambda: !lambda |-
+                  auto time = id(sntp_time).now();
+                  if(time.hour > 6 and time.hour < 17) {
+                    return id(ble_temperature_maysternya).state > 12;
+                  } else {
+                    return id(ble_temperature_maysternya).state > 12;
+                  } 
+              then:
+                - switch.turn_off: switch_relay_d6_maysternya
+              else:
+                - switch.turn_on: switch_relay_d6_maysternya  
+
+           #vanna
+          - if:
+              condition:
+                lambda: !lambda |-
+                  auto time = id(sntp_time).now();
+                  if(time.hour > 6 and time.hour < 21) {
+                    return id(ble_temperature_vanna).state > 19;
+                  } else {
+                    return id(ble_temperature_vanna).state > 16;
+                  } 
+              then:
+                - switch.turn_off: switch_relay_d7_vanna
+              else:
+                - switch.turn_on: switch_relay_d7_vanna  
+
+           #velika
+          - if:
+              condition:
+                lambda: !lambda |-
+                  auto time = id(sntp_time).now();
+                  if(time.hour > 6 and time.hour < 20) {
+                    return id(ble_temperature_velika).state > 18;
+                  } else {
+                    return id(ble_temperature_velika).state > 15;
+                  } 
+              then:
+                - switch.turn_off: switch_relay_d8_velika
+              else:
+                - switch.turn_on: switch_relay_d8_velika  
+
+           #ani
+          - if:
+              condition:
+                lambda: !lambda |-
+                  auto time = id(sntp_time).now();
+                  if(time.hour > 9 and time.hour < 17) {
+                    return id(ble_temperature_ani).state > 19;
+                  } else {
+                    return id(ble_temperature_ani).state > 16;
+                  } 
+              then:
+                - switch.turn_off: switch_relay_d9_ani
+              else:
+                - switch.turn_on: switch_relay_d9_ani  
+
+           #коридор
+          - if:
+              condition:
+                lambda: !lambda |-
+                  auto time = id(sntp_time).now();
+                  if(time.hour > 6 and time.hour < 20) {
+                    return id(ble_temperature_koridor).state > 5;
+                  } else {
+                    return id(ble_temperature_koridor).state > 5;
+                  } 
+              then:
+                - switch.turn_off: switch_relay_d10_koridor
+              else:
+                - switch.turn_on: switch_relay_d10_koridor     
+
+          #run nasos
+          - if:
+              condition:
+                lambda: !lambda |-
+                  return id(hoch_odna).state;
+              then:
+                - switch.turn_on: switch_relay_d3_nasos
+              else:
+                - switch.turn_off: switch_relay_d3_nasos
+
+      - seconds: 0
+        minutes: /15
+        then:
+          #еко режим
+          - if:
+              condition:
+                lambda: !lambda |-
+                  return id(switch_relay_d12_haz_zamikannya).state or !id(hoch_odna).state;
+              then:
+                - switch.turn_off: switch_relay_d12_haz_zamikannya
+                - delay: 60s
+              else:
+                - switch.turn_on: switch_relay_d12_haz_zamikannya    
+                - delay: 60s   
+
+      # #electro kotel on in evening
+      # - seconds: 0
+      #   minutes: /20
+      #   then:
+      #     - if:
+      #         condition:
+      #           lambda: !lambda |-
+      #             return id(is_night).state;
+      #         then:
+      #           - if:
+      #               condition:
+      #                 lambda: !lambda |-
+      #                   return id(hoch_odna).state;
+      #               then:
+      #                 - switch.turn_off: switch_relay_d12_haz_zamikannya   
+      #                 - switch.turn_off: switch_relay_d2_vhid_niz             
+      #                 - switch.turn_on: switch_relay_d1_electro_kotel
+      #                 - switch.turn_on: switch_relay_d11_electro_kotel_v2
+      #               else:
+      #                 - switch.turn_off: switch_relay_d1_electro_kotel
+      #                 - switch.turn_off: switch_relay_d11_electro_kotel_v2  
+      #         else:
+      #           - switch.turn_on: switch_relay_d2_vhid_niz    
+
+      # #electro kotel off in morning
+      # - seconds: 0
+      #   minutes: 0
+      #   hours: 7
+      #   then:
+      #     - switch.turn_on: switch_relay_d2_vhid_niz             
+      #     - switch.turn_off: switch_relay_d1_electro_kotel
+      #     - switch.turn_off: switch_relay_d11_electro_kotel_v2
+
+             
+           

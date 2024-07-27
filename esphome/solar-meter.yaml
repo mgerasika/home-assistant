@@ -1,0 +1,424 @@
+esphome:
+  name: solar-meter
+
+  on_boot:
+    priority: -100
+    then:
+      - switch.turn_off: switch_relay_0
+      - switch.turn_off: switch_relay_1
+      - switch.turn_off: switch_relay_2
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+api:
+  encryption:
+    key: "M7qQYUSe9fVcAAPyJ0lGNzBENTCouJn+N16vs4MaxJM="
+
+ota:
+  password: "1"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  ap:
+    ssid: "Solar-Meter Fallback Hotspot"
+    password: "zxc123=-"
+
+web_server:
+  port: 80
+
+captive_portal:
+
+# Enable logging
+logger:
+  hardware_uart: UART0
+  baud_rate: 0
+  
+uart:
+  id: energomonitor_uart 
+  tx_pin: GPIO17
+  rx_pin: GPIO16
+  baud_rate: 9600
+  # debug:
+
+globals:
+  - id: counter
+    type: int
+    restore_value: no
+    initial_value: '0'
+
+  - id: can_off_relay
+    type: boolean
+    initial_value: 'true'    
+
+switch:
+  - platform: restart
+    name: "Switch Solar Meter Restart Esp"
+    id: switch_solar_meter_restart_esp
+
+  - platform: uart
+    uart_id: energomonitor_uart
+    name: "220V Energy Reset 1"
+    data: [0x03, 0x42, 0x81, 0x71]  
+
+  - platform: uart
+    uart_id: energomonitor_uart
+    name: "220V Energy Reset 2"
+    data: [0x04, 0x42, 0x83, 0x41]  
+
+  - platform: gpio
+    pin: 15
+    name: "switch_relay_0"
+    id: switch_relay_0   
+
+  - platform: gpio
+    pin: 2
+    name: "switch_relay_1"
+    id: switch_relay_1
+
+  - platform: gpio
+    pin: 4
+    name: "switch_relay_2"  
+    id: switch_relay_2  
+
+  - platform: gpio
+    pin: 23
+    name: "switch_relay_3"  
+    id: switch_relay_3       
+
+    # on_...:
+    # then:
+    #   - pzemac.reset_energy: pzemac_1     
+
+sensor:
+  - platform: adc
+    pin: GPIO32
+    name: "battery_voltage"
+    id: battery_voltage
+    update_interval: 3s
+    accuracy_decimals: 2
+    attenuation: 11dB
+    raw: true
+    filters:
+      - multiply: 1    
+
+  - platform: pzemac
+    current:
+      name: "PZEM-004T_1 V3 Current"
+      id: pzem_1_v3_current
+    voltage:
+      name: "PZEM-004T_1 V3 Voltage"
+      id: pzem_1_v3_voltage
+    energy:
+      name: "PZEM-004T_1 V3 Energy"
+      id: pzem_1_v3_energy
+    power:
+      name: "PZEM-004T_1 V3 Power"
+      id: power_monitor_1
+    frequency:
+      name: "PZEM-004T_1 V3 Frequency"
+    power_factor:
+      name: "PZEM-004T_1 V3 Power Factor"
+    update_interval: 3s
+    address: 0x03
+
+  - platform: pzemac
+    current:
+      name: "PZEM-004T_2 V3 Current"
+      id: pzem_2_v3_current
+    voltage:
+      name: "PZEM-004T_2 V3 Voltage"
+      id: pzem_2_v3_voltage
+    energy:
+      name: "PZEM-004T_2 V3 Energy"
+      id: pzem_2_v3_energy
+    power:
+      name: "PZEM-004T_2 V3 Power"
+      id: power_monitor_2
+    frequency:
+      name: "PZEM-004T_2 V3 Frequency"
+    power_factor:
+      name: "PZEM-004T_2 V3 Power Factor"
+    update_interval: 3s
+    address: 0x04  
+
+#input total
+  - platform: total_daily_energy
+    id: total_daily_energy_1
+    name: "220V Total Daily Energy_1"
+    power_id: power_monitor_1
+    filters:
+      - multiply: 0.001
+    accuracy_decimals: 2
+    unit_of_measurement: kWh
+    icon: mdi:counter  
+
+  - platform: total_daily_energy
+    id: total_daily_energy_reactive_1
+    name: "220V Total Daily Energy Reactive_1"
+    power_id: pzem_1_v3_reactive
+    filters:
+      - multiply: 0.001
+    accuracy_decimals: 2
+    unit_of_measurement: kWh
+    icon: mdi:counter      
+
+#output total
+  - platform: total_daily_energy
+    id: total_daily_energy_2
+    name: "220V Total Daily Energy_2"
+    power_id: power_monitor_2
+    filters:
+      - multiply: 0.001
+    accuracy_decimals: 2
+    unit_of_measurement: kWh
+    icon: mdi:counter 
+
+  - platform: total_daily_energy
+    id: total_daily_energy_reactive_2
+    name: "220V Total Daily Energy Reactive_2"
+    power_id: pzem_2_v3_reactive
+    filters:
+      - multiply: 0.001
+    accuracy_decimals: 2
+    unit_of_measurement: kWh
+    icon: mdi:counter     
+     
+#custom
+  - platform: template
+    name: "Solar energy diff"
+    lambda: |-
+      if(isnan(id(power_monitor_1).state)) {
+         return id(power_monitor_2).state;
+      }
+      int res = id(power_monitor_2).state - id(power_monitor_1).state;
+      return res > 0 ? res: 0;
+    update_interval: 1s   
+    unit_of_measurement: 'W'  
+    icon: mdi:counter 
+
+  - platform: template
+    name: "Solar energy diff in percentage"
+    lambda: |-
+      if(isnan(id(power_monitor_1).state)) {
+         return 0;
+      }
+      int res = id(power_monitor_2).state - id(power_monitor_1).state;
+      return res > 0 ? res/100 : 0;
+    update_interval: 1s   
+    accuracy_decimals: 0
+    unit_of_measurement: '%'  
+    icon: mdi:counter         
+
+  - platform: template
+    name: "Pzem energy Reactive VA 1"
+    id: pzem_1_v3_reactive
+    filters:
+    lambda: |-
+      return (id(pzem_1_v3_voltage).state * id(pzem_1_v3_current).state);
+    update_interval: 1s   
+    accuracy_decimals: 1
+    unit_of_measurement: 'W'  
+
+  - platform: template
+    name: "Pzem energy Reactive VA 2"
+    id: pzem_2_v3_reactive
+    filters:
+    lambda: |-
+      return (id(pzem_2_v3_voltage).state * id(pzem_2_v3_current).state);
+    update_interval: 1s   
+    accuracy_decimals: 1
+    unit_of_measurement: 'W'      
+
+  - platform: template
+    name: "Pzem reactive VA diff"
+    lambda: |-
+      if(isnan(id(pzem_1_v3_reactive).state)) {
+         return id(pzem_2_v3_reactive).state;
+      }
+      return id(pzem_2_v3_reactive).state - id(pzem_1_v3_reactive).state;
+    update_interval: 1s  
+    accuracy_decimals: 1 
+    unit_of_measurement: 'W'  
+
+  - platform: template
+    name: "Pzem reactive VA diff in percentage"
+    lambda: |-
+      if(isnan(id(pzem_1_v3_reactive).state)) {
+         return 0;
+      }
+      int res = id(pzem_2_v3_reactive).state - id(pzem_1_v3_reactive).state;
+      return res > 0 ? res/100 : 0;
+    update_interval: 1s  
+    accuracy_decimals: 0 
+    unit_of_measurement: '%'     
+
+  - platform: template
+    name: "Unity to solar in percentage"
+    lambda: |-
+      if(isnan(id(pzem_1_v3_reactive).state)) {
+         return 0;
+      }
+      int res = id(power_monitor_1).state / id(power_monitor_2).state;
+      return res > 0 ? 100-(res*100) : 0;
+    update_interval: 1s  
+    accuracy_decimals: 0 
+    unit_of_measurement: '%' 
+
+  - platform: template
+    name: "Unity to solar reactive in percentage"
+    lambda: |-
+      if(isnan(id(pzem_1_v3_reactive).state)) {
+         return 0;
+      }
+      int res = id(pzem_1_v3_reactive).state / id(pzem_2_v3_reactive).state;
+      return res > 0 ? 100-(res*100) : 0;
+    update_interval: 1s  
+    accuracy_decimals: 0 
+    unit_of_measurement: '%' 
+
+
+  - platform: template
+    name: "Total dayly energy diff"
+    filters:
+    lambda: |-
+      int res = id(total_daily_energy_2).state - id(total_daily_energy_1).state;
+      return res;
+    update_interval: 1s   
+    accuracy_decimals: 2
+    unit_of_measurement: 'kWh'  
+
+  - platform: template
+    name: "Total dayly energy reactive diff"
+    filters:
+    lambda: |-
+      int res = (id(total_daily_energy_reactive_2).state - id(total_daily_energy_reactive_1).state);
+      return res > 0 ? res: 0;
+    update_interval: 1s   
+    accuracy_decimals: 2
+    unit_of_measurement: 'kWh'                                 
+
+time:
+  - platform: sntp
+    id: sntp_time
+    on_time:
+        #turn off when overload
+      - seconds: /1
+        then:
+          - if:
+              condition:
+                lambda: !lambda |-
+                  return id(power_monitor_2).state > 5750;
+              then:
+                - switch.turn_off: switch_relay_0
+                - switch.turn_off: switch_relay_1   
+                - switch.turn_off: switch_relay_2      
+
+
+      - seconds: /60
+        then:
+          # turn off
+
+          - if:
+              condition:
+                lambda: !lambda |-
+                  return id(can_off_relay) and ((isnan(id(pzem_1_v3_voltage).state) or id(pzem_1_v3_voltage).state < 150 or id(power_monitor_1).state > 249));
+              then:
+              - if:
+                  condition:
+                    lambda: !lambda |-
+                      return !id(switch_relay_1).state;
+                  then:
+                    - switch.turn_off: switch_relay_0   
+
+              - if:
+                  condition:
+                    lambda: !lambda |-
+                      return !id(switch_relay_2).state;
+                  then:
+                    - switch.turn_off: switch_relay_1
+
+              - if:
+                  condition:
+                    lambda: !lambda |-
+                      return true;
+                  then:
+                    - switch.turn_off: switch_relay_2                    
+
+      - seconds: 0
+        minutes: /10
+        then:
+        # (id(sntp_time).now().minute % 2 == 0)  and
+          # turn on
+          - if:
+              condition:
+                lambda: !lambda |-
+                  return  (id(sntp_time).now().hour > 8) and (id(sntp_time).now().hour < 20) and !isnan(id(pzem_1_v3_voltage).state) and id(pzem_1_v3_voltage).state > 150 and id(power_monitor_1).state < 249;
+              then:
+                - if:
+                    condition:
+                      #turn on 2 relay
+                      lambda: !lambda |-
+                        return id(switch_relay_1).state and id(power_monitor_2).state < 3500;
+                    then:
+                      - globals.set:
+                          id: can_off_relay
+                          value: 'false'                      
+                      - switch.turn_on: switch_relay_2 
+                      - delay: 30s
+                      - globals.set:
+                          id: can_off_relay
+                          value: 'true'
+
+                - if:
+                    condition:
+                       #turn on 1 relay
+                      lambda: !lambda |-
+                        return id(switch_relay_0).state and id(power_monitor_2).state < 3500;
+                    then:
+                      - globals.set:
+                          id: can_off_relay
+                          value: 'false'                       
+                      - switch.turn_on: switch_relay_1  
+                      - delay: 30s
+                      - globals.set:
+                          id: can_off_relay
+                          value: 'true'                      
+
+                - if:
+                    #turn on 0 relay
+                    condition:
+                      lambda: !lambda |-
+                        return id(power_monitor_2).state < 2500;
+                    then:
+                      - globals.set:
+                          id: can_off_relay
+                          value: 'false'                       
+                      - switch.turn_on: switch_relay_0  
+                      - delay: 30s
+                      - globals.set:
+                          id: can_off_relay
+                          value: 'true'                           
+                  
+     
+
+                
+                             
+             
+
+
+
+
+
+
+
+               
+
+                                
+
+                                 
+           
