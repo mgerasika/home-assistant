@@ -195,26 +195,30 @@ views:
         show_header_toggle: false
         title: Колектор (esphome)
         entities:
-          - entity: switch.switch_relay_d7_vanna
-            name: Ванна
+
+          - entity: switch.switch_relay_not_used_0
+            name: Не використовується
+
+          - entity: switch.switch_relay_d6_maysternya
+            name: Майстерня
+
+          - entity: switch.switch_relay_d9_ani
+            name: Ані     
+
+          - entity: switch.switch_relay_d8_velika
+            name: Вітальня    
+
+          - entity: switch.switch_relay_d4_kitchen
+            name: Кухня  
+            
+          - entity: switch.switch_relay_d5_spalnya
+            name: Спальня            
 
           - entity: switch.switch_relay_d10_koridor
             name: Коридор
 
-          - entity: switch.switch_relay_d5_spalnya
-            name: Спальня
-
-          - entity: switch.switch_relay_d4_kitchen
-            name: Кухня
-
-          - entity: switch.switch_relay_d8_velika
-            name: Вітальня
-
-          - entity: switch.switch_relay_d9_ani
-            name: Ані
-
-          - entity: switch.switch_relay_d6_maysternya
-            name: Майстерня
+          - entity: switch.switch_relay_d7_vanna
+            name: Ванна
 
           - entity: switch.switch_relay_d3_nasos
             name: Насос 220
